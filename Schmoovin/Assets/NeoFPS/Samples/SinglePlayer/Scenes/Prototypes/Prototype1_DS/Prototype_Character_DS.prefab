@@ -140,6 +140,18 @@ MonoBehaviour:
   m_ChargeRate: 5
   m_EnterSlowMoAudio: {fileID: 0}
   m_ExitSlowMoAudio: {fileID: 0}
+--- !u!114 &3366796220927569057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8844861361780726055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fbd8f73fe708d408f0cb5b6a554092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4071014814450866155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +317,10 @@ PrefabInstance:
     - target: {fileID: 114990583580875868, guid: 6955eb1d3c9906840ab221e0a9292387, type: 3}
       propertyPath: m_WallAngle
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114990583580875868, guid: 6955eb1d3c9906840ab221e0a9292387, type: 3}
+      propertyPath: m_UpSmoothing
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114526402341856060, guid: 6955eb1d3c9906840ab221e0a9292387, type: 3}
