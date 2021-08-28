@@ -1,0 +1,21 @@
+using NeoFPS;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : PlayerCharacterHudBase
+    {
+        private ICharacter m_Character = null;
+
+        public override void OnPlayerCharacterChanged(ICharacter character)
+        {
+            m_Character = character;
+            // Use this method to actually attach to the correct character component / stats
+        }
+        
+        // Useful virtual methods:
+        // Awake()
+        // Start()
+        // OnDestroy()
+    }
+}

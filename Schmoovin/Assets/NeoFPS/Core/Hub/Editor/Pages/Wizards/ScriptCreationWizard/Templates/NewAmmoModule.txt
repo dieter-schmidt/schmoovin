@@ -1,0 +1,47 @@
+using NeoFPS.ModularFirearms;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseAmmoBehaviour
+    {
+        public BaseAmmoEffect ammoEffect = null;
+
+        private int ammoCount = 100;
+
+        public override string printableName
+        {
+            get { return "My New Ammo"; } // Used in the HUD
+        }
+
+        public override IAmmoEffect effect
+        {
+            get { return ammoEffect; }
+        }
+
+        public override int maxAmmo
+        {
+            get { return 100; }
+        }
+
+        public override int currentAmmo
+        {
+            get { return ammoCount; }
+        }
+
+        public override void DecrementAmmo(int amount)
+        {
+            ammoCount = Mathf.Clamp(ammoCount - amount, 0, maxAmmo);
+        }
+
+        public override void IncrementAmmo(int amount)
+        {
+            ammoCount = Mathf.Clamp(ammoCount + amount, 0, maxAmmo);
+        }
+
+        // Useful virtual methods:
+        // OnEnable()
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

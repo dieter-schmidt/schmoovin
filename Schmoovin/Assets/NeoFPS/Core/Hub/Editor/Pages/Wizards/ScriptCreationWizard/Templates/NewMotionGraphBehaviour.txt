@@ -1,0 +1,60 @@
+using UnityEngine;
+using NeoFPS.CharacterMotion;
+using NeoFPS.CharacterMotion.Parameters;
+using NeoSaveGames.Serialization;
+
+namespace %NAMESPACE%
+{
+    [MotionGraphElement("%NAMESPACE%/%CLASS_NAME%", "%CLASS_NAME%")]
+    public class %CLASS_NAME% : MotionGraphBehaviour
+    {
+        public float floatValue = 5f;
+
+        private static readonly NeoSerializationKey k_FloatValueKey = new NeoSerializationKey("floatValue");
+
+        public override void OnValidate()
+        {
+            // Optional - validate any inspector serialized values here
+        }
+
+        public override void Initialise(MotionGraphConnectable o)
+        {
+            base.Initialise(o);
+            // Optional
+        }
+
+        public override void OnEnter()
+        {
+            // Optional
+        }
+
+        public override void OnExit()
+        {
+            // Optional
+        }
+
+        public override void Update()
+        {
+            // Optional
+        }
+
+        public override void WriteProperties(INeoSerializer writer)
+        {
+            // Optional - write any data saved by the NeoSave system here
+            writer.WriteValue(k_FloatValueKey, floatValue);
+        }
+
+        public override void ReadProperties(INeoDeserializer reader)
+        {
+            // Optional - read any data saved by the NeoSave system here
+            reader.TryReadValue(k_FloatValueKey, out floatValue, floatValue);
+        }
+
+        public override void CheckReferences(IMotionGraphMap map)
+        {
+            // Update your reference properties here.
+            // Any property that references another graph element (parameter, data, etc) should be remapped, eg:
+            // property1 = map.Swap(property1);
+        }
+    }
+}

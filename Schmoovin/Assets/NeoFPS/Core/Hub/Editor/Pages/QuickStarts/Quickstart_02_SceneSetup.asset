@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b564cd860b30340832620160250c95, type: 3}
+  m_Name: Quickstart_02_SceneSetup
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 3dbfa0b5390fee041a267bcdd91569e1, type: 3}
+    darkSkinImage: {fileID: 0}
+    title: Scene Setup
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "NeoFPS is a large asset with a number of interacting systems, but ever
+      effort has been made to reduce the complexity of scene setup and therefore make
+      it easy to get started.\r\n\nTo speed up the process of setting up a NeoFPS
+      scene, a template scene has been provided. You can duplicate this scene to use
+      as a starting point, or you can open the scene additively in the editor and
+      duplicate individual items across from it."
+    links: []
+    highlightObjects:
+    - text: Template Scene
+      gameObject: {fileID: 102900000, guid: 2b96d9ab2d2ae0340969f6886e2c4c87, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 'Important Scene Items '
+    h3Heading: 
+    bulletPoints: []
+    text: 'The following scene items are either required or important to access the
+      full functionality of NeoFPS:'
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: c08965e3563b0ef498b059116d3b53d8, type: 3}
+    h2Heading: 
+    h3Heading: 'Character Spawner & Game Mode '
+    bulletPoints: []
+    text: "NeoFPS characters aren't usually placed directly in a scene. Instead, they
+      use a spawning system that is controlled by what's called the game mode. The
+      SimpleSpawnerAndGameMode prefab is an all in one object that you can drop in
+      a scene and position where you want a character to spawn. The attached game
+      mode simply spawns the specified character on start and respawns them when killed.\r\nMore
+      information on spawning characters can be found in the Character Spawning quick
+      start guide:"
+    links: []
+    highlightObjects:
+    - text: SimpleSpawnerAndGameMode Prefab
+      gameObject: {fileID: 1307091013466442, guid: 0486aeb450a3baf42957763257d19131,
+        type: 3}
+    actions:
+    - text: Show Character Spawns Quick-Start
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: quickstart_character_spawns
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 2800000, guid: 3d5523defde5858409bc32c3090e8886, type: 3}
+    h2Heading: 
+    h3Heading: HUD & Menu Canvas
+    bulletPoints: []
+    text: In order to see the player HUD (crosshair, health, ammo count, etc) and
+      access the in game menu, you will need a Unity UI canvas set up with both these
+      elements. The following prefab is set up with a HUD that works for the standard
+      demo character.
+    links: []
+    highlightObjects:
+    - text: HudAndMenuCanvas Prefab
+      gameObject: {fileID: 6088336194742650778, guid: 1fab8c9520621b84896290957c8ca856,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: It is important to note that some HUD items are specific to different setups.
+      For example, the stacked inventory setup requires a different inventroy HUD
+      to the standard and swappable inventories. More information on this can be found
+      in the inventories demo scene readme
+    links: []
+    highlightObjects:
+    - text: Inventory Demos
+      gameObject: {fileID: 102900000, guid: 870665f331f0e184881c39c221977877, type: 3}
+    actions:
+    - text: Show Demo Scenes Page
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: demo_scenes
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "For more information on the player HUD, see the NeoFPS documentation:\r"
+    links:
+    - text: 'Manual: The Player HUD'
+      url: https://docs.neofps.com/manual/hud-index.html
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'SceneSaveInfo '
+    bulletPoints: []
+    text: In order for the contents of a scene to be saved by the NeoFPS save system,
+      a gameobject with the SceneSaveInfo MonoBehaviour attached to it must be placed
+      at the root of the scene. There is no prefab for this as each SceneSaveInfo
+      is specific to the scene it is placed in.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 032b312749ec2ae46acf5ddc2b4df216, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "The SceneSaveInfo allows you to specify a name and thumbnail for the scene.
+      It also allows you to register scene specific prefabs with the save system that
+      need to be instantiated at runtime.\r\nFor more information on working with
+      the save system, see the NeoFPS documentation:"
+    links:
+    - text: 'Manual: Save Games'
+      url: https://docs.neofps.com/manual/savegames-index.html
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'Post Process Volume '
+    bulletPoints: []
+    text: NeoFPS makes use of the Post Processing Stack V2 package. Volumes define
+      the post processing effects that exist within a space. You can also define a
+      global post processing volume which acts as a scene wide profile, allowing other
+      volumes in the scene to override specific effects within their zones. The GlobalProfile
+      prefab contains an example global post processing profile and is used in each
+      of the feature demo scenes.
+    links: []
+    highlightObjects:
+    - text: GlobalPostProcessingProfile Prefab
+      gameObject: {fileID: 1590226849568192, guid: 49679d87671bf224b8684a266d742f9c,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'You can learn more about utilising post processing in your projects from
+      the Post Processing Stack V2 documentation:'
+    links:
+    - text: Unity Post Processing Stack V2 Documentation (latest)
+      url: https://docs.unity3d.com/Packages/com.unity.postprocessing@latest
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The aim is that NeoFPS will be updated to the high definition render pipeline
+      (HDRP) once its API has stabilised sufficiently and the work required to maintain
+      the samples is not prohibitive. This will mean a switch the the HDRP post processing
+      system.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Scene Pool Handler
+    bulletPoints: []
+    text: The NeoFPS pooling system requires a handler to be placed in the scene to
+      manage pooled objects. The scene pool handler will be created automatically
+      the first time a pooled object is requested, but this can cause a large frame
+      hitch due to the time taken to instantate pooled objects. For a smoother experience,
+      you can place a ScenePoolHandler in the scene manually so that the instantiation
+      is performed on load.
+    links: []
+    highlightObjects:
+    - text: ScenePoolHandler Prefab
+      gameObject: {fileID: 1529300802339104, guid: f6e1a063164322a4597bc3b87612b035,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Scene Geometry & Layers
+    h3Heading: 
+    bulletPoints: []
+    text: NeoFPS splits the environment geometry into two parts from a physics point
+      of view. Rough geometry is used for character collisions. Detail is used for
+      gunshots and visibility checks.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: effdffbc5779aeb4bad574118a3a023a, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'Environment Rough '
+    bulletPoints: []
+    text: "Rough physics geometry should be placed on the EnvironmentRough layer.
+      Where possible, it is most efficient to use primitive colliders such as spheres,
+      capsules and boxes. Convex mesh colliders are the next most efficient collider
+      type. Non-convex mesh colliders are the most flexible for describing complex
+      scene geometry, but also the most expensive type to use in collisions.\r\nThe
+      FPS camera is set up so that it does not render items on the EnvironmentRough
+      layer. It is only intended for collisions."
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'Environment Detail '
+    bulletPoints: []
+    text: "The EnvironmentDetail layer is used for both rendering and raycast physics
+      for gun shots and visibility checks. For most of the demo scenes, the render
+      mesh is used directly as the mesh collider so that the 2 match perfectly.\r\nThe
+      layer is set up in the Unity layer collision matrix so that no rigidbodies can
+      collide with it. This offsets the performance cost of using higher detail colliders,
+      but it does mean that object collisions might not match the scene geometry perfectly."
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'Default Layer '
+    bulletPoints: []
+    text: The default layer acts as both detail and rough in that both characters
+      and gun raycasts will interact with it. The major difference is that bullet
+      hits on objects in the default layer will not place decals by default. This
+      layer is useful for prototyping, and also for objects such as terrains where
+      it would make little sense to use 2 separate objects.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'Other Layers '
+    bulletPoints: []
+    text: "Not all layers are set up to collide with each other and most have specific
+      uses. Placing objects on the wrong layers might mean that objects fall through
+      the world or hit invisible walls.\r\nFor more information on the layers setup
+      in NeoFPS, see the documentation:"
+    links:
+    - text: 'Manual: Layers and Tags'
+      url: https://docs.neofps.com/manual/neofps-layers-and-tags.html
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Further Reading
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links:
+    - text: 'Manual: Getting Started'
+      url: https://docs.neofps.com/manual/neofps-getting-started.html
+    highlightObjects: []
+    actions: []
+  subFolder: 
+  pageName: quickstart_scene_setup

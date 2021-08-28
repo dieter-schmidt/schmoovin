@@ -1,0 +1,770 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8828d7c8ce04b4e9e43477dc2ac3f2, type: 3}
+  m_Name: FirearmTemplate_BasicAssaultRifle
+  m_EditorClassIdentifier: 
+  m_StepValues:
+  - {fileID: 114579917042436578}
+  - {fileID: 114694243969210944}
+  - {fileID: 114630939759902232}
+  - {fileID: 114955812431482470}
+  - {fileID: 114090285822202498}
+  - {fileID: 114721336419576258}
+  - {fileID: 114210532175581938}
+  - {fileID: 114249621496046272}
+  - {fileID: 114668927541211070}
+  - {fileID: 114084902736464318}
+  m_StepKeys:
+  - root
+  - shooter
+  - trigger
+  - ammoEffect
+  - recoil
+  - muzzleEffect
+  - reload
+  - shellEject
+  - aiming
+  - animations
+--- !u!114 &114084902736464318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc29c116c85b0b94c9c0f81009455450, type: 3}
+  m_Name: animations(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  fireTrigger: Fire
+  raiseTrigger: Draw
+  raiseDuration: 0.5
+  lowerTrigger: 
+  lowerDuration: 0.25
+  reloadTrigger: Reload
+  chamberEmptyBool: Empty
+  reloadCountInt: ReloadCount
+  triggerHoldBool: TriggerHold
+  aimBool: 
+  unscaledSprintMoveSpeed: 10
+  sprintBool: Sprint
+  sprintSpeedFloat: SprintSpeed
+  sprintBlendFloat: SprintBlend
+  m_FoldoutAnimatorKeys: 1
+--- !u!114 &114090285822202498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edebce63abdbc94f80ee9700779969d, type: 3}
+  m_Name: recoil(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_HipAccuracyKick: 0.075
+  m_HipAccuracyRecover: 0.75
+  m_SightedAccuracyKick: 0.025
+  m_SightedAccuracyRecover: 0.5
+  useSpringRecoil: 1
+  hipFireRecoil:
+    expanded: 1
+    recoilAngle: 0.5
+    wander: 0.2
+    horizontalMultiplier: 1
+    verticalDivergence: 0.05
+    horizontalDivergence: 0.2
+    pushBack: 0.005
+    maxPushBack: 0.03
+    jiggle: 0.2
+    duration: 0.5
+    recoilSpringCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 50
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.05
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.7
+        value: -0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9
+        value: 0.02
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    weaponJiggleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 50
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.05
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.35
+        value: -0.35
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.55
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.75
+        value: -0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    weaponPushCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 50
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.05
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.25
+        value: -0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.65
+        value: 0.02
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  aimedRecoil:
+    expanded: 1
+    recoilAngle: 0.5
+    wander: 0.2
+    horizontalMultiplier: 1
+    verticalDivergence: 0.05
+    horizontalDivergence: 0.2
+    pushBack: 0.005
+    maxPushBack: 0.03
+    jiggle: 0.2
+    duration: 0.5
+    recoilSpringCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 50
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.05
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.7
+        value: -0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.9
+        value: 0.02
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    weaponJiggleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 50
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.05
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.35
+        value: -0.35
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.55
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.75
+        value: -0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    weaponPushCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 50
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.05
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.25
+        value: -0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.65
+        value: 0.02
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+--- !u!114 &114210532175581938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9cac5621b75034996be41a4cf27638, type: 3}
+  m_Name: reload(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_AmmoType: 0
+  sharedAmmoType: {fileID: 11400000, guid: 6bb76e133096f6a4e8a2c63fb876b6eb, type: 2}
+  printableName: 
+  startingAmmo: 100
+  maxAmmo: 100
+  fixedSize: 999
+  m_ReloaderType: 0
+  magazineSize: 30
+  startingMagazine: 30
+  reloadDuration: 2
+  reloadAudio: {fileID: 8300000, guid: 6d2abda95a30ec24b9fdfddf38f7d1ae, type: 3}
+  rechargeSpacing: 3
+  rechargeAmount: 100
+  resetOnChange: 0
+  reloadDurationEmpty: 3
+  reloadAudioEmpty: {fileID: 0}
+  roundsPerIncrement: 1
+  reloadStartDuration: 1
+  reloadIncrementDuration: 1
+  reloadEndDuration: 1
+  reloadAudioStart: {fileID: 0}
+  reloadAudioIncrement: {fileID: 0}
+  reloadAudioEnd: {fileID: 0}
+  countDownLastRounds: 0
+  countdownAudio:
+  - clip: {fileID: 0}
+    volume: 0
+  - clip: {fileID: 0}
+    volume: 0
+  - clip: {fileID: 0}
+    volume: 0
+  - clip: {fileID: 0}
+    volume: 0
+  extendSequence: 0
+--- !u!114 &114249621496046272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0886c758ecb677449a382e9958cf499b, type: 3}
+  m_Name: shellEject(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_ShellEject: 1
+  shellEjectPoint: {fileID: 100136, guid: 253fd70435d74504e9dc6f3a87e678b9, type: 3}
+  shellPrefab: {fileID: 114279792979514160, guid: 07db6962b56d34a45802aafd290b2f44,
+    type: 3}
+  delay: 0
+  outSpeed: 5
+  backSpeed: 1
+  inheritVelocity: 0.25
+  particleSystemsPrefab: {fileID: 0}
+  m_PreviousPrefab: {fileID: 0}
+  objectToReplace: {fileID: 0}
+  ejectOnFire: 0
+  objectsToReplace: []
+  swapInactive: 0
+--- !u!114 &114579917042436578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b056f0a91971704a9576dd913005a71, type: 3}
+  m_Name: root(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  inventoryType: 0
+  maxQuantity: 1
+  displayImage: {fileID: 21300008, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
+  itemKey: -845682173
+  slotIndex: 4
+  inventoryStackIndex: -1
+  inventoryStackPriority: 0
+  category:
+    m_Value: 0
+  prefabName: BasicAssaultRifle
+  autoPrefix: 1
+  overwriteExisting: 1
+  viewModel: {fileID: 100144, guid: 253fd70435d74504e9dc6f3a87e678b9, type: 3}
+  allowNonModelPrefabs: 0
+  weaponObject: {fileID: 100148, guid: 253fd70435d74504e9dc6f3a87e678b9, type: 3}
+  animationController: {fileID: 9100000, guid: 96193a156e3eba94ea9d63c8b8539961, type: 2}
+  usesAnimationEvents: 0
+  cameraObject: {fileID: 0}
+  cameraIsAnimated: 0
+  sprintingStyle: 1
+  fullStrengthSpeed: 12
+  maxSpeed: 15
+  blendZeroSpeed: 5
+  blendFullSpeed: 10
+  sprintActionOnAim: 1
+  sprintActionOnReload: 1
+  sprintActionOnFire: 2
+  minSprintInterrupt: 0.5
+  aimingFatigue: 0
+  staminaLoss: 10
+  staminaTarget: 25
+  staminaFalloff: 25
+  overheat: 0
+  glowRenderer: {fileID: 0}
+  glowMaterial: {fileID: 0}
+  glowThreshold: 0.25
+  hazePrefab: {fileID: 3924164848158945999, guid: 62f14d7f561f0c144b1411baa7b1b97f,
+    type: 3}
+  hazeThreshold: 0.1
+  heatPerShot: 0.02
+  heatLostPerSecond: 0.2
+  damping: 0.5
+  doOverheat: 1
+  coolingThreshold: 0.25
+  overheatSound: {fileID: 0}
+--- !u!114 &114630939759902232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf6fe1872b75084b89dde4a659c1e5a, type: 3}
+  m_Name: trigger(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_TriggerType: 2
+  cooldown: 0
+  repeatDelay: 0
+  shotSpacing: 5
+  burstSize: 3
+  burstSpacing: 5
+  minRepeatDelay: 8
+  repeatOnTriggerHold: 0
+  holdRepeatDelay: 50
+  cancelOnRelease: 0
+  chargeDuration: 0.5
+  unchargeDuration: 0.5
+  canRepeat: 0
+  triggerAudioCharge: {fileID: 0}
+  triggerAudioRelease: {fileID: 0}
+  queueSpacing: 25
+  delayFirst: 0
+  maxQueueSize: 6
+  detectionTag: AI
+  detectionLayers:
+    serializedVersion: 2
+    m_Bits: 67117056
+  lockOnTime: 2
+  detectionConeAngle: 10
+  detectionRange: 200
+  requireLineOfSight: 1
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 26416129
+  memory: 0.1
+  lockSpacing: 50
+  lockRetrySpacing: 25
+--- !u!114 &114668927541211070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a8d00f9da5c234f8904d84dea25924, type: 3}
+  m_Name: aiming(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_AimerType: 0
+  m_Instant: 0
+  aimUpAudio: {fileID: 8300000, guid: e900513d446e494419d05fb5bef3f55f, type: 3}
+  aimDownAudio: {fileID: 8300000, guid: 06f431d6438fef74cb42133b81509829, type: 3}
+  hipAccuracyCap: 1
+  aimedAccuracyCap: 1
+  canAimWhileReloading: 0
+  aimPositionOption: 0
+  aimTarget: {fileID: 100000, guid: 253fd70435d74504e9dc6f3a87e678b9, type: 3}
+  aimPosition: {x: 0, y: 0, z: 0}
+  aimRotation: {x: 0, y: 0, z: 0}
+  fovMultiplier: 0.75
+  aimTime: 0.25
+  blockTrigger: 1
+  hudScopeKey: 
+  positionSpringMultiplier: 0.25
+  rotationSpringMultiplier: 0.5
+  crosshairAiming:
+    m_Value: 1
+  crosshairHipFire:
+    m_Value: 0
+--- !u!114 &114694243969210944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430502fe5afc014889fb40104cc22c5, type: 3}
+  m_Name: shooter(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  shooterStyle: 0
+  shotGrouping: 0
+  muzzleTip: {fileID: 100128, guid: 253fd70435d74504e9dc6f3a87e678b9, type: 3}
+  minAccuracySpread: 0.5
+  maxAccuracySpread: 10
+  bulletCount: 20
+  cone: 5
+  shotsPerTracer: 2
+  pooledTracer: {fileID: 7221158435157611235, guid: e9ad03ead8311bc49a62fb73ccb300be,
+    type: 3}
+  tracerSize: 0.025
+  tracerDuration: 0.025
+  projectilePrefab: {fileID: 0}
+  muzzleSpeed: 100
+  gravity: 9.8
+  patternPoints:
+  - {x: 0, y: 0}
+  - {x: 0.5, y: 0}
+  - {x: -0.5, y: 0}
+  - {x: 0, y: 0.5}
+  - {x: 0, y: -0.5}
+  patternDistance: 50
+--- !u!114 &114721336419576258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b522abfb14ca0774793421c7d0137050, type: 3}
+  m_Name: muzzleEffect(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_MuzzleEffect: 0
+  muzzleEffectObjectType: 1
+  muzzleFlashPrefab: {fileID: 0}
+  muzzleFlashPrefabs: []
+  muzzleFlashObject: {fileID: 100128, guid: 253fd70435d74504e9dc6f3a87e678b9, type: 3}
+  muzzleFlashObjects: []
+  muzzleFlashMesh: {fileID: 0}
+  muzzleFlashMaterial: {fileID: 0}
+  muzzleFlashMeshes: []
+  muzzleFlashDuration: 0.05
+  particleSystem: {fileID: 0}
+  particleSystemOption: -1
+  effectTransform: {fileID: 0}
+  followDuration: 0
+  advancedParticleSystemPrefab: {fileID: 0}
+  m_PreviousPrefab: {fileID: 0}
+  particleSystems: []
+  firingSounds:
+  - {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
+  - {fileID: 8300000, guid: 5f1b80a08747b6741bd5ffb1748278f1, type: 3}
+  - {fileID: 8300000, guid: 91241f96a55b9e34ab65c43800129f82, type: 3}
+--- !u!114 &114955812431482470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 571dc5f39dd79fb46bcdaaead05ef1c4, type: 3}
+  m_Name: ammoEffect(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  m_EffectType: 0
+  m_ImpactBehaviour: 0
+  m_FollowUpEffect: -1
+  effectData:
+  - damageType: 1
+    damage: 5
+    impactForce: 20
+    bulletSize: 1
+    impactEffect: {fileID: 0}
+    explosion: {fileID: 0}
+    maxForce: 15
+    normalOffset: 0
+    randomiseDamage: 1
+    minDamage: 15
+    maxDamage: 25
+    falloffMode: 1
+    falloffSettingLower: 100
+    falloffSettingUpper: 200
+  - damageType: 1
+    damage: 5
+    impactForce: 20
+    bulletSize: 1
+    impactEffect: {fileID: 0}
+    explosion: {fileID: 0}
+    maxForce: 15
+    normalOffset: 0
+    randomiseDamage: 1
+    minDamage: 15
+    maxDamage: 25
+    falloffMode: 1
+    falloffSettingLower: 100
+    falloffSettingUpper: 200
+  maxPenetration: 0.15
+  maxScatterAngle: 15
+  exitEffectSize: 1
+  tracerPrototype: {fileID: 0}
+  tracerSize: 0.05
+  tracerDuration: 0.05
+  projectilePrefab: {fileID: 0}
+  gravity: 9.8
+  normalVsDeflection: 1
+  splitCount: 1
+  speedMode: 0
+  minSpeedSetting: 0.75
+  maxSpeedSetting: 0.75
+  surfacePhysics: {fileID: 0}
+  maxRicochetScatter: 30
+  maxPenetrationDeflect: 15
+  recursive: 1

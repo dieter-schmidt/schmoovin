@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d960635a0c498f4c95312b357ee4971, type: 3}
+  m_Name: PickupTemplate_AmmoCrate
+  m_EditorClassIdentifier: 
+  m_StepValues:
+  - {fileID: 114777086855083328}
+  - {fileID: 114207173922536272}
+  - {fileID: 114734781936582962}
+  - {fileID: 114656531992246610}
+  - {fileID: 114325406797920976}
+  - {fileID: 114709712502742786}
+  - {fileID: 114263386611308230}
+  - {fileID: 114934256807803306}
+  - {fileID: 114377024107035598}
+  m_StepKeys:
+  - root
+  - wieldable
+  - firearm
+  - inventoryItem
+  - inventoryMultiItem
+  - health
+  - shield
+  - audioVisual
+  - audioVisualFirearm
+--- !u!114 &114207173922536272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e50bb97ce662dd40baeb0a329ba3dad, type: 3}
+  m_Name: wieldable
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  wieldablePrefab: {fileID: 0}
+  addToWieldable: 0
+--- !u!114 &114263386611308230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1570af36753804eacbd8df3ace5127, type: 3}
+  m_Name: shield
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  stepCount: 1
+  consumeType: 0
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114325406797920976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bae2feac7349e48b8096dc5132e5e1, type: 3}
+  m_Name: inventoryMultiItem
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  inventoryItems:
+  - {fileID: 114720571942937776, guid: dfe46eefaa9a7544ca7ee5e668df212c, type: 3}
+  - {fileID: 114235257556039404, guid: 64f2a695fbc7afe4cb28f1ba66c2b64d, type: 3}
+  - {fileID: 114155156615581814, guid: dd380354ce548fb45a4ca08cf3c74330, type: 3}
+  - {fileID: 114988272171304022, guid: 83edd995a1902c94098088f3ef81e802, type: 3}
+  - {fileID: 114491831698022604, guid: 6c688c81d559f0c4d9a19f7a8b9b4d36, type: 3}
+  - {fileID: 114798084419304180, guid: e8c6d0e631cd74d43a001e86db309eb3, type: 3}
+  replenishItems: 1
+--- !u!114 &114377024107035598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f132f04e7616f4a8bf6f31b392e02c, type: 3}
+  m_Name: audioVisualFirearm
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  displayObjectType: -1
+  renderMesh: {fileID: 0}
+  material: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  useCustomMaterial: 0
+  displayPrefab: {fileID: 0}
+  highlight: 0
+  tooltipName: My Pickup
+  tooltipAction: pick up
+  pickupAudio: {fileID: 0}
+  physicsType: -1
+  mass: 1
+  colliderType: 0
+  colliderMesh: {fileID: 0}
+  surfaceMaterial:
+    m_Value: 0
+  ammoMesh: {fileID: 0}
+  ammoAudio: {fileID: 0}
+--- !u!114 &114656531992246610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aac068c350eb594daeb3bf42893f02e, type: 3}
+  m_Name: inventoryItem
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  inventoryItem: {fileID: 0}
+  spawnOnAwake: 1
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114709712502742786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff9a2de0f804f40ae09487dfc7d9f0, type: 3}
+  m_Name: health
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  healType: 0
+  healAmount: 25
+  healFactor: 0.25
+  consumeType: 1
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114734781936582962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be57e882a5ed7c41840d5f3d02d317f, type: 3}
+  m_Name: firearm
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  firearmPrefab: {fileID: 0}
+  addToGun: 0
+  ammoType: {fileID: 0}
+--- !u!114 &114777086855083328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12fe57200b0b6fe4a88307e962d3bb07, type: 3}
+  m_Name: root
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  prefabName: AmmoCrate
+  autoPrefix: 1
+  overwriteExisting: 1
+  pickupType: 3
+  m_InteractionType: 0
+  tapOrHold: 0
+  holdDuration: 0.5
+--- !u!114 &114934256807803306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f96caa3dcca6b34cb0267130aca5201, type: 3}
+  m_Name: audioVisual
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  displayObjectType: 0
+  renderMesh: {fileID: 4300028, guid: fac8676225062d44db7002c11f0846b4, type: 3}
+  material: {fileID: 2100000, guid: 73dafa491245d68499be3bd775e8a073, type: 2}
+  modelPrefab: {fileID: 0}
+  useCustomMaterial: 0
+  displayPrefab: {fileID: 0}
+  highlight: 1
+  tooltipName: Ammo Crate
+  tooltipAction: pick up
+  pickupAudio: {fileID: 8300000, guid: efe4bd07b41b12a4c8e9d568de1ada72, type: 3}
+  physicsType: 1
+  mass: 1
+  colliderType: 3
+  colliderMesh: {fileID: 4300030, guid: fac8676225062d44db7002c11f0846b4, type: 3}
+  surfaceMaterial:
+    m_Value: 8

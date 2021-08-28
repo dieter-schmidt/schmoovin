@@ -1,0 +1,92 @@
+using NeoFPS;
+using NeoFPS.ModularFirearms;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseReloaderBehaviour
+    {
+        public float reloadDuration = 3f;
+
+        private float m_ReloadTimeout = 0f;
+        private WaitForReload m_WaitForReload = null;
+
+        private class WaitForReload : Waitable
+        {
+            // Store the reloadable owner
+            readonly %CLASS_NAME% m_Owner;
+            public WaitForReload(%CLASS_NAME% owner) { m_Owner = owner; }
+
+            // Check for timeout
+            protected override bool CheckComplete() { return Mathf.Approximately(m_Owner.m_ReloadTimeout, 0f); }
+        }
+
+        private WaitForReload waitForReload
+        {
+            get
+            {
+                return m_WaitForReload;
+            }
+        }
+
+        public override bool isReloading
+        {
+            get { return m_ReloadTimeout > Mathf.Epsilon; }
+        }
+
+        public override FirearmDelayType reloadDelayType
+        {
+            get { return FirearmDelayType.ElapsedTime; }
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            // Store a waitable
+            m_WaitForReload = new WaitForReload(this);
+        }
+
+        public override void ManualReloadComplete()
+        {
+            // This would be called by the FirearmAnimEventsHandler
+        }
+
+        public override Waitable Reload()
+        {
+            m_ReloadTimeout = reloadDuration;
+            return m_WaitForReload;
+        }
+
+        public override void ManualReloadPartial()
+        {
+            // Optional - this would be called by the FirearmAnimEventsHandler
+        }
+
+        public override void DecrementMag(int amount)
+        {
+            base.DecrementMag(amount);
+            // Optional - base just subtracts amount from current ammo
+        }
+
+        public override bool interruptable
+        {
+            get { return false; }
+            // Optional - if true, then pulling the trigger while reloading will call Interrupt()
+        }
+
+        public override void Interrupt()
+        {
+            // Optional - Interrupt the reload, for example while loading shells into a shotgun
+        }
+
+        // Useful virtual methods:
+        // OnValidate()
+        // OnEnable()
+        // OnDisable()
+        // bool isModuleValid { get; } - To show an error in the ModularFirearm inspector if dependencies haven't been met
+        // void OnCurrentMagazineChange(int from, int to) - called when the magazine count changes (eg, a shot is fired)
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

@@ -1,0 +1,30 @@
+using NeoFPS;
+using NeoFPS.Constants;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : FpsInput
+    {
+        public override FpsInputContext inputContext
+        {
+            get { return FpsInputContext.Character; }
+            // Optional - Used to enable / disable certain inputs depending on game state (menu, play, etc) - default = None
+        }
+
+        protected override void UpdateInput()
+        {
+            if (GetButton(FpsInputButton.PrimaryFire)) { }
+            if (GetButtonDown(FpsInputButton.PrimaryFire)) { }
+            if (GetButtonUp(FpsInputButton.PrimaryFire)) { }
+        }
+
+        // Useful virtual methods:
+        // OnAwake()
+        // OnEnable()
+        // OnDisable()
+        // Update()
+        // void OnGainFocus() - Called when the context becomes current
+        // void OnLoseFocus() - Called when the current context blocks this one
+    }
+}

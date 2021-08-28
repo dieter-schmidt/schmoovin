@@ -1,0 +1,28 @@
+using NeoFPS.ModularFirearms;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseMuzzleEffectBehaviour
+    {
+        public override void Fire()
+        {
+            // Used for one off shots
+        }
+
+        public override void FireContinuous()
+        {
+            // Used for things like beam weapons and flamethrowers
+        }
+
+        public override void StopContinuous()
+        {
+            // Used for things like beam weapons and flamethrowers
+        }
+
+        // Useful virtual methods:
+        // Awake()
+        // OnEnable()
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

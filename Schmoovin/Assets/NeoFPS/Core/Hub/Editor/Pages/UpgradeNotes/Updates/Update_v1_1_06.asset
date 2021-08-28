@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_06
+  m_EditorClassIdentifier: 
+  version: 1106
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - TeleportZone1Way allows simple teleportation
+    - TargetVelocity condition for motion graph (velocity before collision response)
+    - MaintainVelocity motion graph state
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - Added BreathingEffect to all demo weapons
+    - Added Aim Rotation property to WeaponMoveAimer module
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - Added StopAimInstant() to IAimer interface (and base aimer)
+    - Added "silent" parameter to Lock/Unlock selection on inventories. Prevents HUD
+      changes by blocking events
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []

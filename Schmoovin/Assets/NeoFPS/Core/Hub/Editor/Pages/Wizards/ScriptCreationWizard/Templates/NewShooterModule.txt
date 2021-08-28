@@ -1,0 +1,21 @@
+using NeoFPS.ModularFirearms;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseShooterBehaviour
+    {
+        public override void Shoot(float accuracy, IAmmoEffect effect)
+        {
+            base.Shoot(accuracy, effect); // Base sends the onShoot event
+
+            // Do something here (spawn projectile, raycast, etc)
+        }
+        
+        // Useful virtual methods:
+        // Awake()
+        // OnEnable()
+        // OnDisable()
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d01ba1e6996eb498425b893b977bd1, type: 3}
+  m_Name: NeoFpsScriptCreationWizard
+  m_EditorClassIdentifier: 
+  m_TargetDirectory: Assets/NeoFPS/Core/MotionGraphs/States
+  m_EditorDirectory: Assets/NeoFPS/Core/MotionGraphs/States/Editor
+  m_DefaultProjectNamespace: MyProject
+  m_DefaultEditorNamespace: MyProject
+  m_Data:
+  - title: Motion Graph State
+    category: Motion Graph
+    className: NewMotionGraphState
+    editorSuffix: Editor
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: b7a1cd09106b9ac46abcc9c86e68b7ef, type: 3}
+    editorScript: {fileID: 4900000, guid: 4c346d384be8ac94ba1053fa2102c77c, type: 3}
+  - title: Motion Graph Condition
+    category: Motion Graph
+    className: NewMotionGraphCondition
+    editorSuffix: Drawer
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: 8d01d97d95cdc6d41b35e678af63eced, type: 3}
+    editorScript: {fileID: 4900000, guid: a92ab13735410bc4292454fa49a85994, type: 3}
+  - title: Motion Graph Behaviour
+    category: Motion Graph
+    className: NewMotionGraphBehaviour
+    editorSuffix: Editor
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: e3341605f1979c94980bad06cdde4ed9, type: 3}
+    editorScript: {fileID: 4900000, guid: 3b13bd85137d03f4ea54afdd9dc3d447, type: 3}
+  - title: Character HUD Element
+    category: HUD
+    className: NewCharacterHudElement
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: a86be295d1ac46c42b7e29a6428457ff, type: 3}
+    editorScript: {fileID: 0}
+  - title: Input Handler
+    category: Input
+    className: NewInputHandler
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: a69f48587f6d4d0499904b666eefbd20, type: 3}
+    editorScript: {fileID: 0}
+  - title: Formatter
+    category: Save Games
+    className: NewNeoSaveFormatter
+    editorSuffix: 
+    nameSpace: MyProject
+    properties:
+    - propertyName: Target Type
+      propertyTag: TARGET_TYPE
+      defaultValue: Rigidbody
+    script: {fileID: 4900000, guid: 21580e4d81db9bd40b8aef845135b78f, type: 3}
+    editorScript: {fileID: 0}
+  - title: Neo-Serializable MonoBehaviour
+    category: Save Games
+    className: NewNeoSerializableBehaviour
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: 820beb3ec2e227745837fd94745aaf71, type: 3}
+    editorScript: {fileID: 0}
+  - title: Aimer Module
+    category: Modular Firearms
+    className: NewAimerModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: e26c5b955fcf9b3459602583c2dac9b6, type: 3}
+    editorScript: {fileID: 0}
+  - title: Ammo Effect
+    category: Modular Firearms
+    className: NewAmmoEffect
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: eeb3479598bd6604ab53e0f815e7f124, type: 3}
+    editorScript: {fileID: 0}
+  - title: Ammo Module
+    category: Modular Firearms
+    className: NewAmmoModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: 76e2e5b67caa8f343a582ee4901ece0e, type: 3}
+    editorScript: {fileID: 0}
+  - title: Muzzle Effect Module
+    category: Modular Firearms
+    className: NewMuzzleEffectModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: df9672d236f809b408595bed13cd6435, type: 3}
+    editorScript: {fileID: 0}
+  - title: Projectile
+    category: Modular Firearms
+    className: NewProjectile
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: 66c584fdf4eef644e8244c22aa053d59, type: 3}
+    editorScript: {fileID: 0}
+  - title: Recoil Module
+    category: Modular Firearms
+    className: NewRecoilModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: fdcf2eb309e9cf647b7710f6d7cc5f60, type: 3}
+    editorScript: {fileID: 0}
+  - title: Reloader Module
+    category: Modular Firearms
+    className: NewReloaderModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: 4a5be178df2b88349bd1bbe54db717e4, type: 3}
+    editorScript: {fileID: 0}
+  - title: Shell Ejector Module
+    category: Modular Firearms
+    className: NewShellEjectorModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: 254a5b653f2211c4c8ff7f6c35162634, type: 3}
+    editorScript: {fileID: 0}
+  - title: Shooter Module
+    category: Modular Firearms
+    className: NewShooterModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: da3c949be5b29044587cc94ca0654c69, type: 3}
+    editorScript: {fileID: 0}
+  - title: Trigger Module
+    category: Modular Firearms
+    className: NewTriggerModule
+    editorSuffix: 
+    nameSpace: MyProject
+    properties: []
+    script: {fileID: 4900000, guid: e5ba77c545b418741a8387c4a213df53, type: 3}
+    editorScript: {fileID: 0}
+  currentData:
+    currentScript: 0
+    className: AnimCurveDirectionalDashState
+    nameSpace: NeoFPS.CharacterMotion.States
+    properties: []

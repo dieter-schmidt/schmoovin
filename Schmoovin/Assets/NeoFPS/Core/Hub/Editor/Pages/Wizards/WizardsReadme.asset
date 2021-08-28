@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4798972dbe0680e4c9f3990ecea72191, type: 3}
+  m_Name: WizardsReadme
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 996f1d2f739939647a7af45ec56d2481, type: 3}
+    darkSkinImage: {fileID: 2800000, guid: 187dfc0db73abc64c9339feec0c7ba89, type: 3}
+    title: Wizards
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The wizards help you quickly get up and running creating new items such
+      as weapons, characters and custom scripts. This section of the hub is still
+      under development, and more wizards will be available in an upcoming update
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Player Character Wizard
+    bulletPoints:
+    - This wizard is in an experimental state and may have bugs. Please raise any
+      issues via standard support channels
+    text: The player character wizard enables you to quickly create NeoFPS character
+      prefabs with various configurations of inventory, health, armour or shields,
+      and stamina.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Player Character Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_player_character
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Modular Firearm Wizard
+    bulletPoints:
+    - This wizard is in an experimental state and may have bugs. Please raise any
+      issues via standard support channels
+    text: The modular firearm wizard helps with the initial setup of modular firearm
+      prefabs. It lets you choose and configure each of the firearm modules, and tie
+      them to an existing animator controller. The created prefab can act as a starting
+      point for your weapon, only requiring manual edits for tweaking positions, or
+      adding more involved features such as mode switching.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Modular Firearm Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_firearm
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Melee Weapon Wizard
+    bulletPoints:
+    - This wizard is in an experimental state and may have bugs. Please raise any
+      issues via standard support channels
+    text: The melee weapon wizard allows you to quickly and easily create a melee
+      weapon prefab. You can choose to use an existing animator controller, or create
+      a new one by specifying the animation clips.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Melee Weapon Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_melee
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Thrown Weapon Wizard
+    bulletPoints:
+    - This wizard is in an experimental state and may have bugs. Please raise any
+      issues via standard support channels
+    text: The thrown weapon wizard allows you to quickly and easily create a thrown
+      weapon prefab such as a hand grenade. You can choose to use an existing animator
+      controller, or create a new one by specifying the animation clips.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Thrown Weapon Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_thrown
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Pickup Wizard
+    bulletPoints: []
+    text: The pickup wizard allows you to create item pickups or powerups such as
+      health packs, shield boosters, and weapon drops that you can place in your scenes.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Pickup Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_pickup
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Interactive Object Wizard
+    bulletPoints: []
+    text: The interactive object wizard lets you quickly set up an interactive object
+      prefab that you can place in your scene. You can specify a display mesh or object,
+      along with audio clips and animations. Once created, you can use the interact
+      object component's events to tie it to your own scripts or scene items.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Interactive Object Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_interactive
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Creation Wizard
+    bulletPoints: []
+    text: The script creation wizard provides you with a range of script templates
+      for different NeoFPS features. Select where you want the new scripts to be output,
+      give them a name, and fill out any required properties. The wizard will generate
+      the a script to match (and a corresponding editor script if required) that you
+      can use as a starting point for your own features.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show The Script Creation Wizard
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: wizard_customscripts
+              m_BoolArgument: 0
+            m_CallState: 1

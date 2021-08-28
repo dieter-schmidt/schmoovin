@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_05
+  m_EditorClassIdentifier: 
+  version: 1105
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - New wieldable stance managers that can be used for weapon stances/poses
+    - Procedural and keyframed sprint animation handlers for weapons
+    - New BetterSpringRecoilHandler firearm module replaces the old spring recoil
+      module and is much more intuitive and powerful
+    - New breathing system provides a consistent way to count breaths for procedural
+      animation (new BreathingEffect additive transform component), as well as firing
+      unity events on breath for things like particle systems
+    - StaminaSystem tracks the player character's stamina and can modify movement
+      speed and breathing rate based on fatigue
+    - CameraShake additive effect for use with continuous shakes such as earthquakes,
+      and one-off shakes such as explosions
+    - New step tracking system added to MotionController and motion graph
+    - New PositionBob and RotationBob spring effects replace deprecated (but still
+      functional) HeadBob and WeaponBob
+    - LockInventorySelection and UnlockInventorySelection motion graph behaviours
+      let you set the character inventory to a specific item, hands (backup item)
+      or nothing when entering and exiting motion states
+    - AdditiveJiggle adds a Z-axis rotation spring effect
+    - Added quickstart to hub for firearm overheat
+    - Set up Demo Facility with its own character, motion graph and weapons
+    text: 
+    links: []
+    highlightObjects:
+    - text: Demo Facility Folder
+      gameObject: {fileID: 102900000, guid: 354d6f2a72391cf40a5cf5f83287501a, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - New restriction on AdvancedParticleSystemMuzzleEffect that the effect transform
+      must be a child object (examples updated)
+    - Demo firearms have been switched to the new BetterSpringRecoilHandler modules
+    - WeaponBob and HeadBob have been deprecated and replaced with PositionBob and
+      RotationBob (the old ones still work, but you should switch to the new ones)
+    - Bob effects are now driven via the motion graph. To get PositionBob and RotationBob
+      working, you must either add TrackSteps behaviours to the motion graph states
+      or sub-graphs that you want bobbing on (best), or set the MotionController's
+      "Use Dumb Stepping" property to true.
+    - Fixes to the pivot point calculations in the AdditiveTransformHandling (better
+      stacking) might make some procedural animations look different
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - CharacterTriggerZone and CharacterTriggerZonePersistent have had their OnTrigger*
+      methods renamed to OnCharacter* due to Unity throwing errors that messages must
+      use a collider parameter
+    - New events in IModularFirearm, IMeleeWeapon and IThrownWeapon interfaces
+    - IThrownWeapon interface has new properties for throw durations
+    - Some firearm modules now assume there is an IPoseManager component on the firearm
+      (the ModularFirearm now implements this, but any custom firearm behaviours will
+      not)
+    - IWieldable and IQuickSlotItem interfaces now have DeselectInstant() methods
+      that need implementing
+    - IAdditiveTransform interface now has bool properties for bypassing position
+      and rotation scaling
+    - IAimer interface switched onAimUp and onAimDown events to single onAimStateChanged
+      with transitions included
+    - ITrigger interface gained an onStateChanged event
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []

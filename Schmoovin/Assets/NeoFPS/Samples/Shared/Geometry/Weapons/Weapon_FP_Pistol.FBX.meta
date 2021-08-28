@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 8854dd57ba48e8f44a89d85470073021
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Aim
+    100002: Barrel
+    100004: FpsArms_LArm_Lower
+    100006: FpsArms_LArm_LowerTwist
+    100008: FpsArms_LArm_Upper
+    100010: FpsArms_LHand
+    100012: FpsArms_LHand_IndexFinger01
+    100014: FpsArms_LHand_IndexFinger02
+    100016: FpsArms_LHand_IndexFinger03
+    100018: FpsArms_LHand_IndexFingerNub
+    100020: FpsArms_LHand_MiddleFinger01
+    100022: FpsArms_LHand_MiddleFinger02
+    100024: FpsArms_LHand_MiddleFinger03
+    100026: FpsArms_LHand_MiddleFingerNub
+    100028: FpsArms_LHand_PinkyFinger01
+    100030: FpsArms_LHand_PinkyFinger02
+    100032: FpsArms_LHand_PinkyFinger03
+    100034: FpsArms_LHand_PinkyFingerNub
+    100036: FpsArms_LHand_RingFinger01
+    100038: FpsArms_LHand_RingFinger02
+    100040: FpsArms_LHand_RingFinger03
+    100042: FpsArms_LHand_RingFingerNub
+    100044: FpsArms_LHand_Thumb01
+    100046: FpsArms_LHand_Thumb02
+    100048: FpsArms_LHand_Thumb03
+    100050: FpsArms_LHand_ThumbNub
+    100052: FpsArms_LHandNub
+    100054: FpsArms_LShoulder
+    100056: FpsArms_RArm_Hand
+    100058: FpsArms_RArm_Lower
+    100060: FpsArms_RArm_LowerTwist
+    100062: FpsArms_RArm_Upper
+    100064: FpsArms_RHand_IndexFinger01
+    100066: FpsArms_RHand_IndexFinger02
+    100068: FpsArms_RHand_IndexFinger03
+    100070: FpsArms_RHand_IndexFingerNub
+    100072: FpsArms_RHand_MiddleFinger01
+    100074: FpsArms_RHand_MiddleFinger02
+    100076: FpsArms_RHand_MiddleFinger03
+    100078: FpsArms_RHand_MiddleFingerNub
+    100080: FpsArms_RHand_PinkyFinger01
+    100082: FpsArms_RHand_PinkyFinger02
+    100084: FpsArms_RHand_PinkyFinger03
+    100086: FpsArms_RHand_PinkyFingerNub
+    100088: FpsArms_RHand_RingFinger01
+    100090: FpsArms_RHand_RingFinger02
+    100092: FpsArms_RHand_RingFinger03
+    100094: FpsArms_RHand_RingFingerNub
+    100096: FpsArms_RHand_Thumb01
+    100098: FpsArms_RHand_Thumb02
+    100100: FpsArms_RHand_Thumb03
+    100102: FpsArms_RHand_ThumbNub
+    100104: FpsArms_RHandNub
+    100106: FpsArms_RShoulder
+    100108: FpsArms_Torso
+    100110: Magazine
+    100112: MagBullet
+    100114: MagPlunger
+    100116: MagRelease
+    100118: MainCharacterFirstPersonArms
+    100120: MuzzleFlash
+    100122: Slide
+    100124: SlideRelease
+    100126: Trigger
+    100128: Tube
+    100130: //RootNode
+    100132: WeaponPistol
+    100134: IK_LeftHand
+    100136: IK_RightHand
+    100138: Zero
+    100140: ShellEject
+    400000: Aim
+    400002: Barrel
+    400004: FpsArms_LArm_Lower
+    400006: FpsArms_LArm_LowerTwist
+    400008: FpsArms_LArm_Upper
+    400010: FpsArms_LHand
+    400012: FpsArms_LHand_IndexFinger01
+    400014: FpsArms_LHand_IndexFinger02
+    400016: FpsArms_LHand_IndexFinger03
+    400018: FpsArms_LHand_IndexFingerNub
+    400020: FpsArms_LHand_MiddleFinger01
+    400022: FpsArms_LHand_MiddleFinger02
+    400024: FpsArms_LHand_MiddleFinger03
+    400026: FpsArms_LHand_MiddleFingerNub
+    400028: FpsArms_LHand_PinkyFinger01
+    400030: FpsArms_LHand_PinkyFinger02
+    400032: FpsArms_LHand_PinkyFinger03
+    400034: FpsArms_LHand_PinkyFingerNub
+    400036: FpsArms_LHand_RingFinger01
+    400038: FpsArms_LHand_RingFinger02
+    400040: FpsArms_LHand_RingFinger03
+    400042: FpsArms_LHand_RingFingerNub
+    400044: FpsArms_LHand_Thumb01
+    400046: FpsArms_LHand_Thumb02
+    400048: FpsArms_LHand_Thumb03
+    400050: FpsArms_LHand_ThumbNub
+    400052: FpsArms_LHandNub
+    400054: FpsArms_LShoulder
+    400056: FpsArms_RArm_Hand
+    400058: FpsArms_RArm_Lower
+    400060: FpsArms_RArm_LowerTwist
+    400062: FpsArms_RArm_Upper
+    400064: FpsArms_RHand_IndexFinger01
+    400066: FpsArms_RHand_IndexFinger02
+    400068: FpsArms_RHand_IndexFinger03
+    400070: FpsArms_RHand_IndexFingerNub
+    400072: FpsArms_RHand_MiddleFinger01
+    400074: FpsArms_RHand_MiddleFinger02
+    400076: FpsArms_RHand_MiddleFinger03
+    400078: FpsArms_RHand_MiddleFingerNub
+    400080: FpsArms_RHand_PinkyFinger01
+    400082: FpsArms_RHand_PinkyFinger02
+    400084: FpsArms_RHand_PinkyFinger03
+    400086: FpsArms_RHand_PinkyFingerNub
+    400088: FpsArms_RHand_RingFinger01
+    400090: FpsArms_RHand_RingFinger02
+    400092: FpsArms_RHand_RingFinger03
+    400094: FpsArms_RHand_RingFingerNub
+    400096: FpsArms_RHand_Thumb01
+    400098: FpsArms_RHand_Thumb02
+    400100: FpsArms_RHand_Thumb03
+    400102: FpsArms_RHand_ThumbNub
+    400104: FpsArms_RHandNub
+    400106: FpsArms_RShoulder
+    400108: FpsArms_Torso
+    400110: Magazine
+    400112: MagBullet
+    400114: MagPlunger
+    400116: MagRelease
+    400118: MainCharacterFirstPersonArms
+    400120: MuzzleFlash
+    400122: Slide
+    400124: SlideRelease
+    400126: Trigger
+    400128: Tube
+    400130: //RootNode
+    400132: WeaponPistol
+    400134: IK_LeftHand
+    400136: IK_RightHand
+    400138: Zero
+    400140: ShellEject
+    2100000: MAT_MuzzleFlashCenter
+    2300000: Barrel
+    2300002: Magazine
+    2300004: MagBullet
+    2300006: MagPlunger
+    2300008: MagRelease
+    2300010: MuzzleFlash
+    2300012: Slide
+    2300014: SlideRelease
+    2300016: Trigger
+    2300018: Tube
+    2300020: WeaponPistol
+    3300000: Barrel
+    3300002: Magazine
+    3300004: MagBullet
+    3300006: MagPlunger
+    3300008: MagRelease
+    3300010: MuzzleFlash
+    3300012: Slide
+    3300014: SlideRelease
+    3300016: Trigger
+    3300018: Tube
+    3300020: WeaponPistol
+    4300000: WeaponPistol
+    4300002: Tube
+    4300004: Barrel
+    4300006: MuzzleFlash
+    4300008: Magazine
+    4300010: MagBullet
+    4300012: MagPlunger
+    4300014: MagRelease
+    4300016: Slide
+    4300018: SlideRelease
+    4300020: Trigger
+    4300022: MainCharacterFirstPersonArms
+    7400000: Idle
+    7400002: Fire
+    7400004: Reload
+    7400006: Draw
+    9500000: //RootNode
+    13700000: MainCharacterFirstPersonArms
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_CharacterPalette
+    second: {fileID: 2100000, guid: 90a258252e8b4d441be83446d2617a00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_MuzzleFlash
+    second: {fileID: 2100000, guid: 09d17fba02c287248949ccea36b13326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_MuzzleFlashCenter
+    second: {fileID: 2100000, guid: 740e9cc71a8400a4699123354154f8a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_WeaponPalette
+    second: {fileID: 2100000, guid: 6f4fd83ee1d3f714b8ee6a73412e9b64, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.1
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Aim
+        weight: 1
+      - path: FpsArms_Torso
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03/FpsArms_LHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03/FpsArms_LHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03/FpsArms_LHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03/FpsArms_LHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03/FpsArms_LHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHandNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03/FpsArms_RHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03/FpsArms_RHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03/FpsArms_RHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03/FpsArms_RHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03/FpsArms_RHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHandNub
+        weight: 1
+      - path: MainCharacterFirstPersonArms
+        weight: 1
+      - path: WeaponPistol
+        weight: 1
+      - path: WeaponPistol/Barrel
+        weight: 1
+      - path: WeaponPistol/Barrel/MuzzleFlash
+        weight: 1
+      - path: WeaponPistol/Magazine
+        weight: 1
+      - path: WeaponPistol/Magazine/MagBullet
+        weight: 1
+      - path: WeaponPistol/Magazine/MagPlunger
+        weight: 1
+      - path: WeaponPistol/MagRelease
+        weight: 1
+      - path: WeaponPistol/Slide
+        weight: 1
+      - path: WeaponPistol/SlideRelease
+        weight: 1
+      - path: WeaponPistol/Trigger
+        weight: 1
+      - path: WeaponPistol/Tube
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fire
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Aim
+        weight: 1
+      - path: FpsArms_Torso
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03/FpsArms_LHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03/FpsArms_LHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03/FpsArms_LHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03/FpsArms_LHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03/FpsArms_LHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHandNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03/FpsArms_RHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03/FpsArms_RHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03/FpsArms_RHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03/FpsArms_RHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03/FpsArms_RHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHandNub
+        weight: 1
+      - path: MainCharacterFirstPersonArms
+        weight: 1
+      - path: WeaponPistol
+        weight: 1
+      - path: WeaponPistol/Barrel
+        weight: 1
+      - path: WeaponPistol/Barrel/MuzzleFlash
+        weight: 1
+      - path: WeaponPistol/Magazine
+        weight: 1
+      - path: WeaponPistol/Magazine/MagBullet
+        weight: 1
+      - path: WeaponPistol/Magazine/MagPlunger
+        weight: 1
+      - path: WeaponPistol/MagRelease
+        weight: 1
+      - path: WeaponPistol/Slide
+        weight: 1
+      - path: WeaponPistol/SlideRelease
+        weight: 1
+      - path: WeaponPistol/Trigger
+        weight: 1
+      - path: WeaponPistol/Tube
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reload
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Aim
+        weight: 1
+      - path: FpsArms_Torso
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03/FpsArms_LHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03/FpsArms_LHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03/FpsArms_LHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03/FpsArms_LHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03/FpsArms_LHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHandNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03/FpsArms_RHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03/FpsArms_RHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03/FpsArms_RHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03/FpsArms_RHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03/FpsArms_RHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHandNub
+        weight: 1
+      - path: MainCharacterFirstPersonArms
+        weight: 1
+      - path: WeaponPistol
+        weight: 1
+      - path: WeaponPistol/Barrel
+        weight: 1
+      - path: WeaponPistol/Barrel/MuzzleFlash
+        weight: 1
+      - path: WeaponPistol/Barrel/ShellEject
+        weight: 1
+      - path: WeaponPistol/IK_LeftHand
+        weight: 1
+      - path: WeaponPistol/IK_RightHand
+        weight: 1
+      - path: WeaponPistol/Magazine
+        weight: 1
+      - path: WeaponPistol/Magazine/MagBullet
+        weight: 1
+      - path: WeaponPistol/Magazine/MagPlunger
+        weight: 1
+      - path: WeaponPistol/MagRelease
+        weight: 1
+      - path: WeaponPistol/Slide
+        weight: 1
+      - path: WeaponPistol/SlideRelease
+        weight: 1
+      - path: WeaponPistol/Trigger
+        weight: 1
+      - path: WeaponPistol/Tube
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Draw
+      takeName: Take 001
+      firstFrame: 72
+      lastFrame: 87
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Aim
+        weight: 1
+      - path: FpsArms_Torso
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_IndexFinger01/FpsArms_LHand_IndexFinger02/FpsArms_LHand_IndexFinger03/FpsArms_LHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_MiddleFinger01/FpsArms_LHand_MiddleFinger02/FpsArms_LHand_MiddleFinger03/FpsArms_LHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_PinkyFinger01/FpsArms_LHand_PinkyFinger02/FpsArms_LHand_PinkyFinger03/FpsArms_LHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_RingFinger01/FpsArms_LHand_RingFinger02/FpsArms_LHand_RingFinger03/FpsArms_LHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHand_Thumb01/FpsArms_LHand_Thumb02/FpsArms_LHand_Thumb03/FpsArms_LHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_LShoulder/FpsArms_LArm_Upper/FpsArms_LArm_Lower/FpsArms_LArm_LowerTwist/FpsArms_LHand/FpsArms_LHandNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_IndexFinger01/FpsArms_RHand_IndexFinger02/FpsArms_RHand_IndexFinger03/FpsArms_RHand_IndexFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_MiddleFinger01/FpsArms_RHand_MiddleFinger02/FpsArms_RHand_MiddleFinger03/FpsArms_RHand_MiddleFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_PinkyFinger01/FpsArms_RHand_PinkyFinger02/FpsArms_RHand_PinkyFinger03/FpsArms_RHand_PinkyFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_RingFinger01/FpsArms_RHand_RingFinger02/FpsArms_RHand_RingFinger03/FpsArms_RHand_RingFingerNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHand_Thumb01/FpsArms_RHand_Thumb02/FpsArms_RHand_Thumb03/FpsArms_RHand_ThumbNub
+        weight: 1
+      - path: FpsArms_Torso/FpsArms_RShoulder/FpsArms_RArm_Upper/FpsArms_RArm_Lower/FpsArms_RArm_LowerTwist/FpsArms_RArm_Hand/FpsArms_RHandNub
+        weight: 1
+      - path: MainCharacterFirstPersonArms
+        weight: 1
+      - path: WeaponPistol
+        weight: 1
+      - path: WeaponPistol/Barrel
+        weight: 1
+      - path: WeaponPistol/Barrel/MuzzleFlash
+        weight: 1
+      - path: WeaponPistol/Barrel/ShellEject
+        weight: 1
+      - path: WeaponPistol/IK_LeftHand
+        weight: 1
+      - path: WeaponPistol/IK_RightHand
+        weight: 1
+      - path: WeaponPistol/Magazine
+        weight: 1
+      - path: WeaponPistol/Magazine/MagBullet
+        weight: 1
+      - path: WeaponPistol/Magazine/MagPlunger
+        weight: 1
+      - path: WeaponPistol/MagRelease
+        weight: 1
+      - path: WeaponPistol/Slide
+        weight: 1
+      - path: WeaponPistol/SlideRelease
+        weight: 1
+      - path: WeaponPistol/Trigger
+        weight: 1
+      - path: WeaponPistol/Tube
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

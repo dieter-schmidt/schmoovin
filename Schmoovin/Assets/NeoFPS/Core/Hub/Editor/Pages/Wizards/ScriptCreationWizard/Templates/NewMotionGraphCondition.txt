@@ -1,0 +1,33 @@
+﻿using UnityEngine;
+using NeoFPS.CharacterMotion;
+using NeoFPS.CharacterMotion.Parameters;
+
+namespace %NAMESPACE%
+{
+    [MotionGraphElement("%NAMESPACE%/%CLASS_NAME%")]
+    public class %CLASS_NAME% : MotionGraphCondition
+    {
+        public override void OnValidate()
+        {
+            // Optional - validate any inspector serialized values here
+        }
+
+        public override void Initialise(IMotionController c)
+        {
+            base.Initialise(c);
+            // Optional
+        }
+
+        public override bool CheckCondition(MotionGraphConnectable connectable)
+        {
+            return false;
+        }
+
+        public override void CheckReferences(IMotionGraphMap map)
+        {
+            // Update your reference properties here.
+            // Any property that references another graph element (parameter, data, etc) should be remapped, eg:
+            // property1 = map.Swap(property1);
+        }
+    }
+}

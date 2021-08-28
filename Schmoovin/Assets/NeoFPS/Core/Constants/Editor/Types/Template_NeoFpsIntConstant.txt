@@ -1,0 +1,102 @@
+﻿//======================================================================================================
+// WARNING: This file is auto-generated. Any manual changes might be lost.
+//======================================================================================================
+
+using System;
+using UnityEngine;
+
+namespace NeoFPS
+{
+	[Serializable]
+	public struct %NAME%
+	{
+%VALUES%
+		public const int count = %COUNT%;
+
+		public static readonly string[] names = new string[]
+		{
+%VALUE_NAMES%
+		};
+
+		[SerializeField] 
+		private int m_Value;
+		public int value
+		{
+			get { return m_Value; }
+			set
+			{
+				int max = (int)(count - 1);
+				if (value < 0)
+					value = 0;
+				if (value > max)
+					value = 0; // Reset to default
+				m_Value = value;
+			}
+		}
+
+		private %NAME% (int v)
+		{
+			m_Value = v;
+		}
+
+		public static bool IsWithinBounds (int v)
+		{
+			int cast = (int)v;
+			return (cast >= 0) && (cast < count);
+		}
+
+		// Checks
+		public static bool operator ==(%NAME% x, %NAME% y)
+		{
+			return (x.value == y.value);
+		}
+		public static bool operator ==(%NAME% x, int y)
+		{
+			return (x.value == y);
+		}
+
+		public static bool operator !=(%NAME% x, %NAME% y)
+		{
+			return (x.value != y.value);
+		}
+		public static bool operator !=(%NAME% x, int y)
+		{
+			return (x.value != y);
+		}
+
+		public override bool Equals (object obj)
+		{
+			if (obj is %NAME%)
+				return value == ((%NAME%)obj).value;
+			if (obj is int)
+				return value == (int)value;
+			return false;
+		}
+
+		// Implicit conversions
+		public static implicit operator %NAME% (int v)
+		{
+			int max = count - 1;
+			if (v < 0)
+				v = 0;
+			if (v > max)
+				v = 0; // Reset to default
+			return new %NAME% (v);
+		}
+
+		public static implicit operator int (%NAME% dam)
+		{
+			return dam.value;
+		}
+
+		public override string ToString ()
+		{
+			return names [value];
+		}
+
+        public override int GetHashCode()
+        {
+            return value.GetHashCode();
+        }
+	}
+}

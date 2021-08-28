@@ -1,0 +1,27 @@
+﻿using System;
+using UnityEngine;
+using UnityEditor;
+using NeoFPS.CharacterMotion;
+using NeoFPS.CharacterMotion.Behaviours;
+using NeoFPS.CharacterMotion.Parameters;
+using NeoFPSEditor.CharacterMotion;
+
+namespace %NAMESPACE%
+{
+    [MotionGraphBehaviourEditor(typeof(%CLASS_NAME%))]
+    public class %EDITOR_NAME% : MotionGraphBehaviourEditor
+    {
+        public override void Initialise(MotionGraphBehaviour b, MotionGraphConnectableEditor connectable)
+        {
+            base.Initialise(b, connectable);
+
+            // Optional
+        }
+
+        protected override void OnInspectorGUI()
+        {
+            // Use standard EditorGUILayout methods here to modify values, eg.
+            // EditorGUILayout.PropertyField(serializedObject.FindProperty("floatValue"));
+        }
+    }
+}

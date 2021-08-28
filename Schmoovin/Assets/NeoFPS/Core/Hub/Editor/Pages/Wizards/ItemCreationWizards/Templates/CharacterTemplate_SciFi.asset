@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa96809bbaaf0b46861ae3b6e2c5719, type: 3}
+  m_Name: CharacterTemplate_SciFi
+  m_EditorClassIdentifier: 
+  m_StepValues:
+  - {fileID: 114736144575289506}
+  - {fileID: 114398852667096600}
+  - {fileID: 114904699194861420}
+  - {fileID: 114437693357261000}
+  - {fileID: 114703346647453176}
+  - {fileID: 114182772398532960}
+  m_StepKeys:
+  - root
+  - controller
+  - health
+  - inventory
+  - stamina
+  - input
+--- !u!114 &114182772398532960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ecc85e6ff08f6438742aa48b99ebb2, type: 3}
+  m_Name: input(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  neoMovementInput: 1
+  enableDodging: 0
+  toggleLean: 1
+  jumpKey: jump
+  jumpChargeKey: jumpCharge
+  jumpHoldKey: jumpHold
+  crouchKey: crouch
+  crouchHoldKey: crouchHold
+  sprintKey: sprint
+  dodgeLeftKey: dodgeLeft
+  dodgeRightKey: dodgeRight
+  neoInventoryInput: 1
+--- !u!114 &114398852667096600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ed23e3335c6bb4ea3e0693feedf41e, type: 3}
+  m_Name: controller(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  motionGraph: {fileID: 11400000, guid: 93e1d5c34ea050e4ba1cff4138eb765f, type: 2}
+  useCrouchJump: 1
+  slopeLimit: 45
+  slopeFriction: 1
+  ledgeFriction: 0
+  wallAngle: 5
+  stepHeight: 0.3
+  groundSnapHeight: 0.3
+  pushRigidbodies: 1
+  lowRigidbodyPushMass: 10
+  maxRigidbodyPushMass: 200
+  rigidbodyPush: 20
+  pushedByCharacters: 1
+  pushCharacters: 1
+  characterPush: 2.5
+  gravity: 9.8
+--- !u!114 &114437693357261000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11455c9756a88664984ed35c64e7e0d2, type: 3}
+  m_Name: inventory(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  inventoryType: 1
+  slotCount: 10
+  startingSlotChoice: 0
+  startingOrder: 000000000100000002000000030000000400000005000000
+  backupItem: {fileID: 114220906628037716, guid: fea32a3c49938a24c86df8b49a457398,
+    type: 3}
+  duplicateBehaviour: 0
+  dropVelocity: {x: 0, y: 2, z: 3}
+  maxStackSize: 10
+  swappableSlotCount: 6
+  swapAction: 0
+  groupSizes: 040000000100000001000000
+  startingItemsStandard: []
+  startingItemsSwappable:
+  - {fileID: 114629206448661886, guid: ea43aa8e2528bf94faab503aa13dc878, type: 3}
+  - {fileID: 114491831698022604, guid: 6c688c81d559f0c4d9a19f7a8b9b4d36, type: 3}
+--- !u!114 &114703346647453176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f338702daf16149b899177c122c1ac, type: 3}
+  m_Name: stamina(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  staminaAndBreathing: 2
+  breathInterval: 4
+  breathStrength: 0.25
+  stamina: 100
+  maxStamina: 100
+  staminaRefreshRate: 10
+  modifyMovementSpeed: 1
+  walkSpeedData: 
+  aimWalkSpeedData: 
+  sprintSpeedData: 
+  aimSprintSpeedData: 
+  crouchSpeedData: 
+  aimCrouchSpeedData: 
+  minWalkMultiplier: 0.5
+  minSprintMultiplier: 0.5
+  minCrouchMultiplier: 0.5
+  breatheSlowInterval: 5
+  breatheFastInterval: 1
+  useExhaustion: 1
+  exhaustionThreshold: 1
+  recoverThreshold: 50
+  exhaustedMotionParameter: 
+  sprintMotionParameter: 
+--- !u!114 &114736144575289506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff9b46d15fac434eacfde36596ba6df, type: 3}
+  m_Name: root(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  prefabName: SciFi
+  autoPrefix: 1
+  overwriteExisting: 1
+  characterHeight: 2
+  eyeLine: 1.75
+  characterWidth: 1
+  characterMass: 80
+  characterAudioData: {fileID: 11400000, guid: 7529a3201e555034883d77abae1288c5, type: 2}
+  softLandingAudio: {fileID: 11400000, guid: b1cff59a55e7b3c44890442cd5bae358, type: 2}
+  hardLandingAudio: {fileID: 11400000, guid: f1551af870bb1b94aa615f0b53cc8a19, type: 2}
+  addAiSeekerTargets: 1
+--- !u!114 &114904699194861420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9f0fd5f996ba342a98a2422fd6b0de, type: 3}
+  m_Name: health(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 0}
+  useNeoHealthSystems: 1
+  health: 100
+  maxHealth: 100
+  healthRecharges: 0
+  rechargeRate: 5
+  rechargeDelay: 5
+  interruptDamage: 1
+  applyFallDamage: 0
+  headDamageHandler: 2
+  headRadius: 0.2
+  headDamageMultiplier: 2
+  headShotsAreCritical: 1
+  headInventoryKey:
+    m_Value: 27
+  headArmourMitigation: 0.75
+  headArmourMultiplier: 0.5
+  bodyDamageHandler: 2
+  bodyRadius: 0.35
+  bodyDamageMultiplier: 1
+  bodyInventoryKey:
+    m_Value: 26
+  bodyArmourMitigation: 0.75
+  bodyArmourMultiplier: 0.5
+  legsDamageHandler: 2
+  legsRadius: 0.25
+  legsDamageMultiplier: 0.75
+  legsInventoryKey:
+    m_Value: 26
+  legsArmourMitigation: 0.75
+  legsArmourMultiplier: 0.5
+  shield: 100
+  stepCapacity: 100
+  stepCount: 1
+  shieldMitigation: 1
+  shieldChargeRate: 5
+  shieldChargeDelay: 5
+  canBreakStep1: 0

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_07
+  m_EditorClassIdentifier: 
+  version: 1107
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - Regenerating health manager
+    - Armour (inventory & pickup based)
+    - Shields (recharging, and staggered with pickups to fill empty bars)
+    - Healing and damage zones
+    - Slow-motion system with slow-mo zones and motion graph behaviour
+    - New HudAdvancedCrosshair with hit and critical hit feedback
+    - HUD based Interaction tooltips
+    - New CameraYawConstraint motion graph behaviour (used in the demo curved wall
+      runs)
+    - CutsceneCamera handles disabling HUD and character input for external camera
+      views
+    - RecoilPushback behaviour pushes the player character backwards when they shoot
+      a firearm
+    - Added a "Pickup Wizard" to the NeoFPS hub to simplify creating item pickups
+      and powerups
+    - New example contact based and interactive pickups (inventory items, health and
+      armour)
+    - HUD based meters and counters for inventory items, and other systems
+    - JumpDirectionV2 motion graph state replaces old directional jump and handles
+      analogue input correctly
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - HUD prefab has been arranged into groups and now uses Unity UI auto layout components
+      to position the relevant elements
+    - HUD ammo counter has been split so the firearm mode is now a separate HUD elements
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - Modular firearm mode changes are now handled differently because the old system
+      didn't work well with the save system
+    - MotionController.SetHeightMultiplier() now requires a speed parameter
+    - ICharacter now has an event and method for reporting hits
+    - IInteractiveObject now has tooltipName and tooltipAction properties
+    - Added normalisedHealth property to IHealthManager
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_02
+  m_EditorClassIdentifier: 
+  version: 1102
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - Firearm ammo effect modules now require a distance parameter
+    - Audio settings volume methods have been swapped with properties
+    - FpsInputButton, Axis and Context constants have been moved to root NeoFPS namespace
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - Game settings and managers are now accessible through the new NeoFPS Hub (Tools/NeoFPS/NeoFPS
+      Hub)
+    - Prefabs have been moved to new prefab system
+    - Swappable and stacked weapons have been replaced with variant prefabs. The old
+      prefabs are found in NeoFPS/Samples/Legacy
+    - DemoSoloCharacter has been renamed to NeoFpsSoloPlayerCharacter for consistency
+    - Parkour and swimming characters have been replaced with variant prefabs. The
+      old prefabs can be found in NeoFPS/Samples/Legacy
+    - New nested prefabs for HUD elements and scene items
+    - Firearm Infinite Ammo module has been split into Infinte Ammo for ammo handling
+      and Passthrough Reloader for reloading
+    text: 
+    links: []
+    highlightObjects:
+    - text: Legacy Sample Prefabs
+      gameObject: {fileID: 102900000, guid: 086b9b219cc0903479bee89e40b24f98, type: 3}
+    actions: []

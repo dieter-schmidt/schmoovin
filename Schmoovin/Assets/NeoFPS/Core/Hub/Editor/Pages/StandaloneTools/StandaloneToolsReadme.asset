@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484588b71ccaf4b459b69900f87c25e0, type: 3}
+  m_Name: StandaloneToolsReadme
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 996f1d2f739939647a7af45ec56d2481, type: 3}
+    darkSkinImage: {fileID: 2800000, guid: 187dfc0db73abc64c9339feec0c7ba89, type: 3}
+    title: Standalone Tools
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Motion Graph Editor
+    bulletPoints: []
+    text: The motion graph is a key component of the NeoFPS movement system. It allows
+      you fine grained control over the movement of your FPS characters through a
+      powerful graph editor.
+    links:
+    - text: Manual - The Motion Graph
+      url: https://docs.neofps.com/manual/motiongraph-index.html
+    - text: Manual - The Motion Graph Editor
+      url: https://docs.neofps.com/manual/motiongraph-editor.html
+    highlightObjects: []
+    actions:
+    - text: Open The Motion Graph Editor
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowMotionGraphEditor
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Motion Debugger
+    bulletPoints: []
+    text: The motion debugger records the player character's movement to a buffer
+      during play. Upon encountering a problem, you can pause the game, scrub through
+      the movement buffer, and view the inputs and outputs of the motion controller
+      and motion graph. This can help track down issues when the character does not
+      move as expected.
+    links:
+    - text: Manual - The Motion Debugger
+      url: https://docs.neofps.com/manual/motiongraph-motiondebugger.html
+    highlightObjects: []
+    actions:
+    - text: Open The Motion Debugger
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowMotionDebugger
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: NeoSave File Inspector
+    bulletPoints: []
+    text: The NeoFPS save system uses a custom binary formatter, meaning that save
+      files are not easily readable. The save file inspector allows you to open a
+      save file and navigate and view its contents in order to track down problems.
+    links:
+    - text: Manual - Save Games
+      url: https://docs.neofps.com/manual/savegames-index.html
+    - text: Manual - Troubleshooting The Save System
+      url: https://docs.neofps.com/manual/savegames-troubleshooting.html
+    highlightObjects: []
+    actions:
+    - text: Open The NeoSave File Inspector
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowNeoSaveFileInspector
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1

@@ -1,0 +1,51 @@
+using NeoFPS.ModularFirearms;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseTriggerBehaviour
+    {
+        public int spacing = 10;
+
+        private bool m_Pressed = false;
+        private int m_Wait = 0;
+
+        public override bool pressed
+        {
+            get { return m_Pressed; }
+        }
+
+        public override void Press()
+        {
+            m_Pressed = true;
+            m_Wait = 0;
+        }
+
+        public override void Release()
+        {
+            m_Pressed = false;
+        }
+
+        protected override void FixedTriggerUpdate()
+        {
+            if (m_Wait > 0)
+                --m_Wait;
+
+            if (m_Wait == 0 && m_Pressed)
+            {
+                m_Wait = spacing;
+
+                // Shoot
+                Shoot();
+            }
+        }
+
+        // Useful virtual methods:
+        // Awake()
+        // OnEnable()
+        // OnDisable()
+        // bool isModuleValid { get; } - To show an error in the ModularFirearm inspector if dependencies haven't been met
+        // void OnSetBlocked(bool to) - Called when the trigger is blocked or unblocked
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

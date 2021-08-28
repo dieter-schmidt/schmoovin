@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_10
+  m_EditorClassIdentifier: 
+  version: 1110
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - Locked doors
+    - Inventory based keyring
+    - Lockpicks and lockpicking mini-game
+    - Keypad based passcode locks
+    - Guided projectiles
+    - Targeting systems such as laser guidance and target lock
+    - Sticky projectiles
+    - Contact thrown weapons
+    - Recharging ammo firearm module
+    - Queued trigger module (hold to queue shots, release to fire)
+    - Ability based firearms (eg shoulder mounted launchers)
+    - Tribes inspired demo scene for jetpacks and guided missiles
+    - Adaptive jetpack (allows for hover effects and max speeds)
+    - Anim curve dashes
+    - Animator motion graph behaviours
+    - Camera spring and shake motion graph behaviours
+    - Checkpoint triggers
+    - Inventory loadouts
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - All inventory items now use the new inventory database system instead of inventory
+      keys. The inventory database can be found alongside the other managers. It also
+      includes a "constants" database table which uses the FpsInventoryKey constants
+      for fixed entries, meaning any items using the old setup will still work, but
+      should be switched over when possible
+    - NeoCharacterController forces have been fixed to be consistent with rigidbody
+      forces
+    - Modular firearm now exposes movement accuracy settings, and damping alters behaviour
+      from previous
+    - Stacked inventory wieldables are now fixed at the maximum stack size of 10 (other
+      options were causing confusion)
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - MotionController character height can no longer be set via property - must use
+      methods.
+    - Character trigger zone methods have been renamed to prevent being incorrectly
+      called by physics messages
+    - IHealthManager interface adds new damage methods with a RaycastHit parameter
+    - IAimController interface has new steering and aimYawDiff properties
+    - ITriggerModule interface requires new onShootContinuousChanged event and cancelOnReload
+      property
+    - Ballistic projectiles now use a common base class
+    - Firearm modules now use a common base class. Custom versions may need editor
+      scripts
+    - IInventory interface has new AddItemFromPrefab method
+    - IInteractiveObject interface now requires an onTooltipChanged event implementing
+    - IProjectile interface adds new Teleport method
+    - IMotionGraphDataOverride interface has been changed to allow stacking. Functions
+      now take the previous override in the stack's output as a parameter.
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []

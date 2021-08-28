@@ -1,0 +1,647 @@
+fileFormatVersion: 2
+guid: 16ba836699f73b746a8151933406bb97
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm_R_Clavicle001
+    100002: Arm_R_Clavicle002
+    100004: BatonShaft
+    100006: BatonTip
+    100008: BonePoints
+    100010: FpsArmControls
+    100012: FpsArms_LArm_Lower
+    100014: FpsArms_LArm_LowerTwist
+    100016: FpsArms_LArm_Upper
+    100018: FpsArms_LHand
+    100020: FpsArms_LHand_IndexFinger01
+    100022: FpsArms_LHand_IndexFinger02
+    100024: FpsArms_LHand_IndexFinger03
+    100026: FpsArms_LHand_MiddleFinger01
+    100028: FpsArms_LHand_MiddleFinger02
+    100030: FpsArms_LHand_MiddleFinger03
+    100032: FpsArms_LHand_PinkyFinger01
+    100034: FpsArms_LHand_PinkyFinger02
+    100036: FpsArms_LHand_PinkyFinger03
+    100038: FpsArms_LHand_RingFinger01
+    100040: FpsArms_LHand_RingFinger02
+    100042: FpsArms_LHand_RingFinger03
+    100044: FpsArms_LHand_Thumb01
+    100046: FpsArms_LHand_Thumb02
+    100048: FpsArms_LHand_Thumb03
+    100050: FpsArms_LShoulder
+    100052: FpsArms_RArm_Hand
+    100054: FpsArms_RArm_Lower
+    100056: FpsArms_RArm_LowerTwist
+    100058: FpsArms_RArm_Upper
+    100060: FpsArms_RHand_IndexFinger01
+    100062: FpsArms_RHand_IndexFinger02
+    100064: FpsArms_RHand_IndexFinger03
+    100066: FpsArms_RHand_MiddleFinger01
+    100068: FpsArms_RHand_MiddleFinger02
+    100070: FpsArms_RHand_MiddleFinger03
+    100072: FpsArms_RHand_PinkyFinger01
+    100074: FpsArms_RHand_PinkyFinger02
+    100076: FpsArms_RHand_PinkyFinger03
+    100078: FpsArms_RHand_RingFinger01
+    100080: FpsArms_RHand_RingFinger02
+    100082: FpsArms_RHand_RingFinger03
+    100084: FpsArms_RHand_Thumb01
+    100086: FpsArms_RHand_Thumb02
+    100088: FpsArms_RHand_Thumb03
+    100090: FpsArms_RShoulder
+    100092: FpsArms_Torso
+    100094: IkParent_BatonHandle
+    100096: MainCharacterFirstPersonArms
+    100098: //RootNode
+    100100: WeaponBaton
+    100102: WeaponOrigin
+    100104: FpsArms_LHand_IndexFingerNub
+    100106: FpsArms_LHand_MiddleFingerNub
+    100108: FpsArms_LHand_PinkyFingerNub
+    100110: FpsArms_LHand_RingFingerNub
+    100112: FpsArms_LHand_ThumbNub
+    100114: FpsArms_LHandNub
+    100116: FpsArms_RHand_IndexFingerNub
+    100118: FpsArms_RHand_MiddleFingerNub
+    100120: FpsArms_RHand_PinkyFingerNub
+    100122: FpsArms_RHand_RingFingerNub
+    100124: FpsArms_RHand_ThumbNub
+    100126: FpsArms_RHandNub
+    400000: Arm_R_Clavicle001
+    400002: Arm_R_Clavicle002
+    400004: BatonShaft
+    400006: BatonTip
+    400008: BonePoints
+    400010: FpsArmControls
+    400012: FpsArms_LArm_Lower
+    400014: FpsArms_LArm_LowerTwist
+    400016: FpsArms_LArm_Upper
+    400018: FpsArms_LHand
+    400020: FpsArms_LHand_IndexFinger01
+    400022: FpsArms_LHand_IndexFinger02
+    400024: FpsArms_LHand_IndexFinger03
+    400026: FpsArms_LHand_MiddleFinger01
+    400028: FpsArms_LHand_MiddleFinger02
+    400030: FpsArms_LHand_MiddleFinger03
+    400032: FpsArms_LHand_PinkyFinger01
+    400034: FpsArms_LHand_PinkyFinger02
+    400036: FpsArms_LHand_PinkyFinger03
+    400038: FpsArms_LHand_RingFinger01
+    400040: FpsArms_LHand_RingFinger02
+    400042: FpsArms_LHand_RingFinger03
+    400044: FpsArms_LHand_Thumb01
+    400046: FpsArms_LHand_Thumb02
+    400048: FpsArms_LHand_Thumb03
+    400050: FpsArms_LShoulder
+    400052: FpsArms_RArm_Hand
+    400054: FpsArms_RArm_Lower
+    400056: FpsArms_RArm_LowerTwist
+    400058: FpsArms_RArm_Upper
+    400060: FpsArms_RHand_IndexFinger01
+    400062: FpsArms_RHand_IndexFinger02
+    400064: FpsArms_RHand_IndexFinger03
+    400066: FpsArms_RHand_MiddleFinger01
+    400068: FpsArms_RHand_MiddleFinger02
+    400070: FpsArms_RHand_MiddleFinger03
+    400072: FpsArms_RHand_PinkyFinger01
+    400074: FpsArms_RHand_PinkyFinger02
+    400076: FpsArms_RHand_PinkyFinger03
+    400078: FpsArms_RHand_RingFinger01
+    400080: FpsArms_RHand_RingFinger02
+    400082: FpsArms_RHand_RingFinger03
+    400084: FpsArms_RHand_Thumb01
+    400086: FpsArms_RHand_Thumb02
+    400088: FpsArms_RHand_Thumb03
+    400090: FpsArms_RShoulder
+    400092: FpsArms_Torso
+    400094: IkParent_BatonHandle
+    400096: MainCharacterFirstPersonArms
+    400098: //RootNode
+    400100: WeaponBaton
+    400102: WeaponOrigin
+    400104: FpsArms_LHand_IndexFingerNub
+    400106: FpsArms_LHand_MiddleFingerNub
+    400108: FpsArms_LHand_PinkyFingerNub
+    400110: FpsArms_LHand_RingFingerNub
+    400112: FpsArms_LHand_ThumbNub
+    400114: FpsArms_LHandNub
+    400116: FpsArms_RHand_IndexFingerNub
+    400118: FpsArms_RHand_MiddleFingerNub
+    400120: FpsArms_RHand_PinkyFingerNub
+    400122: FpsArms_RHand_RingFingerNub
+    400124: FpsArms_RHand_ThumbNub
+    400126: FpsArms_RHandNub
+    2300000: BatonShaft
+    2300002: BatonTip
+    2300004: WeaponBaton
+    3300000: BatonShaft
+    3300002: BatonTip
+    3300004: WeaponBaton
+    4300000: MainCharacterFirstPersonArms
+    4300002: WeaponBaton
+    4300004: BatonShaft
+    4300006: BatonTip
+    7400000: Idle
+    7400002: Draw
+    7400004: AttackLight
+    7400006: RecoverLight
+    7400008: Charge
+    7400010: AttackHeavy
+    7400012: RecoverHeavy
+    7400014: FullLight
+    7400016: FullHeavy
+    7400018: BlockRaise
+    7400020: BlockIdle
+    7400022: BlockHit
+    7400024: BlockLower
+    7400026: AttackHit
+    9500000: //RootNode
+    13700000: MainCharacterFirstPersonArms
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_CharacterPalette
+    second: {fileID: 2100000, guid: 90a258252e8b4d441be83446d2617a00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_WeaponPalette
+    second: {fileID: 2100000, guid: 6f4fd83ee1d3f714b8ee6a73412e9b64, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.01
+    animationPositionError: 0.01
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Draw
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackLight
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RecoverLight
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Charge
+      takeName: Take 001
+      firstFrame: 45
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackHeavy
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RecoverHeavy
+      takeName: Take 001
+      firstFrame: 55
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FullLight
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FullHeavy
+      takeName: Take 001
+      firstFrame: 45
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BlockRaise
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BlockIdle
+      takeName: Take 001
+      firstFrame: 81
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BlockHit
+      takeName: Take 001
+      firstFrame: 83
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BlockLower
+      takeName: Take 001
+      firstFrame: 88
+      lastFrame: 93
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackHit
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

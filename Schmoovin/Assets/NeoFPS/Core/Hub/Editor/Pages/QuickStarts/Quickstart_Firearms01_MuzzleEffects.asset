@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b564cd860b30340832620160250c95, type: 3}
+  m_Name: Quickstart_Firearms01_MuzzleEffects
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 3dbfa0b5390fee041a267bcdd91569e1, type: 3}
+    darkSkinImage: {fileID: 0}
+    title: Muzzle Effects
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The NeoFPS firearm system provides a number of ways to implement muzzle
+      effects, from briefly enabling an object to complex particle systems.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 90df92216692c524bb442a363727753e, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The demo guns provided with NeoFPS use a simple muzzle flash object by default.
+      This works well for a low-poly style, but not for more realistic or stylised
+      projects. To demonstrate an alternative approach using Unity's built-in particle
+      system, each weapon has an alternative "realistic" muzzle effect prefab which
+      is pre-configured to just drop in and work.
+    links: []
+    highlightObjects:
+    - text: Muzzle Flashes Folder
+      gameObject: {fileID: 102900000, guid: 1b7eefd49f6762a44a73b36a5da2029a, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Swapping The Assault Rifle Muzzle Effect
+    h3Heading: 
+    bulletPoints: []
+    text: The muzzle effects on the demo weapons can be swapped out very easily. As
+      an example, let's do that for the assault rifle. First up, you will need to
+      open the assault rifle prefab.
+    links: []
+    highlightObjects:
+    - text: Assault Rifle Prefab
+      gameObject: {fileID: 1152804995060304, guid: 5586913d6e0ce934da6bed04cc353246,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'On the root object of the prefab, you will find a component called the
+      "Basic Game Object Muzzle Effect". Selecting the "Muzzle Flash" property on
+      this will highlight the object in the hierarchy:'
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 1d19087e89e017c46a1e4456b63eece2, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The parent of the muzzle flash object is the main body of the gun. We want
+      to replace the muzzle flash object with the new realistic muzzle flash prefab,
+      using the same parent. To do this, delete the existing muzzle flash object and
+      drag and drop the replacement prefab under the "WeaponAssaultRifle" object.
+    links: []
+    highlightObjects:
+    - text: Realistic Assault Rifle Muzzle Flash
+      gameObject: {fileID: 4615012247575037848, guid: ab3cce691e56abb4fb349231873822a0,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "You also need to remove the \"Basic Game Object Muzzle Effect\" component
+      from the root object of the firearm. Firearm modules can be attached to any
+      child of the firearm and swapped at runtime. In this case, the replacement muzzle
+      flash prefab uses an \"Advanced Particle Muzzle Effect\" component, which will
+      register itself with the firearm on start.\r\n\r\nGive it a try! That should
+      be everything required to swap the muzzle effect on a demo gun. If you want
+      to create your own muzzle effects then you can use the sample prefabs as an
+      example of how to set yours up. You can also see the other muzzle effect options
+      in the NeoFPS documentation."
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 'Note: Check the Muzzle Tip'
+    bulletPoints: []
+    text: In some cases the demo guns also use the muzzle flash transform to represent
+      the muzzle tip position for the shooter module. This does not apply to the assault
+      rifle, but if you see an error appear in the shooter module after making the
+      above changes, then you will need to add a new game object positioned at the
+      gun's muzzle tip (Z axis pointing forwards from the barrel) and parented to
+      the gun body. Drag this new object onto the "Muzzle Tip" property on the shooter
+      module and the error will be fixed.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Further Reading
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links:
+    - text: NeoFPS Manual - Modular Firearms
+      url: https://docs.neofps.com/manual/weapons-modular-firearms.html
+    - text: NeoFPS Reference - Advanced Particle Muzzle Effect
+      url: https://docs.neofps.com/manual/weaponsref-mb-advancedparticlemuzzleeffect.html
+    - text: Unity Manual - Built-In Particle System
+      url: https://docs.unity3d.com/Manual/Built-inParticleSystem.html
+    highlightObjects: []
+    actions: []
+  subFolder: Firearms
+  pageName: quickstart_firearms_muzzlefx

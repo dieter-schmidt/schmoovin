@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e3c6566aedac14e83c1e41e6995714, type: 3}
+  m_Name: FeatureDemosList
+  m_EditorClassIdentifier: 
+  category: Feature Demos
+  priority: 90
+  scenes:
+  - title: 'Feature Demo: Firing Range'
+    loadName: FeatureDemo_FiringRange
+    thumbnail: {fileID: 2800000, guid: 2132dd4b87f56fc41bbc0f60430ba101, type: 3}
+    description: This level demonstrates modular firearms using a variety of target
+      setups and sequences.
+  - title: 'Feature Demo: Parkour'
+    loadName: FeatureDemo_Parkour
+    thumbnail: {fileID: 2800000, guid: bb81ca24fef1f214b8d83202f82f1f2e, type: 3}
+    description: The parkour demo demonstrates the kind of motion mechanics that can
+      be created with the motion graph, pushing many of them to extremes.
+  - title: 'Feature Demo: NeoCharacterController'
+    loadName: FeatureDemo_NeoCharacterController
+    thumbnail: {fileID: 2800000, guid: 09b5a2cffc132534fa7a4fd4eb6ee628, type: 3}
+    description: This level demonstrates some of the capabilities of the NeoCharacterController
+      which the NeoFPS character is built upon. This includes a simple example of
+      changing the character's gravity.
+  - title: 'Feature Demo: Jetpacks & Guided Missiles'
+    loadName: FeatureDemo_JetpacksGuidedMissiles
+    thumbnail: {fileID: 2800000, guid: c2f3f8182411fc14c815b133b400f25c, type: 3}
+    description: The jetpacks & guided missiles demo pairs a tribes style movement
+      system, featuring jetpacks and skiing, with a shoulder mounted missile launcher
+      and player tracking missile turrets.
+  - title: 'Feature Demo: Interactable Doors'
+    loadName: FeatureDemo_InteractableDoors
+    thumbnail: {fileID: 2800000, guid: bff6c8ca25b81f94bb8397f7a491dbea, type: 3}
+    description: This level demonstrates different door implementations in NeoFPS,
+      including physics based and animated doors
+  - title: 'Feature Demo: Inventory'
+    loadName: FeatureDemo_InventoryStandard
+    thumbnail: {fileID: 2800000, guid: 6a1cef9f25965d74fbddc39db8db863c, type: 3}
+    description: The inventory demo uses a separate scene, character and weapons /
+      pickups for each of the different inventory types in NeoFPS.
+  - title: 'Feature Demo: Moving Platforms'
+    loadName: FeatureDemo_MovingPlatforms
+    thumbnail: {fileID: 2800000, guid: 77e25d426e3ea864abede04713098914, type: 3}
+    description: This level showcases how the FPS character interacts with kinematic
+      platform objects in a scene including movement and rotation.
+  - title: 'Feature Demo: Swimming'
+    loadName: FeatureDemo_Swimming
+    thumbnail: {fileID: 2800000, guid: a08be16a901448746b66ea1212b20ae6, type: 3}
+    description: This level contains a number of water zones and a character with
+      a motion graph that demonstrates the new NeoFPS states
+  - title: 'Feature Demo: Ladders'
+    loadName: FeatureDemo_Ladders
+    thumbnail: {fileID: 2800000, guid: 657d4d691ecd2404d8e965c4de436606, type: 3}
+    description: This level highlights the different ladder types and setups implemented
+      in NeoFPS
+  - title: 'Feature Demo: Persistence'
+    loadName: FeatureDemo_Persistence01
+    thumbnail: {fileID: 2800000, guid: 3a419e51d2473ad41ababdd258fb0da3, type: 3}
+    description: NeoFPS now features a full save game system which can also be used
+      to persist data like character health and inventory across multiple scenes.
+  - title: 'Feature Demo: Minimal Character'
+    loadName: FeatureDemo_MinimalCharacter
+    thumbnail: {fileID: 2800000, guid: a35d2703007354945a0033b356d70f50, type: 3}
+    description: The minimal character demo is an example of a functioning first person
+      character with the absolute minimum number of NeoFPS specific features - the
+      motion graph and the mouse and gamepad aim controller.

@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d960635a0c498f4c95312b357ee4971, type: 3}
+  m_Name: PickupTemplate_WieldableBaton
+  m_EditorClassIdentifier: 
+  m_StepValues:
+  - {fileID: 114567671406517964}
+  - {fileID: 114724962280513702}
+  - {fileID: 114843060520899542}
+  - {fileID: 114280855390173936}
+  - {fileID: 114434669708478466}
+  - {fileID: 114868067770337506}
+  - {fileID: 114290900036032032}
+  - {fileID: 114578139762790736}
+  - {fileID: 114982548725864262}
+  m_StepKeys:
+  - root
+  - wieldable
+  - firearm
+  - inventoryItem
+  - inventoryMultiItem
+  - health
+  - shield
+  - audioVisual
+  - audioVisualFirearm
+--- !u!114 &114280855390173936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aac068c350eb594daeb3bf42893f02e, type: 3}
+  m_Name: inventoryItem(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  inventoryItem: {fileID: 0}
+  spawnOnAwake: 1
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114290900036032032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1570af36753804eacbd8df3ace5127, type: 3}
+  m_Name: shield(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  stepCount: 1
+  consumeType: 0
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114434669708478466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bae2feac7349e48b8096dc5132e5e1, type: 3}
+  m_Name: inventoryMultiItem(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  inventoryItems: []
+  replenishItems: 1
+--- !u!114 &114567671406517964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12fe57200b0b6fe4a88307e962d3bb07, type: 3}
+  m_Name: root(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  prefabName: WieldableBaton
+  autoPrefix: 1
+  overwriteExisting: 1
+  pickupType: 0
+  m_InteractionType: 0
+  tapOrHold: 1
+  holdDuration: 0.5
+--- !u!114 &114578139762790736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f96caa3dcca6b34cb0267130aca5201, type: 3}
+  m_Name: audioVisual(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  displayObjectType: 0
+  renderMesh: {fileID: 4300000, guid: 8e689105e0235b54fbf852842ad2a8a1, type: 3}
+  material: {fileID: 2100000, guid: 6f4fd83ee1d3f714b8ee6a73412e9b64, type: 2}
+  modelPrefab: {fileID: 0}
+  useCustomMaterial: 0
+  displayPrefab: {fileID: 0}
+  highlight: 1
+  tooltipName: Baton
+  tooltipAction: pick up
+  pickupAudio: {fileID: 8300000, guid: 6e915eda7926d8745ab800f69cafd9af, type: 3}
+  physicsType: -1
+  mass: 1
+  colliderType: 0
+  colliderMesh: {fileID: 0}
+  surfaceMaterial:
+    m_Value: 0
+--- !u!114 &114724962280513702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e50bb97ce662dd40baeb0a329ba3dad, type: 3}
+  m_Name: wieldable(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  wieldablePrefab: {fileID: 1101792277718084, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2,
+    type: 3}
+  addToWieldable: 0
+--- !u!114 &114843060520899542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be57e882a5ed7c41840d5f3d02d317f, type: 3}
+  m_Name: firearm(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  firearmPrefab: {fileID: 0}
+  addToGun: 0
+  ammoType: {fileID: 0}
+--- !u!114 &114868067770337506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff9a2de0f804f40ae09487dfc7d9f0, type: 3}
+  m_Name: health(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  healType: 0
+  healAmount: 25
+  healFactor: 0.25
+  consumeType: 1
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114982548725864262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f132f04e7616f4a8bf6f31b392e02c, type: 3}
+  m_Name: audioVisualFirearm(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 179822d630ee40646a3ce532c7a01092, type: 2}
+  displayObjectType: -1
+  renderMesh: {fileID: 0}
+  material: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  useCustomMaterial: 0
+  displayPrefab: {fileID: 0}
+  highlight: 0
+  tooltipName: My Pickup
+  tooltipAction: pick up
+  pickupAudio: {fileID: 0}
+  physicsType: -1
+  mass: 1
+  colliderType: 0
+  colliderMesh: {fileID: 0}
+  surfaceMaterial:
+    m_Value: 0
+  ammoMesh: {fileID: 0}
+  ammoAudio: {fileID: 0}

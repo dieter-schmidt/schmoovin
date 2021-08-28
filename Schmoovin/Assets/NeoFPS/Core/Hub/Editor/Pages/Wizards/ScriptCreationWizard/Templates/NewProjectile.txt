@@ -1,0 +1,35 @@
+using NeoFPS;
+using NeoFPS.ModularFirearms;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    [RequireComponent(typeof(PooledObject))]
+    public class %CLASS_NAME% : MonoBehaviour, IProjectile
+    {
+        private PooledObject m_PooledObject = null;
+
+        void Awake()
+        {
+            m_PooledObject = GetComponent<PooledObject>();
+        }
+
+        void ReleaseProjectile()
+        {
+            m_PooledObject.ReturnToPool();
+        }
+
+        public void Fire(Vector3 position, Vector3 velocity, float gravity, IAmmoEffect effect, Transform ignoreRoot, LayerMask layers, IDamageSource damageSource = null)
+        {
+            // The object will already have been spawned from the pooling system at this point, but is only set to active after this has been called
+
+            // position is the muzzle tip position
+            // velocity is the velocity for the projectile based on shooter module settings
+            // gravity is based on shooter module settings
+            // effect is the effect to apply on hitting a target -> effect.Hit (RaycastHit hit, Vector3 rayDirection, float totalDistance, IDamageSource damageSource);
+            // ignoreRoot is the root of the shooter's hierarchy, used to filter out accidental collisions with the shooter
+            // layers is the physics layers the projectile should collide with
+            // damage source is passed to the ammo effect for things like friendly fire filtering
+        }
+    }
+}

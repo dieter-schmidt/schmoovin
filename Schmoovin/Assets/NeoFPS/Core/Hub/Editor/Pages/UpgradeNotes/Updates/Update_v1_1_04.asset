@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_04
+  m_EditorClassIdentifier: 
+  version: 1104
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - New pooled object surface hit FX
+    - Added new demo realistic particle system effects for weapon muzzle flashes
+    - New demo bullet trails and projectiles
+    - Overheat system for firearms including barrel glow, heat-haze and HUD heat bar
+    - New standard shaders for firearm VFX and interactive object highlighting
+    - 'Added transition settings for weapon move aimer, using different easing functions '
+    text: 
+    links: []
+    highlightObjects:
+    - text: Muzzle Effects
+      gameObject: {fileID: 102900000, guid: 1b7eefd49f6762a44a73b36a5da2029a, type: 3}
+    - text: Projectiles
+      gameObject: {fileID: 102900000, guid: 5ce84eb4f0ec0ff4dbd7a50246940142, type: 3}
+    - text: Hitscan Bullet Trails
+      gameObject: {fileID: 102900000, guid: 010ced5881ef85e4f9c729f0372b8e9f, type: 3}
+    - text: Shaders
+      gameObject: {fileID: 102900000, guid: 9bcb57923d027664bb4135529be98ab8, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - Added Aim Rotation property to WeaponMoveAimer module
+    - New weapon VFX available
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []

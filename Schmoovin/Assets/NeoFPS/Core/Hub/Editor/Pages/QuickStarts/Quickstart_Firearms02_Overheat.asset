@@ -1,0 +1,289 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b564cd860b30340832620160250c95, type: 3}
+  m_Name: Quickstart_Firearms02_Overheat
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 3dbfa0b5390fee041a267bcdd91569e1, type: 3}
+    darkSkinImage: {fileID: 0}
+    title: Weapon Overheat
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The NeoFPS firearms have an optional barrel heat system that has both a
+      visual effect and an overheat mechanic, blocking the gun from firing until it
+      cools down.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 5675f2bb8d624d24cad6a1f4392bcfae, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: As the gun fires it heats the barrel, applying a glow effect, and showing
+      a heat haze above it. There is also a corresponding HUD heat bar that you can
+      use to show the heat status if you want.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Adding Overheat To A Firearm
+    h3Heading: 
+    bulletPoints: []
+    text: Lets walk through adding the overheat system to the demo assault rifle so
+      that you can see what goes into it. First up, open the assault rifle prefab
+      for editing.
+    links: []
+    highlightObjects:
+    - text: Assault Rifle Prefab
+      gameObject: {fileID: 1152804995060304, guid: 5586913d6e0ce934da6bed04cc353246,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: Add the "Firearm Overheat" component to the firearm root object.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 2ff309afbf59f9b4ea32eda8b30431ba, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'The component is broken into 3 sections: Glow, Haze, and Overheat.'
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Glow
+    bulletPoints: []
+    text: 'To make the gun barrel glow as it heats up, you need to use a material
+      using one of the "NeoFPS Glow" shaders. These include both metallic and specular
+      versions, and can apply the glow in one of 3 ways:'
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The "Alpha Masked" variants allow you to specify a mask texture for the
+      glow. The glow will be strongest where the mask is white, and will not appear
+      at all where it is black.
+    links: []
+    highlightObjects:
+    - text: NeoFPS/Standard/GlowMetallic (Alpha Masked)
+      gameObject: {fileID: 4800000, guid: 032555954b6f009439416d508abc0670, type: 3}
+    - text: NeoFPS/Standard/GlowSpecular (Alpha Masked)
+      gameObject: {fileID: 4800000, guid: 3618a27bef52bae42b201b092a47fc70, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The "Distance Masked" variants allow you to specify a local position in
+      the material, as well as a glow distance. The glow will be strongest at that
+      position, and fade out based on the radius.
+    links: []
+    highlightObjects:
+    - text: NeoFPS/Standard/GlowMetallic (Distance Masked)
+      gameObject: {fileID: 4800000, guid: bcc0fe7955b2bb54888cab9b58b552dd, type: 3}
+    - text: NeoFPS/Standard/GlowSpecular (Distance Masked)
+      gameObject: {fileID: 4800000, guid: 6901dba193d9405459582e04e6968355, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The "Position Masked" variants allow you to specify a start and end point
+      in the Z-axis. The glow will be strongest at that center of these 2 points,
+      and fade out towards the limits.
+    links: []
+    highlightObjects:
+    - text: NeoFPS/Standard/GlowMetallic (Position Masked)
+      gameObject: {fileID: 4800000, guid: 25b6a01fe1cca2b48b634f793a8ec4c3, type: 3}
+    - text: NeoFPS/Standard/GlowSpecular (Position Masked)
+      gameObject: {fileID: 4800000, guid: a7e97d8c9bc2fa24f8e304f04d08ef61, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The shaders have been created using Amplify Shader Editor, allowing you
+      to easily modify them or use them as the basis for your own glow shaders if
+      you own the asset.
+    links:
+    - text: Asset Store - Amplify Shader Editor
+      url: https://assetstore.unity.com/packages/tools/visual-scripting/amplify-shader-editor-68570?aid=1011l58Ft
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: There is also an example material set up for the demo assault rifle. Since
+      the assault rifle's barrel is not a separate mesh, this uses the distance masked
+      glow shader, and the position matches the muzzle tip of the gun.
+    links: []
+    highlightObjects:
+    - text: Example Glow Material
+      gameObject: {fileID: 2100000, guid: 2c36867809d4c7b49b5e3316681934ae, type: 2}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: Navigate through the assault rifle hierarchy to find the "WeaponAssaultRifle"
+      object. This is the body of the gun and includes the barrel.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: a332dd801db14bd45807677cf340a53e, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: Assign the example material to the Mesh Renderer materials as shown.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: c2a764fa5698c844198d57557e04c353, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "You will then need to set the \"Glow Renderer\" property on the \"Firearm
+      Overheat\" component to point at this object. Once done, the assault rifle barrel
+      will start to glow as the weapon heats up.\r\n\r\nThe \"Glow Material Index\"
+      is the index of the material to use in the material array on the renderer component.
+      This is useful for weapons that use multiple materials for different sub-meshes.
+      The \"Glow Threshold\" is the heat the weapon must reach before it starts to
+      glow. This prevents single shots from causing the barrel to flash warm."
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Haze
+    bulletPoints: []
+    text: "To add heat haze above the gun barrel, you can use a simple billboard with
+      a heat haze material. This will always orient towards the camera as the gun
+      moves around.\r\n\r\nAn example heat haze prefab is provided. Drag and drop
+      this as a child of the \"WeaponAssaultRifle\" object so that it moves with the
+      gun, and position it above the gun barrel."
+    links: []
+    highlightObjects:
+    - text: Example Heat Haze Billboard Prefab
+      gameObject: {fileID: 7580822839265203795, guid: 62f14d7f561f0c144b1411baa7b1b97f,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "Once you have placed the billboard, you will need to assign it to the \"Glow
+      Renderer\" property on the \"Firearm Overheat\" component. At this point, the
+      haze will fade in as the barrel heats up, and fade back out as it cools down
+      again.\r\n\r\nThe \"Haze Material Index\" is the index of the material to use
+      in the material array on the renderer component. This would be useful if the
+      haze is actually built into the barrel mesh. The \"Haze Threshold\" is the heat
+      level above which the haze starts to appear."
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Overheat
+    bulletPoints: []
+    text: 'The overheat properties define how the weapon behaves as it heats up. The
+      heat is treated as a 0 to 1 range. "Heat Per Shot" is the amount of heat gained
+      every time the weapon shoots, while "Heat Lost Per Second" is the cooldown rate.
+      Damping adds a bit of lag to the temperature change to make it appear more natural.
+      Experiment with these properties to get the best feel. For example, the following
+      settings are a good starting point for the assault rifle:'
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints:
+    - '"Heat Per Shot" = 0.025'
+    - '"Heat Lost Per Second" = 0.1'
+    - '"Damping" = 0.75'
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "Setting the \"Do Overheat\" check box to false means that the overheat
+      effect is purely visual. If you want the weapon to stop working when it hits
+      the maximum heat, then you will need to set \"Do Overheat\" to true. This means
+      that the firearm's trigger will be blocked once the heat reaches 1, and unblocked
+      again once it reaches the \"Cooling Threshold\" value. \r\n\r\nYou can also
+      use the \"Overheat Sound\" and the \"On Overheat ()\" event once the heat limit
+      is reached, enabling you to add extra feedback to the effect. Both of these
+      are triggered the moment the heat hits maximum."
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Setting Up The HUD
+    h3Heading: 
+    bulletPoints: []
+    text: A sample HUD element is provided that displays the current weapon heat,
+      along with a warning when the firearm overheats. You can see it in the screenshot
+      above.
+    links: []
+    highlightObjects:
+    - text: HUD Firearm Overheat Bar Prefab
+      gameObject: {fileID: 1378389579096780, guid: ff48f5dff7523a24296363f0c122e010,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: This HUD prefab should be dropped inside the NeoFPS HUD's Fade object alongside
+      other HUD elements such as the health and ammo counters.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 7ee812f4628361e40a1fbbe643d58394, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: This HUD element will be hidden automatically when the selected gun does
+      not have a "Firearm Overheat" component attached, and will appear when a weapon
+      that does use one is selected.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Further Reading
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links:
+    - text: NeoFPS Manual - Modular Firearms
+      url: https://docs.neofps.com/manual/weapons-modular-firearms.html
+    - text: NeoFPS Reference - Firearm Overheat Monobehaviour
+      url: https://docs.neofps.com/manual/weaponsref-mb-firearmoverheat.html
+    highlightObjects: []
+    actions: []
+  subFolder: Firearms
+  pageName: quickstart_firearms_overheat

@@ -1,0 +1,24 @@
+using NeoFPS.ModularFirearms;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseEjectorBehaviour
+    {
+        public override bool ejectOnFire
+        {
+            get { return true; } // If false, you will need to call eject manually (for example, in an animation event)
+        }
+
+        public override void Eject()
+        {
+            // Actually eject a shell here
+        }
+        
+        // Useful virtual methods:
+        // Awake()
+        // OnEnable()
+        // OnDisable()
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

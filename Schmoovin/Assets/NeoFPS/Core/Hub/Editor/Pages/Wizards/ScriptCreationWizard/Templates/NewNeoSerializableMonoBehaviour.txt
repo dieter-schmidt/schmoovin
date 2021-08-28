@@ -1,0 +1,26 @@
+using NeoSaveGames;
+using NeoSaveGames.Serialization;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : MonoBehaviour, INeoSerializableComponent
+    {
+        // Static readonly NeoSerializationKey objects are the most efficient way of storing keys
+        private readonly static NeoSerializationKey k_FloatValueKey = new NeoSerializationKey("floatValue");
+
+        public float floatValue = 5f;
+
+        public virtual void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode)
+        {
+            // Write any properties here (method does not need to be virtual)
+            writer.WriteValue(k_FloatValueKey, floatValue);
+        }
+
+        public virtual void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo)
+        {
+            // Read any properties here (method does not need to be virtual)
+            reader.TryReadValue(k_FloatValueKey, out floatValue, floatValue);
+        }
+    }
+}

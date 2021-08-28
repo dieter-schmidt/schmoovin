@@ -1,0 +1,29 @@
+﻿using UnityEngine;
+using UnityEditor;
+using NeoFPS.CharacterMotion.States;
+using NeoFPS.CharacterMotion.Parameters;
+using NeoFPSEditor.CharacterMotion;
+
+namespace %NAMESPACE%
+{
+    [CustomEditor(typeof(%CLASS_NAME%))]
+    public class %EDITOR_NAME% : MotionGraphStateEditor
+    {
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            // Optional
+        }
+
+        protected override void OnDisable()
+        {
+            base.OnDisable();
+            // Optional
+        }
+
+        protected override void OnInspectorGUIInternal()
+        {
+            // Use EditorGUILayout methods here to inspect state properties
+        }
+    }
+}

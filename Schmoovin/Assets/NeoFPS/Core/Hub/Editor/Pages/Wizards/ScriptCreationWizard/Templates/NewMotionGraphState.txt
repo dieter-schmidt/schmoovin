@@ -1,0 +1,125 @@
+﻿using UnityEngine;
+using NeoFPS.CharacterMotion;
+using NeoFPS.CharacterMotion.MotionData;
+using NeoFPS.CharacterMotion.Parameters;
+using NeoFPS.CharacterMotion.States;
+using NeoSaveGames.Serialization;
+
+namespace %NAMESPACE%
+{
+    [MotionGraphElement("%CLASS_NAME%", "%CLASS_NAME%")]
+    public class %CLASS_NAME% : MotionGraphState
+    {
+        private static readonly NeoSerializationKey k_OutVelocityKey = new NeoSerializationKey("outVelocity");
+
+        private Vector3 m_OutVelocity = Vector3.zero;
+        private bool m_Completed = false;
+
+        public override bool completed
+        {
+            // Optional override if state is intended to have limited duration
+            // If not used, base will always return false
+            get { return m_Completed; } 
+        }
+
+        public override Vector3 moveVector
+        {
+            get { return m_OutVelocity * Time.deltaTime; }
+        }
+
+        public override bool applyGravity
+        {
+            get { return true; } // Optional override (base returns true)
+        }
+
+        public override bool applyGroundingForce
+        {
+            get { return true; } // Optional override (base returns true)
+        }
+
+        public override bool ignorePlatformMove
+        {
+            get { return false; } // Optional override (base returns false)
+        }
+
+        public override bool ignoreExternalForces
+        {
+            get { return false; } // Optional override (base returns false)
+        }
+
+        public override void OnValidate()
+        {
+            base.OnValidate();
+            // Optional - validate any inspector serialized values here
+        }
+
+        public override void Initialise(IMotionController c)
+        {
+            base.Initialise(c);
+            // Optional
+        }
+
+        public override bool CheckCanEnter()
+        {
+            return base.CheckCanEnter();
+            // Optional - used for states that have dependencies as a kind of forced condition
+        }
+
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            m_Completed = false;
+            // Optional
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+            m_Completed = false;
+            m_OutVelocity = Vector3.zero;
+            // Optional
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            // Implement movement logic here. For states that should have a limited duration, you
+            // can use the completed system to signify when it is done
+
+            if (!m_Completed)
+            {
+                m_OutVelocity = characterController.velocity;
+                m_Completed = true;
+            }
+        }
+
+        public override void ChangeFrameOfReference(Vector3 deltaPos, Quaternion deltaRot)
+        {
+            base.ChangeFrameOfReference(deltaPos, deltaRot);
+            // Optional - used in situations like teleport to reorient vectors based on new rotation
+        }
+
+        public override void WriteProperties(INeoSerializer writer)
+        {
+            base.WriteProperties(writer);
+            // Optional - write any data saved by the NeoSave system here
+            writer.WriteValue(k_OutVelocityKey, m_OutVelocity);
+        }
+
+        public override void ReadProperties(INeoDeserializer reader)
+        {
+            base.ReadProperties(reader);
+            // Optional - read any data saved by the NeoSave system here
+            reader.TryReadValue(k_OutVelocityKey, out m_OutVelocity, m_OutVelocity);
+        }
+
+        public override void CheckReferences(IMotionGraphMap map)
+        {
+            base.CheckReferences(map);
+            // Update your reference properties here.
+            // Any property that references another graph element (parameter, data, etc) should be remapped, eg:
+            // property1 = map.Swap(property1);
+        }
+    }
+}

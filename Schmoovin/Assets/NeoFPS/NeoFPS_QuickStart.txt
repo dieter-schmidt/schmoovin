@@ -1,0 +1,51 @@
+Thanks for choosing NeoFPS!
+
+NeoFPS Hub =========================================
+
+The first time you import NeoFPS you should see a pop-up appear displaying a page for required Unity settings. NeoFPS requires various project settings to be applied in order to function correctly. This Unity settings page allows you to apply all settings automatically, groups of settings automatically, or to manually apply settings via the Unity project settings menus.
+
+For more information on installation, including a guide to applying the settings manually, visit:
+https://docs.neofps.com/manual/neofps-installation.html
+
+The NeoFPS Hub has a table of contents on the left hand side. It provides a central place to access various NeoFPS settings, item creation wizards, a demo scene browser with readmes, and quickstart guides to help you get started.
+
+The hub can be set to re-open each time the project is opened via the checkbox on the front page (this is switched off by default). To access the hub again, you can find it via the toolbar at:
+Tools / NeoFPS / NeoFPS Hub
+
+PACKAGE DEPENDENCIES =========================================
+
+NeoFPS makes use of Unity's Post Processing package. On first adding NeoFPS to your project this should be installed automatically.
+
+Due to a bug in the post-processing package code, the package can throw errors if it is imported into a project that already has PostProcessingLayer components referenced on prefab or scene objects. These errors can usually be fixed by restarting Unity. If they persist, then you can remove the PostProcessingLayer component from the cameras in the scenes and prefabs and re-add it (you can find them on the characters and the spawners/test setup objects). You will need to set the layer property in the component to **PostProcessingVolumes**.
+
+SAMPLE SCENES =========================================
+
+Sample scenes that demonstrate NeoFPS' features can be found in the project folder:
+NeoFPS / Samples / SinglePlayer / Scenes
+
+The "MainMenu" scene MUST be set as scene 0, while the "Loading" scene MUST be set as build index 1
+
+You can find a demo scene browser inside the hub. This gives a brief description of each scene and allows you to open it from the hub or highlight it in the project view. Once a demo scene is opened via the hub, the readme will be displayed, highlighting important elements in the scene and linking to relevant documentation.
+
+HELPFUL LINKS =========================================
+
+Official Website: https://neofps.com
+
+Documentation: https://docs.neofps.com
+
+Tutorials: https://neofps.com/tutorials
+
+Discord: https://discord.neofps.com
+
+Support: https://neofps.com/support
+
+Support Email: mailto:support@neofps.com
+
+Roadmap: https://neofps.com/roadmap
+
+Trello: https://trello.neofps.com
+
+
+If you like NeoFPS and want to support its development, please consider leaving an honest review on the Unity Asset Store.
+
+If you are having problems using NeoFPS then please visit the support site linked above or email support@neofps.com for assistance. The discord is an active community, and most queries will be answered quickly from there.

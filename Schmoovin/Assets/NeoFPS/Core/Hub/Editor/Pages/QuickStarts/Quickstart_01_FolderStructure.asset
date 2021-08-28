@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b564cd860b30340832620160250c95, type: 3}
+  m_Name: Quickstart_01_FolderStructure
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 3dbfa0b5390fee041a267bcdd91569e1, type: 3}
+    darkSkinImage: {fileID: 0}
+    title: NeoFPS Folder Structure
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: NeoFPS is a large asset with multiple scripts and demo scenes. This quickstart
+      breaks down the main root folders, and then shows where to find specific items.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Root Folders
+    h3Heading: 
+    bulletPoints: []
+    text: 'Inside the NeoFPS folder, there are 4 sub-folders:
+
+
+      All the scripts for the main NeoFPS systems are contained in the "Core" folder
+      and its subfolders'
+    links: []
+    highlightObjects:
+    - text: Core Folder
+      gameObject: {fileID: 102900000, guid: c56c72f3d27cb4740bf5c9da13828180, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "The \"Samples\" sub-folder contains all the sample assets that demo the
+      various NeoFPS features. The \"Shared\" sub-folder contains assets such as audio
+      files, geometry and prefabs which could be shared between single-player and
+      multi-player games.\r\n\r\nMultiplayer is a planned feature for NeoFPS, though
+      how it will be integrated with the existing asset has not been finalised.\r\n\r\nThe
+      \"SinglePlayer\" sub-folder contains all of the demo scenes and single-player
+      specific assets for demonstrating the features of NeoFPS."
+    links: []
+    highlightObjects:
+    - text: Samples Folder
+      gameObject: {fileID: 102900000, guid: 3b393d3e56288a84fbd4c612d0f0733c, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The "Resources" folder contains the persistent settings and manager assets
+      that control how the various systems work together. It is advised to edit these
+      via the "Game Settings" and "Managers" sections in the NeoFPS hub.
+    links: []
+    highlightObjects:
+    - text: Resources Folder
+      gameObject: {fileID: 102900000, guid: 25e18c52d7fe43140b42817320aa90fc, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The "Constants" folder contains generated constants scripts, which allow
+      you to expand on a number of NeoFPS features without writing your own scripts.
+      Generated constants include things like the crosshair IDs, surface material
+      IDs and input buttons. You can modify the constants via the "NeoFPSConstants"
+      asset in this folder.
+    links: []
+    highlightObjects:
+    - text: Constants Folder
+      gameObject: {fileID: 102900000, guid: a2c9b7c7eb0a6b340881351417a0b6ff, type: 3}
+    - text: NeoFPSConstants Asset
+      gameObject: {fileID: 11400000, guid: 725f444462e450c478aa24f8bff070f8, type: 2}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Important Locations
+    h3Heading: Demo Scenes
+    bulletPoints: []
+    text: "The demo scenes are found within the \"Samples\" folder.\r\n\r\nThe \"Demo
+      Facility\" is a demo scene which ties a number of features together. This will
+      grow along with the asset.\r\n\r\nThe \"Feature Demos\" are demo scenes which
+      show individual features of NeoFPS in context.\r\n\r\nThe \"Loading Screen\"
+      scene contains the loading screen which is displayed when loading a scene via
+      the save system or the NeoSceneManager.\r\n\r\nThe \"Main Menu\" scene is the
+      starting point for the built game. If you hit escape in any of the demo scenes
+      and then select \"Main Menu\", it will load this scene."
+    links: []
+    highlightObjects:
+    - text: Demo Facility Folder
+      gameObject: {fileID: 102900000, guid: 354d6f2a72391cf40a5cf5f83287501a, type: 3}
+    - text: Feature Demos Folder
+      gameObject: {fileID: 102900000, guid: 8d1ded66846230244a82a037d1ea16c8, type: 3}
+    - text: Loading Screen Folder
+      gameObject: {fileID: 102900000, guid: 50e8c1d47c00a97439470756f854bd90, type: 3}
+    - text: Main Menu Folder
+      gameObject: {fileID: 102900000, guid: 97c342229d046df4783f432a01f92604, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: You can also access the demo scenes via the "Demo Scenes" section in the
+      NeoFPS Hub. This also allows you to view a readme for each scene, highlighting
+      important objects, assets and scripts.
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show Demo Scenes Page
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: demo_scenes
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Characters
+    bulletPoints: []
+    text: "The main characters to look at are the \"NeoFPS Solo Player Character\"
+      and the \"Prototype Spawnerless Character\".\r\n\r\nThe \"NeoFPS Solo Player
+      Character\" is used in the majority of the sample scenes and ties into the NeoFPS
+      spawning system. The spawning system uses a separate object for the player and
+      the player character, allowing the player to switch between controlling multiple
+      characters. The \"NeoFPS Solo Player\" is the player prefab that is used for
+      all of the demo characters except for the spawnerless one.\r\n\r\nThe \"Prototype
+      Spawnerless Character\" bypasses the spawning system and can be useful when
+      testing or building prototypes. It has a player behaviour attached directly
+      to the character, and if it dies then the current scene will be reloaded."
+    links: []
+    highlightObjects:
+    - text: NeoFPSSoloPlayerCharacter Prefab
+      gameObject: {fileID: 1000010381446024, guid: 2345fa8f7cb306c499e81465ce9c1bd8,
+        type: 3}
+    - text: NeoFPSSoloPlayer Prefab
+      gameObject: {fileID: 1762867495287774, guid: 3b4baa77285369e46a04c916100b828b,
+        type: 3}
+    - text: PrototypeSpawnerlessCharacter Prefab
+      gameObject: {fileID: 1000010381446024, guid: 13027a0fcdf7ebb4ea590983994f42a0,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: Other useful characters include the inventory demo characters which are
+      set up with different inventories to the standard demo character. A number of
+      the movement demos also use a different character prefab with the main difference
+      being a different motion graph assigned to the motion controller. This includes
+      the parkour, swimming and ladder demo characters. For more information, you
+      can view the scene breakdowns via the "Demo Scenes" section in the NeoFPS Hub
+    links: []
+    highlightObjects: []
+    actions:
+    - text: Show Demo Scenes Page
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: ShowPage
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: demo_scenes
+              m_BoolArgument: 0
+            m_CallState: 1
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Weapons
+    bulletPoints: []
+    text: 'The weapon prefabs and assets can be found in the following folder:'
+    links: []
+    highlightObjects:
+    - text: Weapon Prefabs Folder
+      gameObject: {fileID: 102900000, guid: a1052c0615e515e44852d27e6f52fcb2, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "The subfolders include the prefabs for the ammo pickups and inventory items,
+      the weapon drops/pickups, the projectiles and the bullet casings.\r\n\r\nThe
+      different inventory options require the weapons and pickups/drops to be set
+      up differently and therefore have their own prefabs. You can find those in the
+      sub-folders named after the inventory option:"
+    links: []
+    highlightObjects:
+    - text: Quick-Switch Weapons Folder
+      gameObject: {fileID: 102900000, guid: ec1f6dfb743dd654581b3b18ba82245f, type: 3}
+    - text: Stacked Weapons Folder
+      gameObject: {fileID: 102900000, guid: 9e7bd4f56efe133419d17c53b6cdac4a, type: 3}
+    - text: Swappable Weapons Folder
+      gameObject: {fileID: 102900000, guid: 9533fe657f70e204c87ff18ec91801f7, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'Ammo types, inventory objects and pickups can be found in the ammo folder:'
+    links: []
+    highlightObjects:
+    - text: Ammo Folder
+      gameObject: {fileID: 102900000, guid: 4a5bbf8458746914c8048bbe047218d4, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Further Reading
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links:
+    - text: Manual - Getting Started
+      url: https://docs.neofps.com/manual/neofps-getting-started.html
+    - text: Manual - Generated Constants
+      url: https://docs.neofps.com/manual/neofps-generated-constants.html
+    - text: Manual - Samples
+      url: https://docs.neofps.com/manual/samples-index.html
+    - text: Manual - First Person Characters
+      url: https://docs.neofps.com/manual/fpcharacters-index.html
+    - text: Manual - Weapons
+      url: https://docs.neofps.com/manual/weapons-index.html
+    highlightObjects: []
+    actions: []
+  subFolder: 
+  pageName: quickstart_folder_structure

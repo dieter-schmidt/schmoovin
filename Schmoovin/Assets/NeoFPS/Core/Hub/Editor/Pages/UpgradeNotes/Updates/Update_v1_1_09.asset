@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_09
+  m_EditorClassIdentifier: 
+  version: 1109
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - New firearm optics
+    - Holographic & red dot sights
+    - Render texture based scopes
+    - Stencil based scopes
+    - Weapon flashlights
+    - Laser pointers
+    - New weapon attachments geometry (system not yet implemented)
+    text: 
+    links: []
+    highlightObjects:
+    - text: New Optics & Attachments Prefabs
+      gameObject: {fileID: 102900000, guid: 4f4099f2d3a4aa9489498aae8f8e15ff, type: 3}
+    - text: Demo Facility Weapons Prefabs
+      gameObject: {fileID: 102900000, guid: 024c172a0c873924cbad982d8796e26f, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - Can't set first person camera FoV directly any-more. Need to use the SetFov()
+      method instead
+    - Added HideCrosshair() and ShowCrosshair() to ICrosshairDriver interface
+    - Added accuracyKickMultiplier property to IRecoilHandler interface
+    - Added modeSwitcher property to IModularFirearm, and now mode switchers must
+      register themselves
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - Added new FpsInputButton constants (ability, flashlight, optics brightness +/-)
+    - Changes to key-binding options UI may require updates for custom versions (new
+      keyboard layout options)
+    - WeaponMoveAimer and HeadMoveAimer now store aim offset transform and calculate
+      offsets on start (uses old vector offsets if no transform is set)
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []

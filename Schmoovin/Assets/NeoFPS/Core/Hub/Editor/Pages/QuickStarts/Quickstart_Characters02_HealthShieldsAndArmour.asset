@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b564cd860b30340832620160250c95, type: 3}
+  m_Name: Quickstart_Characters02_HealthShieldsAndArmour
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 3dbfa0b5390fee041a267bcdd91569e1, type: 3}
+    darkSkinImage: {fileID: 0}
+    title: Health, Shields & Armour
+  m_Sections:
+  - image: {fileID: 2800000, guid: a0baa24cd4ef303459c1dd0512ade821, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: NeoFPS provides a range of systems for character health. All health and
+      damage is processed by a character's health manager. Sheilds and armour modify
+      the damage before it reaches the health manager.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Character Health
+    h3Heading: 
+    bulletPoints: []
+    text: A character's health is processed by the health manager component. The BasicHealthManager
+      component simply tracks a health value and triggers the character's death when
+      health reaches zero. You can also use a RechargingHealthManager, which will
+      wait for a short duration after it takes damage, and then recharge the health
+      over time. If the character is damaged again, the recharge is interrupted.
+    links: []
+    highlightObjects:
+    - text: BasicHealthManager.cs Script
+      gameObject: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+    - text: RechargingHealthManager.cs Script
+      gameObject: {fileID: 11500000, guid: 56ec0273a9120ea4d9e8052b3c5dbceb, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: To try the recharging health system, simply remove the BasicHealthManager
+      from any of the demo characters, and replace it with a RechargingHealthManager.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 0a3806cd32db99e43b089b6e2f46c080, type: 3}
+    h2Heading: Damage Handlers
+    h3Heading: 
+    bulletPoints: []
+    text: Weapons and explosions don't deal damage directly to a character's health
+      manager. Instead, they affect the damage handlers attached to its colliders.
+      These damage handlers can modify the damage amount before passing it to the
+      health manager, and also flag the damage as critical if the handler is attached
+      to a weaker collider such as the head. The BasicDamageHandler simply multiplies
+      the incoming damage by a set value. The EventDamageHandler does the same, but
+      also fires UnityEvents when damage is received that you can use to trigger effects.
+    links: []
+    highlightObjects:
+    - text: BasicDamageHandler.cs Script
+      gameObject: {fileID: 11500000, guid: ba672449e0da655428ca4e3b031f6b65, type: 3}
+    - text: EventDamageHandler.cs Script
+      gameObject: {fileID: 11500000, guid: e4d5ed5102f960f4abfd636271c56432, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: You can also implement your own damage handlers by implementing the IDamageHandler
+      interface. This is useful for things like passing damage to an AI asset's health
+      systems instead of the NeoFPS systems.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: 7e17f4e542fe66a4aba1df42e7cc94dd, type: 3}
+    h2Heading: Shields
+    h3Heading: 
+    bulletPoints: []
+    text: Energy shields can be added to a character by adding a ShieldManager component,
+      and replacing its damage handlers with ShieldedDamageHandler components.
+    links: []
+    highlightObjects:
+    - text: ShieldManager.cs Script
+      gameObject: {fileID: 11500000, guid: 4480beccd2f001346865fd2ebe505fa1, type: 3}
+    - text: ShieldedDamageHandler.cs Script
+      gameObject: {fileID: 11500000, guid: 4ed2e4a68e5a0444ca8fb40b38c5af59, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'Incoming damage is passed to the shield manager first, and any damage that
+      isn''t absorbed is passed on to the health manager afterwards.
+
+      Energy shields are split into multiple shield steps. These steps are damaged
+      in sequence, and if a step''s shield charge reaches zero, that step is broken.
+      If a shield step takes damage and is not broken, it will recharge after a short
+      pause.
+
+      You can restore broken shield steps by collecting a ShieldPickup.'
+    links: []
+    highlightObjects:
+    - text: ShieldPickup.cs Script
+      gameObject: {fileID: 11500000, guid: 2f32c0ab33426c8468924217f35b9bdd, type: 3}
+    actions: []
+  - image: {fileID: 2800000, guid: 2b55cb2be30f7ce439143bf48e504a93, type: 3}
+    h2Heading: Armour
+    h3Heading: 
+    bulletPoints: []
+    text: 'The NeoFPS armour system uses one or more armour inventory items. The quantity
+      of these armour items the character is carrying act as its armour amount. When
+      the character takes damage, it is subtracted from armour first, and that armour
+      is removed from the character''s inventory. Any remaining damage is then passed
+      to the health manager.
+
+      You can add armour to a character by replacing its damage handlers with ArmouredDamageHandler
+      components.'
+    links: []
+    highlightObjects:
+    - text: ArmouredDamageHandler.cs Script
+      gameObject: {fileID: 11500000, guid: ab21951efcf38ce4d83d6510c34a09d2, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'Each ArmouredDamageHandler lets you specify an inventory item key, so you
+      can have different armour types and values for each of the limbs if desired.
+
+      If a character''s armour is damaged, then it can be restored by collecting more
+      using an InventoryItemPickup.'
+    links: []
+    highlightObjects:
+    - text: InventoryItemPickup Prefab
+      gameObject: {fileID: 11500000, guid: 435a52505a395c2459ad493ac1228696, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Using Armour And Shields Together
+    h3Heading: 
+    bulletPoints: []
+    text: If you want a character to use armour and shields together, then you can
+      follow the setup steps above, but use ShieldedArmouredDamageHandler components
+      for the relevant colliders.
+    links: []
+    highlightObjects:
+    - text: ShieldedArmouredDamageHandler.cs Script
+      gameObject: {fileID: 11500000, guid: 518d9bee85267a2419df6c8aa895ece3, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: Shields are subtracted from incoming damage before armour.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Further Reading
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links:
+    - text: Manual - Health and Damage
+      url: https://docs.neofps.com/manual/health-index.html
+    highlightObjects: []
+    actions: []
+  subFolder: Characters
+  pageName: quickstart_character_healthshieldsarmour

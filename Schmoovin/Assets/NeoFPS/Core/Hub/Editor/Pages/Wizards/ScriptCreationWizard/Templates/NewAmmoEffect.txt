@@ -1,0 +1,18 @@
+using NeoFPS;
+using NeoFPS.ModularFirearms;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseAmmoEffect
+    {
+        public override void Hit(RaycastHit hit, Vector3 rayDirection, float totalDistance, float speed, IDamageSource damageSource)
+        {
+        }
+        
+        // Useful virtual methods:
+        // bool isModuleValid { get; } - To show an error in the ModularFirearm inspector if dependencies haven't been met
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

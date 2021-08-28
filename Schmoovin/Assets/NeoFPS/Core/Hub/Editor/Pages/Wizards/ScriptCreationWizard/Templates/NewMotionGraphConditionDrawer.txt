@@ -1,0 +1,24 @@
+﻿using UnityEngine;
+using UnityEditor;
+using NeoFPS.CharacterMotion.Parameters;
+using NeoFPSEditor.CharacterMotion;
+
+namespace %NAMESPACE%
+{
+    [MotionGraphConditionDrawer(typeof(%CLASS_NAME%))]
+    public class %EDITOR_NAME% : MotionGraphConditionDrawer
+    {
+        protected override int numLines
+        {
+            get { return base.numLines; }
+            // Optional override - the number of lines required to inspect all properties (default = 1)
+        }
+
+        protected override void Inspect (Rect line1)
+        {
+            // Use the EditorGUI methods to inspect properties here
+            // You can move to the next line using:
+            // line1.y += EditorGUIUtility.singleLineHeight;
+        }        
+    }
+}

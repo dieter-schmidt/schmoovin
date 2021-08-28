@@ -1,0 +1,37 @@
+using NeoSaveGames.Serialization;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : NeoSerializationFormatter<%TARGET_TYPE%>
+    {
+        // Register the formatter with the save manager.
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+#if UNITY_EDITOR // Required for the formatter to be recognised when selecting components to serialize
+        [UnityEditor.InitializeOnLoadMethod]
+#endif
+        static void Register()
+        {
+            NeoSerializationFormatters.RegisterFormatter(new %CLASS_NAME%());
+        }
+
+        // Static readonly NeoSerializationKey objects are the most efficient way to specify keys
+        private static readonly NeoSerializationKey k_ExampleKey = new NeoSerializationKey("exampleValue");
+
+        protected override void WriteProperties(INeoSerializer writer, %TARGET_TYPE% from, NeoSerializedGameObject nsgo)
+        {
+            //writer.WriteValue(k_ExampleKey, from.exampleValue);
+
+            // Write other properties here...
+        }
+
+        protected override void ReadProperties(INeoDeserializer reader, %TARGET_TYPE% to, NeoSerializedGameObject nsgo)
+        {
+            //Vector3 v;
+            //if (reader.TryReadValue(k_ExampleKey, out v, Vector3.zero))
+            //    to.exampleValue = v;
+
+            // Read other properties here...
+        }
+    }
+}

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e04e63b2647a74b9d7e3e447ef7168, type: 3}
+  m_Name: FpsManager_InventoryDatabase
+  m_EditorClassIdentifier: 
+  m_Tables:
+  - {fileID: 114276629212092870}
+  - {fileID: 11400000, guid: 93d7afea8f417ef4c8bbb1495058786e, type: 2}
+--- !u!114 &114276629212092870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad59028d840f1714bb55bdcae6538f4d, type: 3}
+  m_Name: FpsInventoryKey Constants
+  m_EditorClassIdentifier: 
+  m_Entries:
+  - m_DisplayName: MeleeKnife
+    m_Id: 1
+  - m_DisplayName: MeleeBaton
+    m_Id: 2
+  - m_DisplayName: MeleeReserved01
+    m_Id: 3
+  - m_DisplayName: MeleeReserved02
+    m_Id: 4
+  - m_DisplayName: MeleeReserved03
+    m_Id: 5
+  - m_DisplayName: FirearmPistol
+    m_Id: 6
+  - m_DisplayName: FirearmRevolver
+    m_Id: 7
+  - m_DisplayName: FirearmShotgun
+    m_Id: 8
+  - m_DisplayName: FirearmAssaultRifle
+    m_Id: 9
+  - m_DisplayName: FirearmSniperRifle
+    m_Id: 10
+  - m_DisplayName: FirearmGrenadeLauncher
+    m_Id: 11
+  - m_DisplayName: ThrownFragGrenade
+    m_Id: 12
+  - m_DisplayName: ThrownReserved01
+    m_Id: 13
+  - m_DisplayName: WeaponReserved01
+    m_Id: 14
+  - m_DisplayName: WeaponReserved02
+    m_Id: 15
+  - m_DisplayName: Ammo9mm
+    m_Id: 16
+  - m_DisplayName: Ammo357magnum
+    m_Id: 17
+  - m_DisplayName: Ammo12gauge
+    m_Id: 18
+  - m_DisplayName: Ammo556mm
+    m_Id: 19
+  - m_DisplayName: Ammo762mm
+    m_Id: 20
+  - m_DisplayName: Ammo40mmHE
+    m_Id: 21
+  - m_DisplayName: AmmoReserved01
+    m_Id: 22
+  - m_DisplayName: AmmoReserved02
+    m_Id: 23
+  - m_DisplayName: AmmoReserved03
+    m_Id: 24
+  - m_DisplayName: AmmoReserved04
+    m_Id: 25
+  - m_DisplayName: ArmourBody
+    m_Id: 26
+  - m_DisplayName: ArmourHelmet
+    m_Id: 27
+  - m_DisplayName: KeyRing
+    m_Id: 28
+  - m_DisplayName: Lockpick
+    m_Id: 29

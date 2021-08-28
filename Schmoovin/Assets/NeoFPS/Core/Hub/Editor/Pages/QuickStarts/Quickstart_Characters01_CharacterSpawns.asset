@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b564cd860b30340832620160250c95, type: 3}
+  m_Name: Quickstart_Characters01_CharacterSpawns
+  m_EditorClassIdentifier: 
+  m_Header:
+    image: {fileID: 2800000, guid: 3dbfa0b5390fee041a267bcdd91569e1, type: 3}
+    darkSkinImage: {fileID: 0}
+    title: Character Spawns
+  m_Sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: In NeoFPS, characters are not placed directly in the scene. Instead, they
+      are spawned in at runtime using the spawn manager and one or more spawn points.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 2800000, guid: b83122e1cb1a02543a66ac941e312345, type: 3}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: 'This approach has a number of advantages: Firstly, the game can easily
+      respawn the player character on death. It is also easy to implement checkpoints
+      by adding spawn points at various points along a level and enabling/disabling
+      them as you progress. Finally, it allows you to extend the game with things
+      like character selection or spawner specific inventory loadouts.'
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Characters Vs Players
+    h3Heading: 
+    bulletPoints: []
+    text: "One of the important concepts of the NeoFPS spawner system is that the
+      player and the player character are separate entities. The player is persistent,
+      while their character can die and respawn or be replaced multiple times. This
+      is an approach that is designed with multiplayer in mind, but can also have
+      some big advantages in single-player games too.\r\n\r\nMost of the NeoFPS samples
+      use the \"NeoFpsSoloPlayerCharacter\" prefab for the player character. The other
+      demo characters are mostly variations on this prefab with one of the components
+      replaced such as the inventory or the motion graph."
+    links: []
+    highlightObjects:
+    - text: NeoFpsSoloPlayerCharacter Prefab
+      gameObject: {fileID: 1000010381446024, guid: 2345fa8f7cb306c499e81465ce9c1bd8,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: All of the samples use the "NeoFpsSoloPlayer" prefab for the player object.
+    links: []
+    highlightObjects:
+    - text: NeoFpsSoloPlayer Prefab
+      gameObject: {fileID: 1762867495287774, guid: 3b4baa77285369e46a04c916100b828b,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: It is advised to make a copy of the character prefab for your own levels
+      so that you can make changes to it without conflicting with future updates to
+      NeoFPS. The player prefab is currently very simple, and there is no real need
+      to create a duplicate until more player object features are added.
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Spawners And Game Modes
+    h3Heading: 
+    bulletPoints: []
+    text: "The spawn system is comprised of 3 parts:\r\n\r\nThe spawn point is a location
+      where the player character can be spawned. It has options for how frequently
+      it can be used and how to test for overlapping objects, as well as a Unity event
+      which is invoked when a character is spawned."
+    links:
+    - text: Reference - SpawnPoint Behaviour
+      url: https://docs.neofps.com/manual/fpcharactersref-mb-spawnpoint.html
+    highlightObjects:
+    - text: SpawnPoint.cs Script
+      gameObject: {fileID: 11500000, guid: ecba0a4bec55ef14ea52ab5cd9f2a237, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: The spawn manager is an optional behaviour which can be used to specify
+      what order spawn points are selected in. The default mode is "Round Robin",
+      which means that each spawn point will be used in sequence. You can add this
+      behaviour to an object in the scene in order to change the spawn mode.
+    links:
+    - text: Reference - SpawnManager Behaviour
+      url: https://docs.neofps.com/manual/fpcharactersref-mb-spawnmanager.html
+    highlightObjects:
+    - text: SpawnManager.cs Script
+      gameObject: {fileID: 11500000, guid: 0cb8d82964795e441a96e9e562ebbf2c, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: 
+    bulletPoints: []
+    text: "The game mode is responsible for actually triggering the spawn character
+      spawn. The demos use a game mode called the \"FpsSoloGameMinimal\", though this
+      can be replaced or extended to achieve the functionality you desire. This example
+      game mode allows you to specify the character and player prefabs to use, along
+      with the behaviour when the player character dies. This can be handled by respawning
+      the character, reloading the scene, returning to the main menu, or loading from
+      the last save game.\r\n\r\nAn example of how to extend the game modes is that
+      you could create a new game mode behaviour which derives from the FpsSoloGameMinimal
+      class. You could add a range of character prefabs to choose from, and delay
+      spawning until the player has picked their desired character from a UI menu."
+    links:
+    - text: Reference - FpsSoloGameMinimal Behaviour
+      url: https://docs.neofps.com/manual/neofpsref-mb-fpssologameminimal.html
+    highlightObjects:
+    - text: FpsSoloGameMinimal.cs Script
+      gameObject: {fileID: 11500000, guid: b2b6fada922338741a0513488bd5ee1e, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: SimpleSpawnerAndGameMode Prefab
+    bulletPoints: []
+    text: A simple way to get started with NeoFPS is to drop the "SimpleSpawnerAndGameMode"
+      prefab into your scenes. This prefab contains a spawn point and the minimal
+      game mode with default settings. On hitting play, this prefab will immediately
+      spawn a character at its position. If the spawn point is blocked by another
+      object (for example, it is overlapping the ground) then the player character
+      will not spawn. You can either set the spawn point to not perform overlap checks,
+      or you can place extra spawn points in the scene by creating a new gameobject,
+      and adding the SpawnPoint behaviour to them.
+    links: []
+    highlightObjects:
+    - text: SimpleSpawnerAndGameMode Prefab
+      gameObject: {fileID: 1307091013466442, guid: 0486aeb450a3baf42957763257d19131,
+        type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: Further Reading
+    h3Heading: 
+    bulletPoints: []
+    text: 
+    links:
+    - text: Manual - Game Modes
+      url: https://docs.neofps.com/manual/neofps-game-modes.html
+    - text: Manual - FPS Characters
+      url: https://docs.neofps.com/manual/fpcharacters-index.html
+    highlightObjects: []
+    actions: []
+  subFolder: Characters
+  pageName: quickstart_character_spawns

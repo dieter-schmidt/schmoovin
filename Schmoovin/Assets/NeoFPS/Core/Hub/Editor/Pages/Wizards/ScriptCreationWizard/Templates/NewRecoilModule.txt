@@ -1,0 +1,26 @@
+using NeoFPS.ModularFirearms;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseRecoilHandlerBehaviour
+    {
+        public override void Recoil()
+        {
+            base.Recoil(); // Base calls onRecoil event
+        }
+
+        public override void SetRecoilMultiplier(float move, float rotation)
+        {
+            // Used when entering / exiting aim-down-sights
+        }
+
+        // Useful virtual methods:
+        // OnValidate()
+        // Awake()
+        // OnEnable()
+        // OnDisable()
+        // bool isModuleValid { get; } - To show an error in the ModularFirearm inspector if dependencies haven't been met
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}

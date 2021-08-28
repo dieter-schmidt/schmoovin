@@ -1,0 +1,33 @@
+﻿using UnityEditor;
+using UnityEngine;
+
+namespace NeoFPS
+{
+    [CustomEditor(typeof(WeaponBob), true)]
+    public class WeaponBobEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_HorizontalBobRange"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_VerticalBobRange"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_HorizontalAngleRange"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_VerticalAngleRange"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_BobCurve"));
+
+            // Bob interval
+            var keyProp = serializedObject.FindProperty("m_BobIntervalParamKey");
+            EditorGUILayout.PropertyField(keyProp);
+            if (string.IsNullOrEmpty(keyProp.stringValue))
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("m_BobInterval"));
+            else
+            {
+                ++EditorGUI.indentLevel;
+                var intervalProp = serializedObject.FindProperty("m_BobInterval");
+                EditorGUILayout.PropertyField(intervalProp, new GUIContent("Fallback Bob Interval", intervalProp.tooltip));
+                --EditorGUI.indentLevel;
+            }
+
+            serializedObject.ApplyModifiedProperties();
+        }
+    }
+}

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4f4abcda999cd4b8254e506b70e10f, type: 3}
+  m_Name: Update_v1_1_03
+  m_EditorClassIdentifier: 
+  version: 1103
+  sections:
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: New Features
+    bulletPoints:
+    - Added new ricochet ammo effects (ballistic and hitscan) which stack with normal
+      bullet effects
+    - Added new penetration ammo effects (ballistic and hitscan) which stack with
+      normal bullet effects
+    - Added new pooled hitscan bullet trails
+    text: 
+    links: []
+    highlightObjects:
+    - text: Hitscan Bullet Trails
+      gameObject: {fileID: 102900000, guid: 010ced5881ef85e4f9c729f0372b8e9f, type: 3}
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Script Changes
+    bulletPoints:
+    - Ammo effect modules now have a speed parameter in Hit(). This will be positive
+      infinity for hitscan
+    text: 
+    links: []
+    highlightObjects: []
+    actions: []
+  - image: {fileID: 0}
+    h2Heading: 
+    h3Heading: Component Changes
+    bulletPoints:
+    - Hitscan shooters now used pooled bullet trails. Old style hitscan bullet trails
+      will no longer appear and the line renderer component can be removed from firearms.
+    text: 
+    links: []
+    highlightObjects:
+    - text: Example Hitscan Trail
+      gameObject: {fileID: 7221158435157611233, guid: aa778a05183bd9744bb698aa5e064855,
+        type: 3}
+    actions: []

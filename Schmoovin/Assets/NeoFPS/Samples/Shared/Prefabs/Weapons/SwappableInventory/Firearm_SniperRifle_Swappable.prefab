@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &114030008102765136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783660794401483061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c32d589158629e44af40aa16d6b54aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Quantity: 1
+  m_OnAddToInventory:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnRemoveFromInventory:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnQuantityChange:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ItemKey:
+    m_Value: 10
+  m_DisplayImage: {fileID: 21300010, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
+  m_MaxQuantity: 1
+  m_DeselectAction: 0
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeselect:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DropObject: {fileID: 9104212418361936917, guid: 0ae334e0e6eb4384c88ef37a38abf79d,
+    type: 3}
+  m_Category:
+    m_Value: 0
+--- !u!1001 &784760135637187429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1152804995060304, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_Name
+      value: Firearm_SniperRifle_Swappable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114729187900465382, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8096f68f8e8ba1e4ca12fb702e08f387, type: 3}
+--- !u!1 &783660794401483061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1152804995060304, guid: 8096f68f8e8ba1e4ca12fb702e08f387,
+    type: 3}
+  m_PrefabInstance: {fileID: 784760135637187429}
+  m_PrefabAsset: {fileID: 0}

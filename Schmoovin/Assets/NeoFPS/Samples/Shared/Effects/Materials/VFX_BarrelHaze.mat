@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VFX_BarrelHaze
+  m_Shader: {fileID: 4800000, guid: e4b519344bc97a8409537a0c16943714, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3100
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DistortionMap:
+        m_Texture: {fileID: 2800000, guid: 0e91f4f669fef4848862675435f2b335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HazeMask:
+        m_Texture: {fileID: 2800000, guid: 395fe69e8ad4b0245a89a619083952be, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0e91f4f669fef4848862675435f2b335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: cd460ee4ac5c1e746b7a734cc7cc64dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _snow_normal:
+        m_Texture: {fileID: 2800000, guid: 24e31ecbf813d9e49bf7a1e0d4034916, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Amp: 0.02
+    - _Float0: 0
+    - _Freq: 10
+    - _HazeHAmp: 0.05
+    - _HazeHFreq: 1
+    - _HazeIntensity: 1
+    - _HazeMaxIntensity: 0.25
+    - _HazeNormalIntensity: 0.072
+    - _HazeSpeed: 0.1
+    - _HazeVSpeed: 0.1
+    - _HorizontalAmplitude: 0.15
+    - _HorizontalFrequency: 0.3
+    - _InvFade: 3
+    - _MaxHazeIntensity: 1
+    - _Strength: 0.39664936
+    - _VerticalSpeed: 0.098
+    - __dirty: 0
+    - _horizontalAmp: 0
+    - _horizontalAmplitdue: 0
+    - _horizontalAmplitude: 0.05
+    - _horizontalFreq: 0
+    - _horizontalFrequency: 0.25
+    - _verticalSpeed: 0.1
+    m_Colors:
+    - _HazeMaxStrength: {r: 0.05, g: 0.025, b: 0, a: 0}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}

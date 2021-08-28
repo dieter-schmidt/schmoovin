@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d960635a0c498f4c95312b357ee4971, type: 3}
+  m_Name: PickupTemplate_ShieldBoost_Contact
+  m_EditorClassIdentifier: 
+  m_StepValues:
+  - {fileID: 114869301163570240}
+  - {fileID: 114393836436969634}
+  - {fileID: 114329162847616176}
+  - {fileID: 114274507291391508}
+  - {fileID: 114072646490586872}
+  - {fileID: 114366862731459068}
+  - {fileID: 114391312697020456}
+  - {fileID: 114189087424592486}
+  - {fileID: 114865855349024450}
+  m_StepKeys:
+  - root
+  - wieldable
+  - firearm
+  - inventoryItem
+  - inventoryMultiItem
+  - health
+  - shield
+  - audioVisual
+  - audioVisualFirearm
+--- !u!114 &114072646490586872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bae2feac7349e48b8096dc5132e5e1, type: 3}
+  m_Name: inventoryMultiItem(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  inventoryItems: []
+  replenishItems: 1
+--- !u!114 &114189087424592486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f96caa3dcca6b34cb0267130aca5201, type: 3}
+  m_Name: audioVisual(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  displayObjectType: 0
+  renderMesh: {fileID: 4300014, guid: 049adc1fb1fd31f4f87797d2001bdcaf, type: 3}
+  material: {fileID: 2100000, guid: 665a9e6f6b082d54d83a6841a4beeb4d, type: 2}
+  modelPrefab: {fileID: 0}
+  useCustomMaterial: 0
+  displayPrefab: {fileID: 0}
+  highlight: 0
+  tooltipName: My Pickup
+  tooltipAction: pick up
+  pickupAudio: {fileID: 0}
+  physicsType: 0
+  mass: 1
+  colliderType: 0
+  colliderMesh: {fileID: 0}
+  surfaceMaterial:
+    m_Value: 0
+--- !u!114 &114274507291391508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aac068c350eb594daeb3bf42893f02e, type: 3}
+  m_Name: inventoryItem(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  inventoryItem: {fileID: 0}
+  spawnOnAwake: 1
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114329162847616176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be57e882a5ed7c41840d5f3d02d317f, type: 3}
+  m_Name: firearm(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  firearmPrefab: {fileID: 0}
+  addToGun: 0
+  ammoType: {fileID: 0}
+--- !u!114 &114366862731459068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff9a2de0f804f40ae09487dfc7d9f0, type: 3}
+  m_Name: health(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  healType: 0
+  healAmount: 25
+  healFactor: 0.25
+  consumeType: 1
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114391312697020456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1570af36753804eacbd8df3ace5127, type: 3}
+  m_Name: shield(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  stepCount: 1
+  consumeType: 0
+  consumeResult: 0
+  respawnDuration: 5
+--- !u!114 &114393836436969634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e50bb97ce662dd40baeb0a329ba3dad, type: 3}
+  m_Name: wieldable(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  wieldablePrefab: {fileID: 0}
+  addToWieldable: 0
+--- !u!114 &114865855349024450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f132f04e7616f4a8bf6f31b392e02c, type: 3}
+  m_Name: audioVisualFirearm(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  displayObjectType: -1
+  renderMesh: {fileID: 0}
+  material: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  useCustomMaterial: 0
+  displayPrefab: {fileID: 0}
+  highlight: 0
+  tooltipName: My Pickup
+  tooltipAction: pick up
+  pickupAudio: {fileID: 0}
+  physicsType: -1
+  mass: 1
+  colliderType: 0
+  colliderMesh: {fileID: 0}
+  surfaceMaterial:
+    m_Value: 0
+  ammoMesh: {fileID: 0}
+  ammoAudio: {fileID: 0}
+--- !u!114 &114869301163570240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12fe57200b0b6fe4a88307e962d3bb07, type: 3}
+  m_Name: root(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000, guid: 31d982a565ff9e746a138794a98f420a, type: 2}
+  prefabName: ShieldBoost
+  autoPrefix: 1
+  overwriteExisting: 1
+  pickupType: 5
+  m_InteractionType: 1
+  tapOrHold: 1
+  holdDuration: 0.5

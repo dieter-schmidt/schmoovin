@@ -1,0 +1,67 @@
+using NeoFPS.Constants;
+using NeoFPS.ModularFirearms;
+using UnityEngine;
+
+namespace %NAMESPACE%
+{
+    public class %CLASS_NAME% : BaseAimerBehaviour
+    {
+        public override float aimUpDuration
+        {
+            get { return 0f; }
+        }
+
+        public override float aimDownDuration
+        {
+            get { return 0f; }
+        }
+
+        public override float fovMultiplier
+        {
+            get { return 0.75f; }
+        }
+
+        protected override void AimInternal()
+        {
+            // Called when entering aim mode
+
+            // Set the camera aim
+            if (firearm.wielder != null)
+                firearm.wielder.fpCamera.SetFov(fovMultiplier, 0.5f);
+
+            // Set to hip fire
+            SetAimState(FirearmAimState.Aiming);
+
+            // Set crosshair
+            crosshair = FpsCrosshair.None;
+
+            // This implementation is instantaneous. Look at the provided examples for alternatives and remember to override aimUpDuration to match
+        }
+
+        protected override void StopAimInternal(bool instant)
+        {
+            // Called when exiting aim mode
+			// instant will be true if switching weapons or dropping the aimed weapon
+
+            // Reset the camera aim
+            if (firearm.wielder != null)
+                firearm.wielder.fpCamera.ResetFov(0.5f);
+
+            // Send event
+            SetAimState(FirearmAimState.HipFire);
+
+            // Reset crosshair
+            crosshair = FpsCrosshair.Default;
+
+            // This implementation is instantaneous. Look at the provided examples for alternatives ann remember to override aimDownDuration to match
+        }
+
+        // Useful virtual methods:
+        // Awake()
+        // OnEnable()
+        // OnDisable()
+        // bool isModuleValid { get; } - To show an error in the ModularFirearm inspector if dependencies haven't been met
+        // void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode) - For saving runtime data using the NeoSave system
+        // void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo) - For saving runtime data using the NeoSave system
+    }
+}
