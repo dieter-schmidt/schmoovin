@@ -301,7 +301,7 @@ namespace NeoFPS
             // Ground Pound
             if (m_GroundPoundTrigger != null)
             {
-                if (GetButtonDown(FpsInputButton.LeanRight))
+                if (GetButtonDown(FpsInputButton.Use))
                     m_GroundPoundTrigger.Trigger();
             }
 
