@@ -92,10 +92,18 @@ namespace NeoFPS.CharacterMotion.States
             // Get velocity & speed
             m_OutVelocity = Vector3.ProjectOnPlane(characterController.rawVelocity, characterController.groundSurfaceNormal);
             float speed = m_OutVelocity.magnitude;
-			// ABOVE WILL BE WHY IT SPEEDS UP ON GRAVITY LOOP
-			// RAW GAINS STEP HEIGHT AND FLOOR IS SLOPED
+            // ABOVE WILL BE WHY IT SPEEDS UP ON GRAVITY LOOP
+            // RAW GAINS STEP HEIGHT AND FLOOR IS SLOPED
 
-            float newSpeed = speed - m_Deceleration.value * Time.deltaTime;
+            //DS
+            float m_DecelAdjusted = Mathf.Max(0f, (m_Deceleration.value - Vector3.Angle(Vector3.up, characterController.groundSurfaceNormal) * m_Deceleration.value/90f) - 4f);
+            Debug.Log(m_DecelAdjusted);
+            //DS
+
+            //DS
+            //float newSpeed = speed - m_Deceleration.value * Time.deltaTime;
+            float newSpeed = speed - m_DecelAdjusted * Time.deltaTime;
+            //DS
             m_OutVelocity *= newSpeed / speed;
 
             // Complete state if near stationary

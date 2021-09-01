@@ -84,6 +84,24 @@ MonoBehaviour:
   m_OnEnterMessage: ROOT ENTER
   m_OnExitMessage: ROOT EXIT
   m_LogElapsedTime: 1
+--- !u!114 &-8919779021557586318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9051b752acd6afd4ca08501614e1f846, type: 3}
+  m_Name: ModifySwitchParameterBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -245148877
+  expanded: 1
+  m_Parameter: {fileID: 7077078690369674952}
+  m_OnEnter: 1
+  m_OnExit: 0
 --- !u!114 &-8840317477933646333
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -488,11 +506,12 @@ MonoBehaviour:
   - {fileID: -8736152658328885643}
   - {fileID: 836117718346181904}
   - {fileID: -2222097629312824537}
+  - {fileID: 7329954914211573767}
   m_SerializationKey: 603440454
   stateName: 
   m_ChargeParameter: {fileID: 0}
   m_MaximumHeight:
-    m_Data: {fileID: 0}
+    m_Data: {fileID: 2402213386434091629}
     m_Value: 15
   m_MinimumHeight:
     m_Data: {fileID: 0}
@@ -566,6 +585,19 @@ MonoBehaviour:
   m_Conditions:
   - {fileID: -4607964154390401262}
   m_ConditionGroups: []
+--- !u!114 &-7570792401377575777
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 0}
 --- !u!114 &-7507137679493628683
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -690,7 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 037eb279a7874fa498e8a33304415656, type: 3}
   m_Name: Ground Dash
   m_EditorClassIdentifier: 
-  uiPosition: {x: -613.0005, y: 33.99994}
+  uiPosition: {x: -625.0005, y: 21.999939}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -698,6 +730,7 @@ MonoBehaviour:
   - {fileID: 7474238959171686129}
   - {fileID: -4986170310704635316}
   - {fileID: 8579489365844735531}
+  - {fileID: -3642239355919877342}
   m_Behaviours:
   - {fileID: -6327625397303071137}
   - {fileID: 1305017789593341021}
@@ -709,6 +742,7 @@ MonoBehaviour:
   - {fileID: -1163919627448872678}
   - {fileID: -4140681175340587476}
   - {fileID: -5385327444446953300}
+  - {fileID: -8919779021557586318}
   m_SerializationKey: -40101189
   stateName: 
   m_MoveDirection: {fileID: -1861940561804937059}
@@ -834,6 +868,7 @@ MonoBehaviour:
   - {fileID: 5810788706495346964}
   - {fileID: 8238733173999956736}
   - {fileID: -4647677716884297653}
+  - {fileID: -3987807784507125222}
   m_Behaviours:
   - {fileID: -6812853647869763297}
   - {fileID: 7393811598194685300}
@@ -842,6 +877,7 @@ MonoBehaviour:
   - {fileID: -4261148821876173860}
   - {fileID: 2541246063788907397}
   - {fileID: -5497687516035671404}
+  - {fileID: 6130420059292546242}
   m_SerializationKey: -965858177
   stateName: 
   m_MaxTurnRate:
@@ -853,6 +889,19 @@ MonoBehaviour:
   m_GravityEffect:
     m_Data: {fileID: 0}
     m_Value: 1
+--- !u!114 &-7067897091298692111
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 6286726758269970427}
 --- !u!114 &-7067365903297538676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1042,6 +1091,20 @@ MonoBehaviour:
   m_VelocityBased: 1
   m_MinSpeed: 0
   m_MaxSpeed: 29
+--- !u!114 &-6735038288418625823
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 7077078690369674952}
+  m_CompareValue: 1
 --- !u!114 &-6680341068407683928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1054,6 +1117,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
   m_Name: Condition Group
   m_EditorClassIdentifier: 
+--- !u!114 &-6622813233807740545
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9051b752acd6afd4ca08501614e1f846, type: 3}
+  m_Name: ModifySwitchParameterBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 165570356
+  expanded: 1
+  m_Parameter: {fileID: 7077078690369674952}
+  m_OnEnter: 0
+  m_OnExit: 2
 --- !u!114 &-6474516348184287984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1510,6 +1591,25 @@ MonoBehaviour:
   m_What: 2
   m_FloatValue: 4
   m_VectorValue: {x: 0, y: 0, z: 0}
+--- !u!114 &-5328721276515971088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a6b6e35dd604e4a91f74da5cd18307, type: 3}
+  m_Name: ModifyCharacterVelocityBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 1318720345
+  expanded: 1
+  m_When: 1
+  m_What: 2
+  m_FloatValue: 3
+  m_VectorValue: {x: 0, y: 0, z: 0}
 --- !u!114 &-5147586547485690292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1606,6 +1706,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 114443509508329774}
   m_CompareValue: 0
+--- !u!114 &-4966244848548593841
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 7077078690369674952}
+  m_CompareValue: 1
 --- !u!114 &-4918068146574676277
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1619,7 +1733,7 @@ MonoBehaviour:
   m_Name: groundPoundAccel
   m_EditorClassIdentifier: 
   m_DataID: -997272
-  m_Value: 1000
+  m_Value: 200
 --- !u!114 &-4890625173991669088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1664,6 +1778,20 @@ MonoBehaviour:
     m_Value: 0
   m_FrameOfReference: 0
   m_DashAngle: 0
+--- !u!114 &-4650350485453181098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 114217032280771992}
+  m_CompareValue: 1
 --- !u!114 &-4647677716884297653
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2082,6 +2210,25 @@ MonoBehaviour:
   m_OnEnterMessage: FALLING ENTER
   m_OnExitMessage: FALLING EXIT
   m_LogElapsedTime: 1
+--- !u!114 &-3987807784507125222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0004d1c6b38b2974c9780b8be7a26d48, type: 3}
+  m_Name: Connection
+  m_EditorClassIdentifier: 
+  m_Source: {fileID: -7076639973793880555}
+  m_Destination: {fileID: 114539652609836404}
+  m_TransitionOn: 0
+  m_Conditions:
+  - {fileID: 2096067304630596239}
+  - {fileID: 4495276845891669640}
+  m_ConditionGroups: []
 --- !u!114 &-3980699651494645366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2150,6 +2297,25 @@ MonoBehaviour:
   - {fileID: 7561456056512615575}
   - {fileID: -8398434119805120078}
   - {fileID: -3313767809673206852}
+  m_ConditionGroups: []
+--- !u!114 &-3642239355919877342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0004d1c6b38b2974c9780b8be7a26d48, type: 3}
+  m_Name: Connection
+  m_EditorClassIdentifier: 
+  m_Source: {fileID: -7369716251491031089}
+  m_Destination: {fileID: 114539652609836404}
+  m_TransitionOn: 0
+  m_Conditions:
+  - {fileID: 843673730027525080}
+  - {fileID: -4650350485453181098}
   m_ConditionGroups: []
 --- !u!114 &-3635422514388018999
 MonoBehaviour:
@@ -2858,6 +3024,19 @@ MonoBehaviour:
   - {fileID: -6821976707310738948}
   - {fileID: 5183099788621276108}
   m_ConditionGroups: []
+--- !u!114 &-1829449247341840175
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 6286726758269970427}
 --- !u!114 &-1790329640068135041
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2910,7 +3089,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_Property: {fileID: 5283584594946618576}
-  m_CompareValue: 1
+  m_CompareValue: 0
 --- !u!114 &-1616657504648271868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3030,7 +3209,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_TimeoutProperty: {fileID: 0}
-  m_TimeoutValue: 0.25
+  m_TimeoutValue: 0.1
 --- !u!114 &-1401525054594934393
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3210,7 +3389,7 @@ MonoBehaviour:
   m_Active: 1
   m_SerializationKey: 1396078906
   expanded: 1
-  m_Clip: {fileID: 8300000, guid: 79880d07fc1235f4fbc6131fd6784047, type: 3}
+  m_Clip: {fileID: 8300000, guid: 726f8637c77ffe346870937568a0293a, type: 3}
   m_Volume: 1
   m_Where: {x: 0, y: 0, z: 0}
   m_When: 0
@@ -3646,6 +3825,8 @@ MonoBehaviour:
   - {fileID: 5116711201203512177}
   - {fileID: 5283584594946618576}
   - {fileID: 1867755037990996379}
+  - {fileID: 6286726758269970427}
+  - {fileID: 7077078690369674952}
   m_Data:
   - {fileID: 114131737730045814}
   - {fileID: 114660871019546414}
@@ -4371,7 +4552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6f2a201b9e4034d8813652ee5adbd4, type: 3}
   m_Name: Crouch Slide
   m_EditorClassIdentifier: 
-  uiPosition: {x: -125.99982, y: 51.500153}
+  uiPosition: {x: -122.99982, y: 48.500153}
   defaultName: NewState
   m_Parent: {fileID: 114931437778338140}
   m_Connections:
@@ -5189,7 +5370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
-  uiPosition: {x: -5.500122, y: -26.000061}
+  uiPosition: {x: -5.500122, y: -27.000061}
   defaultName: NewState
   m_Parent: {fileID: 114028739362575944}
   m_Connections:
@@ -5888,6 +6069,7 @@ MonoBehaviour:
   - {fileID: 1277396801421886142}
   - {fileID: 8639864908557422886}
   - {fileID: -1007926183313762785}
+  - {fileID: -6622813233807740545}
   m_SerializationKey: -1961701378
   stateName: 
   m_DashSpeed:
@@ -6881,7 +7063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Ungrounded
   m_EditorClassIdentifier: 
-  uiPosition: {x: 250.5, y: 85}
+  uiPosition: {x: 148.49994, y: 97.00009}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -8080,9 +8262,8 @@ MonoBehaviour:
   m_Destination: {fileID: 114368051989543176}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: 3766384388350285539}
-  - {fileID: 5255508536213713756}
-  - {fileID: -1717948383265230857}
+  - {fileID: 1328408250089997758}
+  - {fileID: -6735038288418625823}
   m_ConditionGroups: []
 --- !u!114 &114809530149535740
 MonoBehaviour:
@@ -8523,7 +8704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Grounded
   m_EditorClassIdentifier: 
-  uiPosition: {x: -254.49994, y: 93}
+  uiPosition: {x: -254.49994, y: 92}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -8545,8 +8726,9 @@ MonoBehaviour:
   - {fileID: -7676134567364549335}
   - {fileID: -9135409724129251268}
   - {fileID: 6663095063566702808}
+  - {fileID: 4601483898855742644}
   m_SerializationKey: -246196450
-  internalUiPosition: {x: -5, y: -228.00002}
+  internalUiPosition: {x: -5, y: -229.00002}
   m_Container: {fileID: 11400000}
   m_States:
   - {fileID: 114541199595980860}
@@ -8896,7 +9078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Crouch
   m_EditorClassIdentifier: 
-  uiPosition: {x: -316.99985, y: 157.50012}
+  uiPosition: {x: -317.99985, y: 158.50012}
   defaultName: NewState
   m_Parent: {fileID: 114685497385480294}
   m_Connections:
@@ -9229,6 +9411,20 @@ MonoBehaviour:
   m_Volume: 0.6
   m_Where: {x: 0, y: 0, z: 0}
   m_When: 0
+--- !u!114 &843673730027525080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 8542618843833200686}
+  m_CompareValue: 0
 --- !u!114 &909427624137525658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9427,6 +9623,19 @@ MonoBehaviour:
   m_VelocityBased: 1
   m_MinSpeed: 5
   m_MaxSpeed: 27
+--- !u!114 &1328408250089997758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 6286726758269970427}
 --- !u!114 &1379331528716475551
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9762,7 +9971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55363da5be54c142a9c7b5547f419b4, type: 3}
   m_Name: Ground Pound Down
   m_EditorClassIdentifier: 
-  uiPosition: {x: 344.00125, y: -164.99893}
+  uiPosition: {x: 344.00125, y: -165.99893}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -9779,6 +9988,20 @@ MonoBehaviour:
     m_Data: {fileID: -4918068146574676277}
     m_Value: 100
   m_Damping: 0
+--- !u!114 &2096067304630596239
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 8542618843833200686}
+  m_CompareValue: 0
 --- !u!114 &2138900234106207959
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10397,7 +10620,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_Property: {fileID: -6474516348184287984}
-  m_CompareValue: 1
+  m_CompareValue: 0
 --- !u!114 &3540993694544215573
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10459,7 +10682,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_Property: {fileID: -1978752288075368101}
-  m_CompareValue: 1
+  m_CompareValue: 0
 --- !u!114 &3767012720543800143
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10733,7 +10956,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_Property: {fileID: 5283584594946618576}
-  m_CompareValue: 1
+  m_CompareValue: 0
 --- !u!114 &4421119495117779960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10774,6 +10997,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 114443509508329774}
   m_CompareValue: 0
+--- !u!114 &4495276845891669640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 114217032280771992}
+  m_CompareValue: 1
 --- !u!114 &4534139906190625494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10795,12 +11032,13 @@ MonoBehaviour:
   - {fileID: -8739836906429050025}
   - {fileID: -1382420665631015994}
   - {fileID: 1796395809807365797}
+  - {fileID: -5328721276515971088}
   m_SerializationKey: 1104721073
   stateName: 
   m_MoveDirection: {fileID: 1514377411720658538}
   m_MoveSpeed:
     m_Data: {fileID: 0}
-    m_Value: 10
+    m_Value: 15
   m_Acceleration:
     m_Data: {fileID: 0}
     m_Value: 100
@@ -10858,6 +11096,24 @@ MonoBehaviour:
   m_OutputPoint: {fileID: 0}
   m_OutputNormal: {fileID: 114474270435045330}
   m_OutputTransform: {fileID: 0}
+--- !u!114 &4601483898855742644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9051b752acd6afd4ca08501614e1f846, type: 3}
+  m_Name: ModifySwitchParameterBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -276368887
+  expanded: 1
+  m_Parameter: {fileID: 7077078690369674952}
+  m_OnEnter: 1
+  m_OnExit: 0
 --- !u!114 &4633667784382528243
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11300,6 +11556,20 @@ MonoBehaviour:
   m_OnEnterMessage: BURST ENTER
   m_OnExitMessage: BURST EXIT
   m_LogElapsedTime: 1
+--- !u!114 &5947530944054588453
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: 7077078690369674952}
+  m_CompareValue: 1
 --- !u!114 &5947731972273783278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11462,6 +11732,24 @@ MonoBehaviour:
   - {fileID: 3767012720543800143}
   - {fileID: 6008920240797077076}
   m_ConditionGroups: []
+--- !u!114 &6130420059292546242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9051b752acd6afd4ca08501614e1f846, type: 3}
+  m_Name: ModifySwitchParameterBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 1252657247
+  expanded: 1
+  m_Parameter: {fileID: 7077078690369674952}
+  m_OnEnter: 1
+  m_OnExit: 0
 --- !u!114 &6145749326677923906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11568,6 +11856,18 @@ MonoBehaviour:
   m_When: 0
   m_What: 0
   m_Value: 0
+--- !u!114 &6286726758269970427
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adeb22da40544dd4c952b62ae8925a78, type: 3}
+  m_Name: sprintTrigger
+  m_EditorClassIdentifier: 
 --- !u!114 &6441187533934140995
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11584,7 +11884,8 @@ MonoBehaviour:
   m_Destination: {fileID: 114368051989543176}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: 3514324487377887153}
+  - {fileID: -7067897091298692111}
+  - {fileID: 5947530944054588453}
   m_ConditionGroups: []
 --- !u!114 &6529813598212830922
 MonoBehaviour:
@@ -11793,6 +12094,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SlopeAngle: 49.5
   m_Comparison: 2
+--- !u!114 &7077078690369674952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a3b456335ca61438524818321f8afd, type: 3}
+  m_Name: airdashReady
+  m_EditorClassIdentifier: 
+  m_StartingValue: 1
 --- !u!114 &7116193588014707152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11825,6 +12139,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: -4274962132456150102}
   m_CompareValue: 1
+--- !u!114 &7329954914211573767
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9051b752acd6afd4ca08501614e1f846, type: 3}
+  m_Name: ModifySwitchParameterBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 1301139911
+  expanded: 1
+  m_Parameter: {fileID: 7077078690369674952}
+  m_OnEnter: 0
+  m_OnExit: 1
 --- !u!114 &7393811598194685300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11970,7 +12302,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_Property: {fileID: -1978752288075368101}
-  m_CompareValue: 1
+  m_CompareValue: 0
 --- !u!114 &7759339707407834775
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12539,9 +12871,8 @@ MonoBehaviour:
   m_Destination: {fileID: 114368051989543176}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: -7202331455922258222}
-  - {fileID: 7711944022551333647}
-  - {fileID: 4386197468560539356}
+  - {fileID: -1829449247341840175}
+  - {fileID: -4966244848548593841}
   m_ConditionGroups: []
 --- !u!114 &8685951858410778369
 MonoBehaviour:

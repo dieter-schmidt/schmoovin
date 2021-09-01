@@ -52,6 +52,11 @@ namespace NeoFPS
         [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Switch), Tooltip("The key to the sprint hold switch property in the character motion graph.")]
         private string m_SprintHoldKey = "sprintHold";
 
+        //DS
+        [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the sprint trigger property in the character motion graph.")]
+        private string m_SprintTriggerKey = "sprintTrigger";
+        //DS
+
         [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the dodge left trigger property in the character motion graph.")]
         private string m_DodgeLeftKey = "dodgeLeft";
 
@@ -89,6 +94,9 @@ namespace NeoFPS
         private SwitchParameter m_CrouchHoldProperty = null;
         private SwitchParameter m_SprintProperty = null;
         private SwitchParameter m_SprintHoldProperty = null;
+        //DS
+        private TriggerParameter m_SprintTriggerProperty = null;
+        //DS
         private TriggerParameter m_DodgeLeftTrigger = null;
         private TriggerParameter m_DodgeRightTrigger = null;
         //private TriggerParameter m_AbilityTrigger = null;
@@ -126,6 +134,9 @@ namespace NeoFPS
                 m_CrouchProperty = motionGraph.GetSwitchProperty(m_CrouchKey);
                 m_CrouchHoldProperty = motionGraph.GetSwitchProperty(m_CrouchHoldKey);
                 m_SprintProperty = motionGraph.GetSwitchProperty(m_SprintKey);
+                //DS
+                m_SprintTriggerProperty = motionGraph.GetTriggerProperty(m_SprintTriggerKey);
+                //DS
                 m_SprintHoldProperty = motionGraph.GetSwitchProperty(m_SprintHoldKey);
                 m_DodgeLeftTrigger = motionGraph.GetTriggerProperty(m_DodgeLeftKey);
                 m_DodgeRightTrigger = motionGraph.GetTriggerProperty(m_DodgeRightKey);
@@ -200,6 +211,9 @@ namespace NeoFPS
 
             // Movement modifiers
             bool sprintPress = GetButtonDown(FpsInputButton.SprintToggle);
+            //DS
+            bool sprintTrigger = GetButtonDown(FpsInputButton.SprintToggle);
+            //DS
             bool sprintHold = GetButton(FpsInputButton.Sprint);
             bool crouchPress = GetButtonDown(FpsInputButton.CrouchToggle);
             bool crouchHold = GetButton(FpsInputButton.Crouch);
@@ -217,6 +231,15 @@ namespace NeoFPS
                     sprintPress,
                     sprintHold
                 );
+
+                //DS
+                if (sprintTrigger)
+                {
+                    m_SprintTriggerProperty.Trigger();
+                }
+
+                    
+                //DS
 
                 // Cancel sprinting if crouching
                 if (crouchPress || crouchHold)
