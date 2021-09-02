@@ -20,8 +20,11 @@ namespace NeoFPS
         [SerializeField, Tooltip("Does holding the jump button charge up a jump or does the character dodge as soon as the button is pressed.")]
         private bool m_EnableChargedJump = false;
 
-		[SerializeField, Range(0.1f, 51f), Tooltip("The time it takes to charge up a full power jump if charged jumps are enabled.")]
+        [SerializeField, Range(0.1f, 51f), Tooltip("The time it takes to charge up a full power jump if charged jumps are enabled.")]
         private float m_JumpChargeTime = 0.25f;
+
+        [SerializeField, Range(0.1f, 51f), Tooltip("The time it takes to charge up a full power burst if charged bursts are enabled.")]
+        private float m_BurstChargeTime = 1f;
 
         [SerializeField, Tooltip("Toggle leaning or hold to lean.")]
         private bool m_ToggleLean = true;
@@ -77,6 +80,9 @@ namespace NeoFPS
         [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Switch), Tooltip("The key to the burst charge trigger property in the character motion graph.")]
         private string m_BurstChargeKey = "burstCharge";
 
+        [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Float), Tooltip("The key to the burst charge float property in the character motion graph.")]
+        private string m_BurstChargeFloatKey = "burstChargeFloat";
+
         //Burst Release(new)
         [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the burst charge trigger property in the character motion graph.")]
         private string m_BurstReleaseKey = "burstRelease";
@@ -103,6 +109,7 @@ namespace NeoFPS
         private TriggerParameter m_GroundPoundTrigger = null;
         private SwitchParameter m_AbilityProperty = null;
         private SwitchParameter m_BurstChargeProperty = null;
+        private FloatParameter m_BurstChargeFloatProperty = null;
         private TriggerParameter m_BurstReleaseTrigger = null;
 
         private float m_DodgeLeftTimer = 0f;
@@ -144,6 +151,7 @@ namespace NeoFPS
                 m_GroundPoundTrigger = motionGraph.GetTriggerProperty(m_GroundPoundKey);
                 m_AbilityProperty = motionGraph.GetSwitchProperty(m_AbilityKey);
                 m_BurstChargeProperty = motionGraph.GetSwitchProperty(m_BurstChargeKey);
+                m_BurstChargeFloatProperty = motionGraph.GetFloatProperty(m_BurstChargeFloatKey);
                 m_BurstReleaseTrigger = motionGraph.GetTriggerProperty(m_BurstReleaseKey);
 
                 //non properties
@@ -342,24 +350,73 @@ namespace NeoFPS
             bool burstChargeReleased = GetButtonUp(FpsInputButton.LeanLeft);
             bool burstChargePressed = GetButtonDown(FpsInputButton.LeanLeft);
 
-            if (m_BurstChargeProperty != null) 
-            { 
-                if (burstChargeReleased)
+            //if (m_BurstChargeProperty != null) 
+            //{ 
+            //    if (burstChargeReleased)
+            //    {
+            //        if (m_BurstChargeTimer <= 0f)
+            //        {
+            //            m_BurstReleaseTrigger.Trigger();
+            //        }
+            //        m_BurstChargeTimer = m_BurstChargeLength;
+            //    }
+            //    else if (burstChargeHold)
+            //    {
+            //        //charge timer
+            //        m_BurstChargeTimer -= Time.deltaTime;
+            //        m_BurstChargeProperty.on = burstChargeHold;
+            //    }
+            //    //Debug.Log(m_BurstChargeTimer);
+            //}     
+            //if (m_BurstChargeProperty != null)
+            //{
+            //    if (burstChargeReleased)
+            //    {
+            //        //if (m_BurstChargeTimer <= 0f)
+            //        //{
+            //        //set burst jump scale based on how long button is pressed before releasing
+            //        m_Character.motionController.motionGraph.SetFloat(Animator.StringToHash("burstScale"), 1 - (Mathf.Max(m_BurstChargeTimer, 0f)/m_BurstChargeLength));
+            //        m_BurstReleaseTrigger.Trigger();
+            //        //}
+            //        m_BurstChargeTimer = m_BurstChargeLength;
+            //    }
+            //    else if (burstChargeHold)
+            //    {
+            //        //charge timer
+            //        m_BurstChargeTimer -= Time.deltaTime;
+            //        m_BurstChargeProperty.on = burstChargeHold;
+            //    }
+            //    //Debug.Log(m_BurstChargeTimer);
+            //}
+            if (m_BurstReleaseTrigger != null)
+            {
+                if (m_BurstChargeFloatProperty != null)
                 {
-                    if (m_BurstChargeTimer <= 0f)
+                    if (GetButtonDown(FpsInputButton.LeanLeft))
+                        m_BurstChargeFloatProperty.value = 0f;
+
+                    if (GetButton(FpsInputButton.LeanLeft))
+                        m_BurstChargeFloatProperty.value = Mathf.Clamp01(m_BurstChargeFloatProperty.value + (Time.deltaTime / m_BurstChargeTime));
+
+                    if (GetButtonUp(FpsInputButton.LeanLeft))
                     {
                         m_BurstReleaseTrigger.Trigger();
+                        //DS START
+                        //motionGraph.GetSwitch(Animator.StringToHash("groundPoundStarted"))
+                        //DS END
                     }
-                    m_BurstChargeTimer = m_BurstChargeLength;
                 }
-                else if (burstChargeHold)
+                else
                 {
-                    //charge timer
-                    m_BurstChargeTimer -= Time.deltaTime;
-                    m_BurstChargeProperty.on = burstChargeHold;
+                    if (GetButtonDown(FpsInputButton.LeanLeft))
+                    {
+                        m_BurstReleaseTrigger.Trigger();
+                        //DS START
+                        //gpJumpElapsed = 0f;
+                        //DS END
+                    }
                 }
-                //Debug.Log(m_BurstChargeTimer);
-            }     
+            }
 
 
             // Lean

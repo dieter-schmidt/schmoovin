@@ -484,6 +484,19 @@ MonoBehaviour:
   m_OnEnterMessage: JUMPHOLD ENTER
   m_OnExitMessage: JUMPHOLD EXIT
   m_LogElapsedTime: 1
+--- !u!114 &-7800573178328465712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671d3a0fc1d4d1344924a8238c1bfa32, type: 3}
+  m_Name: burstChargeFloat
+  m_EditorClassIdentifier: 
+  m_StartingValue: 0
 --- !u!114 &-7777137064673238778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1091,6 +1104,37 @@ MonoBehaviour:
   m_VelocityBased: 1
   m_MinSpeed: 0
   m_MaxSpeed: 29
+--- !u!114 &-6761467162833515359
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7feceeba7a85a4b4e9e1cd4698576f04, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  uiPosition: {x: 126.50049, y: -583.50183}
+  defaultName: NewState
+  m_Parent: {fileID: 114539652609836404}
+  m_Connections: []
+  m_Behaviours: []
+  m_SerializationKey: 168300708
+  stateName: 
+  m_ChargeParameter: {fileID: -7800573178328465712}
+  m_MaximumHeight:
+    m_Data: {fileID: 0}
+    m_Value: 1
+  m_MinimumHeight:
+    m_Data: {fileID: 0}
+    m_Value: 0.25
+  m_GroundInfluence:
+    m_Data: {fileID: 0}
+    m_Value: 0.25
+  m_IgnoreFallSpeed: 1
+  m_UseInitialGravity: 1
 --- !u!114 &-6735038288418625823
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1180,6 +1224,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DataID: -931698
   m_Value: 18
+--- !u!114 &-6385728014698411092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a5c88e269105844b663d408a8d909d, type: 3}
+  m_Name: PlayAudioClipBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 22747939
+  expanded: 1
+  m_Clip: {fileID: 8300000, guid: 16c803d7a20187542a52fef0434ffd49, type: 3}
+  m_Volume: 1
+  m_Where: {x: 0, y: 0, z: 0}
+  m_When: 0
 --- !u!114 &-6367320427477545539
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1313,6 +1376,19 @@ MonoBehaviour:
   m_Conditions:
   - {fileID: -6680341068407683928}
   m_ConditionGroups: []
+--- !u!114 &-6070667613579466579
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671d3a0fc1d4d1344924a8238c1bfa32, type: 3}
+  m_Name: burstScale
+  m_EditorClassIdentifier: 
+  m_StartingValue: 0
 --- !u!114 &-6029066006596670910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1443,6 +1519,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: -1978752288075368101}
   m_CompareValue: 0
+--- !u!114 &-5713138857930769313
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0004d1c6b38b2974c9780b8be7a26d48, type: 3}
+  m_Name: Connection
+  m_EditorClassIdentifier: 
+  m_Source: {fileID: 114840050261656134}
+  m_Destination: {fileID: 8302091557970555541}
+  m_TransitionOn: 0
+  m_Conditions:
+  - {fileID: -1378137930236907221}
+  m_ConditionGroups: []
 --- !u!114 &-5702110424984663013
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3242,6 +3336,19 @@ MonoBehaviour:
   m_OnEnterMessage: GP CHARGE ENTER
   m_OnExitMessage: GP CHARGE EXIT
   m_LogElapsedTime: 1
+--- !u!114 &-1378137930236907221
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
+  m_Property: {fileID: -8749358381215152038}
 --- !u!114 &-1342988191487603199
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3827,6 +3934,8 @@ MonoBehaviour:
   - {fileID: 1867755037990996379}
   - {fileID: 6286726758269970427}
   - {fileID: 7077078690369674952}
+  - {fileID: -6070667613579466579}
+  - {fileID: -7800573178328465712}
   m_Data:
   - {fileID: 114131737730045814}
   - {fileID: 114660871019546414}
@@ -7103,6 +7212,8 @@ MonoBehaviour:
   - {fileID: -8779979113650021532}
   - {fileID: 3283060464076649286}
   - {fileID: 3231385646742436264}
+  - {fileID: -6761467162833515359}
+  - {fileID: 8302091557970555541}
   m_SubGraphs:
   - {fileID: 114840050261656134}
   m_DefaultEntry: {fileID: 114840050261656134}
@@ -8461,8 +8572,8 @@ MonoBehaviour:
   - {fileID: -3980699651494645366}
   - {fileID: 2419790249851179671}
   - {fileID: -293276942962189330}
-  - {fileID: 6563045159379780197}
   - {fileID: 7912190291328220606}
+  - {fileID: -5713138857930769313}
   m_Behaviours:
   - {fileID: 114816233506461234}
   - {fileID: -4025194945046619212}
@@ -9392,6 +9503,37 @@ MonoBehaviour:
   m_Parameter: {fileID: 1696283295932169292}
   m_OnEnter: 2
   m_OnExit: 0
+--- !u!114 &817472078749848542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8437d9b0fbaf544e8fa6ec48a80b6e6, type: 3}
+  m_Name: Jump Directional Variable
+  m_EditorClassIdentifier: 
+  uiPosition: {x: 110.50049, y: -417.5016}
+  defaultName: NewState
+  m_Parent: {fileID: 114539652609836404}
+  m_Connections: []
+  m_Behaviours: []
+  m_SerializationKey: 1681168430
+  stateName: 
+  m_ChargeParameter: {fileID: 0}
+  m_MaxHorizontalSpeed:
+    m_Data: {fileID: 0}
+    m_Value: 1
+  m_MaxVerticalSpeed:
+    m_Data: {fileID: 0}
+    m_Value: 1
+  m_GroundInfluence:
+    m_Data: {fileID: 0}
+    m_Value: 0.25
+  m_VelocityMode: 2
+  m_JumpPowerMode: 0
 --- !u!114 &836117718346181904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9855,6 +9997,24 @@ MonoBehaviour:
   m_PropertyA: {fileID: 114550212632796500}
   m_PropertyB: {fileID: 114300392832333136}
   m_Comparison: 4
+--- !u!114 &1809850219394643111
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0004d1c6b38b2974c9780b8be7a26d48, type: 3}
+  m_Name: Connection
+  m_EditorClassIdentifier: 
+  m_Source: {fileID: 8302091557970555541}
+  m_Destination: {fileID: 114840050261656134}
+  m_TransitionOn: 0
+  m_Conditions:
+  - {fileID: 7182372432044635904}
+  m_ConditionGroups: []
 --- !u!114 &1858533810019961171
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11362,13 +11522,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 369b841578838c24b8379d6b9df5bd48, type: 3}
-  m_Name: Burst
+  m_Name: Burst_fullpower
   m_EditorClassIdentifier: 
-  uiPosition: {x: 219.0003, y: -361.5}
+  uiPosition: {x: 289.00037, y: -333.49997}
   defaultName: NewState
   m_Parent: {fileID: 114539652609836404}
-  m_Connections:
-  - {fileID: -2756902937154650784}
+  m_Connections: []
   m_Behaviours:
   - {fileID: -5702110424984663013}
   m_SerializationKey: -776267266
@@ -12139,6 +12298,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: -4274962132456150102}
   m_CompareValue: 1
+--- !u!114 &7182372432044635904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
+  m_Name: Condition Group
+  m_EditorClassIdentifier: 
 --- !u!114 &7329954914211573767
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12672,6 +12843,39 @@ MonoBehaviour:
     m_Data: {fileID: -4918068146574676277}
     m_Value: 50
   m_Damping: 0
+--- !u!114 &8302091557970555541
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8437d9b0fbaf544e8fa6ec48a80b6e6, type: 3}
+  m_Name: Burst
+  m_EditorClassIdentifier: 
+  uiPosition: {x: 115.50104, y: -402.5009}
+  defaultName: NewState
+  m_Parent: {fileID: 114539652609836404}
+  m_Connections:
+  - {fileID: 1809850219394643111}
+  m_Behaviours:
+  - {fileID: -6385728014698411092}
+  m_SerializationKey: 903135956
+  stateName: 
+  m_ChargeParameter: {fileID: -7800573178328465712}
+  m_MaxHorizontalSpeed:
+    m_Data: {fileID: 0}
+    m_Value: 20
+  m_MaxVerticalSpeed:
+    m_Data: {fileID: 0}
+    m_Value: 10
+  m_GroundInfluence:
+    m_Data: {fileID: 0}
+    m_Value: 0.25
+  m_VelocityMode: 1
+  m_JumpPowerMode: 1
 --- !u!114 &8374343695535775410
 MonoBehaviour:
   m_ObjectHideFlags: 1
