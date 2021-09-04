@@ -322,6 +322,23 @@ MonoBehaviour:
   m_MinimumSpeed: 0.01
   m_MaximumSpeed: 25
   m_MaxRayDistance: 1
+--- !u!114 &-8162748915083464956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f037b976dda7414ebf0c1e8b356a17c, type: 3}
+  m_Name: CameraShakeBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 1455365357
+  expanded: 1
+  m_ShakeMultiplier: {fileID: 2392461963355658096}
+  m_ShakeStrength: 1
 --- !u!114 &-8048778177047714587
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -598,19 +615,6 @@ MonoBehaviour:
   m_Conditions:
   - {fileID: -4607964154390401262}
   m_ConditionGroups: []
---- !u!114 &-7570792401377575777
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: 0}
 --- !u!114 &-7507137679493628683
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -834,20 +838,6 @@ MonoBehaviour:
   m_Parameter: {fileID: 114598407327608358}
   m_What: 4
   m_Multiplier: 1
---- !u!114 &-7202331455922258222
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: 5116711201203512177}
-  m_CompareValue: 0
 --- !u!114 &-7195175660806852065
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1179,6 +1169,24 @@ MonoBehaviour:
   m_Parameter: {fileID: 7077078690369674952}
   m_OnEnter: 0
   m_OnExit: 2
+--- !u!114 &-6508979760814332038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073d14c3e9803df4a817851d5dc315b6, type: 3}
+  m_Name: BlockSwitchBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_SerializationKey: 7103557
+  expanded: 1
+  m_Parameter: {fileID: -6180121127705600611}
+  m_OnEnter: 0
+  m_OnExit: 1
 --- !u!114 &-6474516348184287984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1339,7 +1347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55363da5be54c142a9c7b5547f419b4, type: 3}
   m_Name: Ground Pound Lag
   m_EditorClassIdentifier: 
-  uiPosition: {x: -392.0007, y: -147.9997}
+  uiPosition: {x: -393.0007, y: -148.9997}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -1348,6 +1356,8 @@ MonoBehaviour:
   - {fileID: 1379331528716475551}
   - {fileID: 6867523608247738637}
   - {fileID: 3006414293010707348}
+  - {fileID: -8162748915083464956}
+  - {fileID: -6508979760814332038}
   m_SerializationKey: 620433637
   stateName: 
   m_MoveDirection: {fileID: 6928351334069922608}
@@ -2720,37 +2730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
   m_Name: Condition Group
   m_EditorClassIdentifier: 
---- !u!114 &-2756902937154650784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0004d1c6b38b2974c9780b8be7a26d48, type: 3}
-  m_Name: Connection
-  m_EditorClassIdentifier: 
-  m_Source: {fileID: 5591552039190162947}
-  m_Destination: {fileID: 114840050261656134}
-  m_TransitionOn: 0
-  m_Conditions:
-  - {fileID: 4450254643574641522}
-  m_ConditionGroups: []
---- !u!114 &-2618913504828639306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d31765eb23c6c4d9a5388e4351abc4, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: -8749358381215152038}
 --- !u!114 &-2606174161901931101
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2764,7 +2743,7 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_TimeoutProperty: {fileID: 0}
-  m_TimeoutValue: 0.5
+  m_TimeoutValue: 0.32
 --- !u!114 &-2542872083138424291
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3170,20 +3149,6 @@ MonoBehaviour:
   m_When: 0
   m_What: 0
   m_Value: 0
---- !u!114 &-1717948383265230857
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: 5283584594946618576}
-  m_CompareValue: 0
 --- !u!114 &-1616657504648271868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3868,6 +3833,20 @@ MonoBehaviour:
   m_Conditions:
   - {fileID: -3284299457692544531}
   m_ConditionGroups: []
+--- !u!114 &-2644833683060784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583769e4f28b87a49a1066e987589b80, type: 3}
+  m_Name: cameraShakeMultiplier
+  m_EditorClassIdentifier: 
+  m_DataID: -294762
+  m_Value: 5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3936,6 +3915,7 @@ MonoBehaviour:
   - {fileID: 7077078690369674952}
   - {fileID: -6070667613579466579}
   - {fileID: -7800573178328465712}
+  - {fileID: 2392461963355658096}
   m_Data:
   - {fileID: 114131737730045814}
   - {fileID: 114660871019546414}
@@ -3968,6 +3948,7 @@ MonoBehaviour:
   - {fileID: -939701681802439027}
   - {fileID: -4918068146574676277}
   - {fileID: 3013951154079267128}
+  - {fileID: -2644833683060784}
   m_RootNode: {fileID: 114028739362575944}
 --- !u!114 &71237702886149863
 MonoBehaviour:
@@ -8815,15 +8796,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Grounded
   m_EditorClassIdentifier: 
-  uiPosition: {x: -254.49994, y: 92}
+  uiPosition: {x: -254.49994, y: 93}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
+  - {fileID: -4119594135701169883}
+  - {fileID: 4713585922577451955}
   - {fileID: 114252841872181272}
   - {fileID: -8725111697616025919}
   - {fileID: 7603751665447065302}
-  - {fileID: -4119594135701169883}
-  - {fileID: 4713585922577451955}
   - {fileID: 2746726764971133118}
   - {fileID: 6016403216684705007}
   - {fileID: -4025545074424595397}
@@ -9503,37 +9484,6 @@ MonoBehaviour:
   m_Parameter: {fileID: 1696283295932169292}
   m_OnEnter: 2
   m_OnExit: 0
---- !u!114 &817472078749848542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8437d9b0fbaf544e8fa6ec48a80b6e6, type: 3}
-  m_Name: Jump Directional Variable
-  m_EditorClassIdentifier: 
-  uiPosition: {x: 110.50049, y: -417.5016}
-  defaultName: NewState
-  m_Parent: {fileID: 114539652609836404}
-  m_Connections: []
-  m_Behaviours: []
-  m_SerializationKey: 1681168430
-  stateName: 
-  m_ChargeParameter: {fileID: 0}
-  m_MaxHorizontalSpeed:
-    m_Data: {fileID: 0}
-    m_Value: 1
-  m_MaxVerticalSpeed:
-    m_Data: {fileID: 0}
-    m_Value: 1
-  m_GroundInfluence:
-    m_Data: {fileID: 0}
-    m_Value: 0.25
-  m_VelocityMode: 2
-  m_JumpPowerMode: 0
 --- !u!114 &836117718346181904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10239,6 +10189,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
   m_Name: Condition Group
   m_EditorClassIdentifier: 
+--- !u!114 &2392461963355658096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671d3a0fc1d4d1344924a8238c1bfa32, type: 3}
+  m_Name: cameraShakeMultiplier
+  m_EditorClassIdentifier: 
+  m_StartingValue: 5
 --- !u!114 &2402213386434091629
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10767,20 +10730,6 @@ MonoBehaviour:
   m_Parameter: {fileID: -4274962132456150102}
   m_OnEnter: 1
   m_OnExit: 0
---- !u!114 &3514324487377887153
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: -6474516348184287984}
-  m_CompareValue: 0
 --- !u!114 &3540993694544215573
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10829,20 +10778,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 8542618843833200686}
   m_CompareValue: 1
---- !u!114 &3766384388350285539
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: -1978752288075368101}
-  m_CompareValue: 0
 --- !u!114 &3767012720543800143
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11103,20 +11038,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 114443509508329774}
   m_CompareValue: 1
---- !u!114 &4386197468560539356
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: 5283584594946618576}
-  m_CompareValue: 0
 --- !u!114 &4421119495117779960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11131,18 +11052,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SlopeAngle: 49.5
   m_Comparison: 2
---- !u!114 &4450254643574641522
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
 --- !u!114 &4467461296617591061
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11434,20 +11343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
   m_Name: Condition Group
   m_EditorClassIdentifier: 
---- !u!114 &5255508536213713756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: 5116711201203512177}
-  m_CompareValue: 0
 --- !u!114 &5259984153590077853
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12046,6 +11941,57 @@ MonoBehaviour:
   - {fileID: -7067897091298692111}
   - {fileID: 5947530944054588453}
   m_ConditionGroups: []
+--- !u!114 &6516835837621670824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4951fc57c9d66834cb02539af56c3f8c, type: 3}
+  m_Name: CameraPulseFoVBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_SerializationKey: -1176842066
+  expanded: 1
+  m_When: 0
+  m_FovMultiplier: 1.05
+  m_PulseDuration: 0.25
+  m_PulseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &6529813598212830922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12059,24 +12005,6 @@ MonoBehaviour:
   m_Name: isFastFall
   m_EditorClassIdentifier: 
   m_StartingValue: 0
---- !u!114 &6563045159379780197
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0004d1c6b38b2974c9780b8be7a26d48, type: 3}
-  m_Name: Connection
-  m_EditorClassIdentifier: 
-  m_Source: {fileID: 114840050261656134}
-  m_Destination: {fileID: 5591552039190162947}
-  m_TransitionOn: 0
-  m_Conditions:
-  - {fileID: -2618913504828639306}
-  m_ConditionGroups: []
 --- !u!114 &6577871939672627784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12460,20 +12388,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 114641588635628614}
   m_CompareValue: 1
---- !u!114 &7711944022551333647
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea5a78367a23ca4b919922a6452c53a, type: 3}
-  m_Name: Condition Group
-  m_EditorClassIdentifier: 
-  m_Property: {fileID: -1978752288075368101}
-  m_CompareValue: 0
 --- !u!114 &7759339707407834775
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12862,6 +12776,7 @@ MonoBehaviour:
   - {fileID: 1809850219394643111}
   m_Behaviours:
   - {fileID: -6385728014698411092}
+  - {fileID: 6516835837621670824}
   m_SerializationKey: 903135956
   stateName: 
   m_ChargeParameter: {fileID: -7800573178328465712}
