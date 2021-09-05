@@ -22,7 +22,7 @@ namespace NeoFPS.CharacterMotion
         private MotionGraphDataOverrideAsset m_DataOverrides = null;
 
         [Header("Colliders")]
-        
+
         [SerializeField, Tooltip("If this is enabled, then the collider will provide an offset that can be used to provide extra height to a jump so it appears the legs are tucked up instead of the head ducked down.")]
         private bool m_UseCrouchJump = true;
 
@@ -397,13 +397,18 @@ namespace NeoFPS.CharacterMotion
                 return;
             }
             m_Initialised = true;
-            
+
             // Set local (blocks calculations conflicting between server and client if relevant)
             isLocal = local;
         }
 
         protected virtual void Start()
         {
+            //DS
+            airdashFX += StartAirdashFX;
+            gpLandFX += StartGPLandFX;
+            gdFX += toggleGDFX;
+            //DS
         }
 
         #endregion
@@ -537,7 +542,7 @@ namespace NeoFPS.CharacterMotion
 
             motionGraph.SetVector(Animator.StringToHash("playerVelocity"), characterController.velocity);
             //Debug.Log(characterController.velocity);
-            motionGraph.SetVector(Animator.StringToHash("groundDashStartVelocity"), Vector3.Dot(characterController.velocity, characterController.forward)*characterController.forward);
+            motionGraph.SetVector(Animator.StringToHash("groundDashStartVelocity"), Vector3.Dot(characterController.velocity, characterController.forward) * characterController.forward);
             //Debug.Log(characterController.velocity);
             motionGraph.SetVector(Animator.StringToHash("playerForward"), characterController.forward);
             //Debug.Log(characterController.velocity);
@@ -711,6 +716,15 @@ namespace NeoFPS.CharacterMotion
 
         private float m_StrideLength = 0f;
 
+        //DS
+        //Camera FX events
+        private UnityAction airdashFX;
+        private UnityAction gpLandFX;
+        private UnityAction gdFX;
+        [SerializeField, Tooltip("The camera effects controller used to alter time-based effects")]
+        private CameraFXController cameraFXController = null;
+        //DS
+
         public float smoothedStepRate
         {
             get;
@@ -743,10 +757,18 @@ namespace NeoFPS.CharacterMotion
         void Update()
         {
             //DS START
+            //m_PreviousState = 
+            //scale radial blur with velocity
+            cameraFXController.scaleFXWithVelocity(characterController.rawVelocity.magnitude);
+
             motionGraph.SetSwitch(Animator.StringToHash("isGroundedDS"), characterController.isGrounded);
             //Debug.Log(characterController.velocity.magnitude);
             //Debug.Log(motionGraph.GetSwitchProperty(Animator.StringToHash("burstCharge")).on);
             //motionGraph.GetEventProperty(Animator.StringToHash("landTimer")).AddListener;
+
+            motionGraph.AddEventListener(Animator.StringToHash("airdashFX"), airdashFX);
+            motionGraph.AddEventListener(Animator.StringToHash("gpLandFX"), gpLandFX);
+            motionGraph.AddEventListener(Animator.StringToHash("gdFX"), gdFX);
             //DS END
 
             // Get the stride length (if using dumb stepping, steps are counted at a strideLength of 3m when grounded)
@@ -781,6 +803,25 @@ namespace NeoFPS.CharacterMotion
                 stepCounter += smoothedStepRate * Time.deltaTime;
             }
         }
+
+
+        //DS
+        void StartAirdashFX()
+        {
+            cameraFXController.timedFX("airdash", 0.15f);
+        }
+
+        void StartGPLandFX()
+        {
+            cameraFXController.timedFX("gpland", 0.30f);
+        }
+
+        void toggleGDFX()
+        {
+            //TODO - handle gd/gd top speed transition - scale with velocity regardless of state?
+            cameraFXController.toggleFX("grounddash");
+        }
+        //DS
 
         #endregion
 
@@ -944,4 +985,5 @@ namespace NeoFPS.CharacterMotion
 #endif
         #endregion
     }
+
 }

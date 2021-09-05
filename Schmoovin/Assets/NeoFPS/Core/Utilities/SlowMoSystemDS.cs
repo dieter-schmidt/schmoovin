@@ -43,6 +43,11 @@ namespace NeoFPS
         private float m_Charge = 1f;
         private float m_CurrentChargeRate = 0f;
 
+        //DS
+        [SerializeField, Tooltip("The camera effects controller used to alter time-based effects")]
+        private CameraFXController cameraFXController = null;
+        //DS
+
         public float charge
         {
             get { return m_Charge; }
@@ -96,6 +101,13 @@ namespace NeoFPS
                 if (m_EnterSlowMoAudio != null && m_CharacterAudioHandler != null)
                     m_CharacterAudioHandler.PlayClip(m_EnterSlowMoAudio);
             }
+
+            //scale CameraFX with timescale
+            //if (cameraFXController != null)
+            //{
+            //    //call CameraFX
+            //    cameraFXController.scaleFXWithTime();
+            //}
         }
 
         public void ResetTimescale()
@@ -117,6 +129,13 @@ namespace NeoFPS
 
             if (m_ExitSlowMoAudio != null && m_CharacterAudioHandler != null)
                 m_CharacterAudioHandler.PlayClip(m_ExitSlowMoAudio);
+
+            //scale CameraFX with timescale
+            //if (cameraFXController != null)
+            //{
+            //    //call CameraFX
+            //    cameraFXController.scaleFXWithTime();
+            //}
         }
 
         //public void ResetTimescale(float scale)
@@ -159,6 +178,13 @@ namespace NeoFPS
                 charge += Time.unscaledDeltaTime * m_CurrentChargeRate;
                 if (charge == 0f && m_TimeIsScaled)
                     ResetTimescale();
+            }
+
+            ////scale CameraFX with timescale
+            if (cameraFXController != null)
+            {
+                //call CameraFX
+                cameraFXController.scaleFXWithTime();
             }
         }
         

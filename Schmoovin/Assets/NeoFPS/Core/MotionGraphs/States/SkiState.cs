@@ -97,7 +97,7 @@ namespace NeoFPS.CharacterMotion.States
 
             //DS
             float m_DecelAdjusted = Mathf.Max(0f, (m_Deceleration.value - Vector3.Angle(Vector3.up, characterController.groundSurfaceNormal) * m_Deceleration.value/90f) - 4f);
-            //Debug.Log(m_DecelAdjusted);
+            //ct Debug.Log(m_DecelAdjusted);
             //DS
 
             //DS

@@ -537,6 +537,7 @@ MonoBehaviour:
   - {fileID: 836117718346181904}
   - {fileID: -2222097629312824537}
   - {fileID: 7329954914211573767}
+  - {fileID: 8906787858503965854}
   m_SerializationKey: 603440454
   stateName: 
   m_ChargeParameter: {fileID: 0}
@@ -727,6 +728,18 @@ MonoBehaviour:
   m_FuelBurnRate: 0.5
   m_FuelDamping: 0.25
   m_MinFuelBurn: 0.25
+--- !u!114 &-7380712006194502588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e04067f54a34a4ca806a4a7e3cc21e, type: 3}
+  m_Name: gdFX
+  m_EditorClassIdentifier: 
 --- !u!114 &-7369716251491031089
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -739,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 037eb279a7874fa498e8a33304415656, type: 3}
   m_Name: Ground Dash
   m_EditorClassIdentifier: 
-  uiPosition: {x: -625.0005, y: 21.999939}
+  uiPosition: {x: -625.0005, y: 20.999939}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -760,6 +773,7 @@ MonoBehaviour:
   - {fileID: -4140681175340587476}
   - {fileID: -5385327444446953300}
   - {fileID: -8919779021557586318}
+  - {fileID: 1641991734508605949}
   m_SerializationKey: -40101189
   stateName: 
   m_MoveDirection: {fileID: -1861940561804937059}
@@ -864,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6f2a201b9e4034d8813652ee5adbd4, type: 3}
   m_Name: Ground Dash Top Speed
   m_EditorClassIdentifier: 
-  uiPosition: {x: -796.00037, y: 194.00009}
+  uiPosition: {x: -798.00037, y: 197.00009}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -881,6 +895,7 @@ MonoBehaviour:
   - {fileID: 2541246063788907397}
   - {fileID: -5497687516035671404}
   - {fileID: 6130420059292546242}
+  - {fileID: -2712533851733740054}
   m_SerializationKey: -965858177
   stateName: 
   m_MaxTurnRate:
@@ -1358,6 +1373,7 @@ MonoBehaviour:
   - {fileID: 3006414293010707348}
   - {fileID: -8162748915083464956}
   - {fileID: -6508979760814332038}
+  - {fileID: 3711338621058325655}
   m_SerializationKey: 620433637
   stateName: 
   m_MoveDirection: {fileID: 6928351334069922608}
@@ -2245,6 +2261,23 @@ MonoBehaviour:
   m_Parameter: {fileID: -4274962132456150102}
   m_OnEnter: 2
   m_OnExit: 0
+--- !u!114 &-4075392534082745634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd3f6c1f43d9a849b6956c98b9f8a6c, type: 3}
+  m_Name: InvokeEventBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 2012289860
+  expanded: 1
+  m_Property: {fileID: 7582652414226034962}
+  m_When: 0
 --- !u!114 &-4064335273476296312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2484,7 +2517,7 @@ MonoBehaviour:
   m_SerializationKey: -1683081437
   expanded: 1
   m_Direction: {fileID: -590120925795347199}
-  m_AngleRange: 0
+  m_AngleRange: 30
   m_Flipped: 0
   m_Continuous: 1
 --- !u!114 &-3391177662755738023
@@ -2730,6 +2763,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
   m_Name: Condition Group
   m_EditorClassIdentifier: 
+--- !u!114 &-2712533851733740054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd3f6c1f43d9a849b6956c98b9f8a6c, type: 3}
+  m_Name: InvokeEventBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_SerializationKey: 416634677
+  expanded: 1
+  m_Property: {fileID: -7380712006194502588}
+  m_When: 2
 --- !u!114 &-2606174161901931101
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2756,7 +2806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c864f9b690ea7a34ba6b6c7824cb5143, type: 3}
   m_Name: Run
   m_EditorClassIdentifier: 
-  uiPosition: {x: 365.00018, y: 179.99988}
+  uiPosition: {x: 365.00018, y: 178.99988}
   defaultName: NewState
   m_Parent: {fileID: 114685497385480294}
   m_Connections:
@@ -3916,6 +3966,9 @@ MonoBehaviour:
   - {fileID: -6070667613579466579}
   - {fileID: -7800573178328465712}
   - {fileID: 2392461963355658096}
+  - {fileID: 7582652414226034962}
+  - {fileID: 4345803348704993260}
+  - {fileID: -7380712006194502588}
   m_Data:
   - {fileID: 114131737730045814}
   - {fileID: 114660871019546414}
@@ -5460,7 +5513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
-  uiPosition: {x: -5.500122, y: -27.000061}
+  uiPosition: {x: -5.500122, y: -30.000061}
   defaultName: NewState
   m_Parent: {fileID: 114028739362575944}
   m_Connections:
@@ -6160,6 +6213,7 @@ MonoBehaviour:
   - {fileID: 8639864908557422886}
   - {fileID: -1007926183313762785}
   - {fileID: -6622813233807740545}
+  - {fileID: -4075392534082745634}
   m_SerializationKey: -1961701378
   stateName: 
   m_DashSpeed:
@@ -6179,8 +6233,8 @@ MonoBehaviour:
     m_Value: 50
   m_FrameOfReference: 0
   m_DashAngle: 0
-  m_DashInTime: 0.05
-  m_DashOutTime: 0.06
+  m_DashInTime: 0.07
+  m_DashOutTime: 0.08
   m_DashOutCurve:
     serializedVersion: 2
     m_Curve:
@@ -6881,11 +6935,11 @@ MonoBehaviour:
   m_Active: 1
   m_SerializationKey: -452834381
   expanded: 1
-  m_TiltAngle: -15
+  m_TiltAngle: -10
   m_NormalisedTiltPoint: 0
   m_TiltMode: 2
   m_DirectionVector: {fileID: 0}
-  m_VelocityBased: 1
+  m_VelocityBased: 0
   m_MinSpeed: 5
   m_MaxSpeed: 10
 --- !u!114 &114500002050551632
@@ -8003,7 +8057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Controlled
   m_EditorClassIdentifier: 
-  uiPosition: {x: -2.5, y: 8}
+  uiPosition: {x: -2.5, y: 7}
   defaultName: NewState
   m_Parent: {fileID: 114877570108072272}
   m_Connections:
@@ -8796,7 +8850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Grounded
   m_EditorClassIdentifier: 
-  uiPosition: {x: -254.49994, y: 93}
+  uiPosition: {x: -254.49994, y: 92}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -9031,7 +9085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4951fc57c9d66834cb02539af56c3f8c, type: 3}
   m_Name: CameraPulseFoVBehaviour
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_SerializationKey: -1701961419
   expanded: 1
   m_When: 0
@@ -9417,7 +9471,7 @@ MonoBehaviour:
   m_Name: dashSpeed
   m_EditorClassIdentifier: 
   m_DataID: -3259424
-  m_Value: 105
+  m_Value: 80
 --- !u!114 &547437540300842720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9833,6 +9887,23 @@ MonoBehaviour:
   m_Name: up
   m_EditorClassIdentifier: 
   m_StartingValue: {x: 0, y: 1, z: 0}
+--- !u!114 &1641991734508605949
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd3f6c1f43d9a849b6956c98b9f8a6c, type: 3}
+  m_Name: InvokeEventBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 792831588
+  expanded: 1
+  m_Property: {fileID: -7380712006194502588}
+  m_When: 2
 --- !u!114 &1662744625841215308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10764,6 +10835,23 @@ MonoBehaviour:
   - {fileID: -1310182504570115961}
   - {fileID: 5411268679388318775}
   m_ConditionGroups: []
+--- !u!114 &3711338621058325655
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd3f6c1f43d9a849b6956c98b9f8a6c, type: 3}
+  m_Name: InvokeEventBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 1370492054
+  expanded: 1
+  m_Property: {fileID: 4345803348704993260}
+  m_When: 0
 --- !u!114 &3729709160685983192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11038,6 +11126,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 114443509508329774}
   m_CompareValue: 1
+--- !u!114 &4345803348704993260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e04067f54a34a4ca806a4a7e3cc21e, type: 3}
+  m_Name: gpLandFX
+  m_EditorClassIdentifier: 
 --- !u!114 &4421119495117779960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12320,6 +12420,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: 114641588635628614}
   m_CompareValue: 0
+--- !u!114 &7582652414226034962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e04067f54a34a4ca806a4a7e3cc21e, type: 3}
+  m_Name: airdashFX
+  m_EditorClassIdentifier: 
 --- !u!114 &7600121530381145795
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12633,7 +12745,7 @@ MonoBehaviour:
   m_SerializationKey: 755039428
   expanded: 1
   m_Direction: {fileID: -590120925795347199}
-  m_AngleRange: 0
+  m_AngleRange: 30
   m_Flipped: 0
   m_Continuous: 1
 --- !u!114 &8221025589932848955
@@ -13054,6 +13166,23 @@ MonoBehaviour:
   m_OutputPoint: {fileID: 0}
   m_OutputNormal: {fileID: 114474270435045330}
   m_OutputTransform: {fileID: 0}
+--- !u!114 &8906787858503965854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd3f6c1f43d9a849b6956c98b9f8a6c, type: 3}
+  m_Name: InvokeEventBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: 668139330
+  expanded: 1
+  m_Property: {fileID: 4345803348704993260}
+  m_When: 0
 --- !u!114 &8916118753536718900
 MonoBehaviour:
   m_ObjectHideFlags: 1
