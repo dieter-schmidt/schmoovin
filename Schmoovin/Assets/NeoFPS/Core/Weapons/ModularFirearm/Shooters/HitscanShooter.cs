@@ -135,7 +135,11 @@ namespace NeoFPS.ModularFirearms
             Vector3 hitPoint;
             bool didHit = PhysicsExtensions.RaycastNonAllocSingle(ray, out m_Hit, m_MaxDistance, m_Layers, ignoreRoot, queryTriggers);
             if (didHit)
+            {
+                Debug.Log(m_Hit.collider.gameObject.name);
                 hitPoint = m_Hit.point;
+            }
+
             else
                 hitPoint = startPosition + (rayDirection * m_MaxDistance);
 
@@ -149,12 +153,32 @@ namespace NeoFPS.ModularFirearms
                 {
                     hitPoint = m_Hit.point;
                     effect.Hit(m_Hit, newRayDirection, m_Hit.distance, float.PositiveInfinity, firearm as IDamageSource);
+                    //DS
+                    GameObject enemy = m_Hit.collider.gameObject;
+                    if (m_Hit.collider.gameObject.tag == "EnemyDS")
+                    {
+                        EnemyController enemyController = enemy.GetComponent<EnemyController>();
+                        enemyController.ProcessRaycastCollision(ray.direction);
+                    }
+                    //DS
                 }
             }
             else
             {
                 if (didHit)
+                {
                     effect.Hit(m_Hit, ray.direction, m_Hit.distance, float.PositiveInfinity, firearm as IDamageSource);
+                    //DS
+                    GameObject enemy = m_Hit.collider.gameObject;
+                    if (m_Hit.collider.gameObject.tag == "EnemyDS")
+                    {
+                        EnemyController enemyController = enemy.GetComponent<EnemyController>();
+                        enemyController.ProcessRaycastCollision(ray.direction);
+                    }
+                    //DS
+                }
+
+
             }
 
             // Draw the tracer line out to max distance

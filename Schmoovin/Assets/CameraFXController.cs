@@ -154,7 +154,7 @@ public class CameraFXController : MonoBehaviour
 
     public void scaleFXWithTime()
     {
-        Debug.Log(NeoFpsTimeScale.timeScale);
+        //Debug.Log(NeoFpsTimeScale.timeScale);
         //brightConSat.Brightness = Time.timeScale;
         //brightConSat.Saturation = NeoFpsTimeScale.timeScale;
         //if (Mathf.Abs(NeoFpsTimeScale.timeScale - 1f) < 0.05f)
