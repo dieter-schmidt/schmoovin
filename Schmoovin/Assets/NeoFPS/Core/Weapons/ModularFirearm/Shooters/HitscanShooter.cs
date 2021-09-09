@@ -158,7 +158,7 @@ namespace NeoFPS.ModularFirearms
                     if (m_Hit.collider.gameObject.tag == "EnemyDS")
                     {
                         EnemyController enemyController = enemy.GetComponent<EnemyController>();
-                        enemyController.ProcessRaycastCollision(ray.direction);
+                        enemyController.ProcessRaycastCollision(ray.direction, m_Hit.point);
                     }
                     //DS
                 }
@@ -173,7 +173,7 @@ namespace NeoFPS.ModularFirearms
                     if (m_Hit.collider.gameObject.tag == "EnemyDS")
                     {
                         EnemyController enemyController = enemy.GetComponent<EnemyController>();
-                        enemyController.ProcessRaycastCollision(ray.direction);
+                        enemyController.ProcessRaycastCollision(ray.direction, m_Hit.point);
                     }
                     //DS
                 }

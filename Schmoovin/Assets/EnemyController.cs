@@ -25,6 +25,10 @@ using UnityEngine;
         public float GravityMultiplier;
         public float PullMultiplier;
 
+        //DS
+        public Transform bloodFXTransform;
+        public Transform headTransform;
+
         private Rigidbody rigid;
         public Rigidbody RIGID_BODY
         {
@@ -44,13 +48,13 @@ using UnityEngine;
             //SetColliderSpheres();
         }
 
-    private IEnumerator Start()
-    {
-        yield return new WaitForSeconds(3f);
-        RIGID_BODY.AddForce(10f * Vector3.up);
-        yield return new WaitForSeconds(1f);
-        TurnOnRagdoll();
-    }
+    //private IEnumerator Start()
+    //{
+    //    yield return new WaitForSeconds(3f);
+    //    RIGID_BODY.AddForce(10f * Vector3.up);
+    //    yield return new WaitForSeconds(1f);
+    //    TurnOnRagdoll();
+    //}
 
     private void SetRagdollParts()
         {
@@ -148,14 +152,22 @@ using UnityEngine;
         }
 
     //DS
-    public void ProcessRaycastCollision(Vector3 direction)//Collision collision)
+    public void ProcessRaycastCollision(Vector3 direction, Vector3 hitPoint)//Collision collision)
     {
         //ProcessImpact(direction);
         //Debug.Log("RAYCAST COLLISION");
         ////Debug.Log(collision.collider.gameObject.name);
+
+        //Vector3 relativeHitPoint = hitPoint - transform.position;
+        //Vector3 relativeRotation = direction - transform.rotation.eulerAngles;
+        //bloodFXTransform.localPosition = relativeHitPoint;
+        //bloodFXTransform.localEulerAngles = relativeRotation;
+        bloodFXTransform.gameObject.SetActive(true);
+
         Debug.Log(direction);
-        //RIGID_BODY.AddForce(5f * Vector3.up);
+        RIGID_BODY.AddForce(5f * Vector3.up);
         TurnOnRagdoll();
+        GameObject.Find("AudioEnemyHit").GetComponent<AudioSource>().Play();
     }
 
     //private IEnumerator ProcessImpact(Vector3 direction)
