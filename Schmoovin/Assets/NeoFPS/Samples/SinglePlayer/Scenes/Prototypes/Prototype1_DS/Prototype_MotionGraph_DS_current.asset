@@ -695,6 +695,7 @@ MonoBehaviour:
   m_Behaviours:
   - {fileID: -7887600491927511446}
   - {fileID: -8991070759389934632}
+  - {fileID: -6855279246761899161}
   m_SerializationKey: 2096282247
   stateName: 
   m_HorizontalAcceleration:
@@ -1049,6 +1050,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedf3c3827666940a3bf369582ccec2, type: 3}
   m_Name: Condition Group
   m_EditorClassIdentifier: 
+--- !u!114 &-6855279246761899161
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf74f6af54c3fdd47ab34b1e2a4aedbf, type: 3}
+  m_Name: BodyTiltBehaviourDS
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_SerializationKey: 1882829343
+  expanded: 1
+  m_TiltAngle: 90
+  m_NormalisedTiltPoint: 0
+  m_TiltMode: 4
+  m_DirectionVector: {fileID: 0}
+  m_VelocityBased: 0
+  m_MinSpeed: 0
+  m_MaxSpeed: 10
 --- !u!114 &-6853531659142794577
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3750,6 +3773,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Filter: 128
   m_FilterType: 1
+--- !u!114 &-469398658036433642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf74f6af54c3fdd47ab34b1e2a4aedbf, type: 3}
+  m_Name: BodyTiltBehaviourDS
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -1380963559
+  expanded: 1
+  m_TiltAngle: 360
+  m_NormalisedTiltPoint: 0
+  m_TiltMode: 4
+  m_DirectionVector: {fileID: 0}
+  m_VelocityBased: 0
+  m_MinSpeed: 0
+  m_MaxSpeed: 10
 --- !u!114 &-387486486474712027
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4695,7 +4740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6f2a201b9e4034d8813652ee5adbd4, type: 3}
   m_Name: Crouch Slide
   m_EditorClassIdentifier: 
-  uiPosition: {x: -122.99982, y: 48.500153}
+  uiPosition: {x: -123.99982, y: 47.500153}
   defaultName: NewState
   m_Parent: {fileID: 114931437778338140}
   m_Connections:
@@ -4704,6 +4749,7 @@ MonoBehaviour:
   - {fileID: 114098734033758492}
   - {fileID: 114491802556567124}
   - {fileID: 4943071440754069616}
+  - {fileID: 3625002865181502106}
   m_SerializationKey: -70725949
   stateName: 
   m_MaxTurnRate:
@@ -5513,7 +5559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
-  uiPosition: {x: -5.500122, y: -32.00006}
+  uiPosition: {x: -5.500122, y: -33.00006}
   defaultName: NewState
   m_Parent: {fileID: 114028739362575944}
   m_Connections:
@@ -6932,13 +6978,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5585ca367d34bad42b93e35b8054e2a5, type: 3}
   m_Name: BodyTiltBehaviour
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_SerializationKey: -452834381
   expanded: 1
   m_TiltAngle: -10
   m_NormalisedTiltPoint: 0
   m_TiltMode: 2
-  m_DirectionVector: {fileID: 0}
+  m_DirectionVector: {fileID: 6928351334069922608}
   m_VelocityBased: 0
   m_MinSpeed: 5
   m_MaxSpeed: 10
@@ -7221,6 +7267,7 @@ MonoBehaviour:
   - {fileID: 2804271074218657610}
   - {fileID: 7759339707407834775}
   - {fileID: 2522854689532147902}
+  - {fileID: -469398658036433642}
   m_SerializationKey: -812367954
   internalUiPosition: {x: 5, y: -263.00015}
   m_Container: {fileID: 11400000}
@@ -8057,7 +8104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Controlled
   m_EditorClassIdentifier: 
-  uiPosition: {x: -2.5, y: 7}
+  uiPosition: {x: -2.5, y: 6}
   defaultName: NewState
   m_Parent: {fileID: 114877570108072272}
   m_Connections:
@@ -8068,7 +8115,7 @@ MonoBehaviour:
   - {fileID: 114001350993591664}
   - {fileID: 4633667784382528243}
   m_SerializationKey: -747802859
-  internalUiPosition: {x: -2.999878, y: -223.99998}
+  internalUiPosition: {x: -2.999878, y: -224.99998}
   m_Container: {fileID: 11400000}
   m_States:
   - {fileID: 114575881305943388}
@@ -8874,7 +8921,7 @@ MonoBehaviour:
   - {fileID: 6663095063566702808}
   - {fileID: 4601483898855742644}
   m_SerializationKey: -246196450
-  internalUiPosition: {x: -5, y: -229.00002}
+  internalUiPosition: {x: -5, y: -230.00002}
   m_Container: {fileID: 11400000}
   m_States:
   - {fileID: 114541199595980860}
@@ -9224,7 +9271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Crouch
   m_EditorClassIdentifier: 
-  uiPosition: {x: -317.99985, y: 158.50012}
+  uiPosition: {x: -317.99985, y: 157.50012}
   defaultName: NewState
   m_Parent: {fileID: 114685497385480294}
   m_Connections:
@@ -10835,6 +10882,28 @@ MonoBehaviour:
   - {fileID: -1310182504570115961}
   - {fileID: 5411268679388318775}
   m_ConditionGroups: []
+--- !u!114 &3625002865181502106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf74f6af54c3fdd47ab34b1e2a4aedbf, type: 3}
+  m_Name: BodyTiltBehaviourDS
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -562272981
+  expanded: 1
+  m_TiltAngle: 90
+  m_NormalisedTiltPoint: 0
+  m_TiltMode: 4
+  m_DirectionVector: {fileID: 0}
+  m_VelocityBased: 0
+  m_MinSpeed: 0
+  m_MaxSpeed: 10
 --- !u!114 &3711338621058325655
 MonoBehaviour:
   m_ObjectHideFlags: 1
