@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using NeoCC;
 using NeoFPS.CharacterMotion;
 using NeoFPS.CharacterMotion.Parameters;
 
@@ -23,6 +24,11 @@ namespace NeoFPS.CharacterMotion.Behaviours
         [SerializeField, Tooltip("The speed above which the tilt amount will be 1")]
         private float m_MaxSpeed = 10f;
 
+        //DS
+        private NeoCharacterController neoCharacterController;
+        private bool flipStarted = false;
+        //DS
+
         public enum TiltMode
         {
             CharacterRelative,
@@ -39,6 +45,7 @@ namespace NeoFPS.CharacterMotion.Behaviours
         public override void OnValidate()
         {
             //DS
+            flipStarted = false;
             //m_TiltAngle = Mathf.Clamp(m_TiltAngle, -45f, 45f);
             //DS
             // Clamp speeds
@@ -50,6 +57,12 @@ namespace NeoFPS.CharacterMotion.Behaviours
         public override void Initialise(MotionGraphConnectable o)
         {
             base.Initialise(o);
+
+            //DS
+            //Get the character controller
+            if (controller.characterController.GetType() == typeof(NeoCharacterController))
+                neoCharacterController = (NeoCharacterController) controller.characterController;
+            //DS
 
             // Get the body tilt component
             var character = controller.GetComponent<ICharacter>();
@@ -67,10 +80,19 @@ namespace NeoFPS.CharacterMotion.Behaviours
         {
             if (m_BodyTilt != null)
                 m_BodyTilt.ResetTilt();
+            //DS
+            //reset up vector
+            if (flipStarted)
+            {
+                neoCharacterController.orientUpWithGravity = true;
+            }
+            //DS
         }
 
         public override void Update()
         {
+            //Debug.Log(neoCharacterController.orientUpWithGravity);
+
             if (m_BodyTilt == null)
                 return;
 
@@ -109,7 +131,25 @@ namespace NeoFPS.CharacterMotion.Behaviours
                     }
                     break;
                 case TiltMode.Input:
-                    tiltDirection = controller.inputMoveDirection * controller.inputMoveScale;
+                    {
+                        //Debug.Log(controller.inputMoveDirection);
+                        Debug.Log(m_BodyTilt.rotation.eulerAngles.normalized);
+                        //DS
+                        //configure up vector to change continuously (not orient with gravity)
+                        if (!flipStarted && controller.inputMoveDirection != Vector2.zero)
+                        {
+                            //Debug.Log(controller.inputMoveDirection);
+                            flipStarted = true;
+                            neoCharacterController.orientUpWithGravity = false;
+                            //neoCharacterController.up = m_BodyTilt.position;
+                            neoCharacterController.up = m_BodyTilt.rotation.eulerAngles.normalized;
+                            //neoCharacterController.up = Vector3.down;
+                            //neoCharacterController.up = controller.inputMoveDirection * controller.inputMoveScale; //controller.characterController.up;
+                            //Debug.Log(neoCharacterController.up);
+                        }
+                        //DS
+                        tiltDirection = controller.inputMoveDirection * controller.inputMoveScale;
+                    }
                     break;
                 case TiltMode.InputLateral:
                     tiltDirection.x = controller.inputMoveDirection.x * controller.inputMoveScale;

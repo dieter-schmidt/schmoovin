@@ -133,7 +133,7 @@ namespace NeoFPS
                 // Get damping parameters
                 //DS
                 //float maxSpeed = Mathf.Lerp(10f, 200f, m_TiltSpeed * m_TiltSpeed);
-                float maxSpeed = Mathf.Lerp(10f, 350f, m_TiltSpeed * m_TiltSpeed);
+                float maxSpeed = Mathf.Lerp(10f, 500f, m_TiltSpeed * m_TiltSpeed);
                 //DS
                 float leanTime = Mathf.Lerp(0.25f, 0.01f, m_TiltSpeed);
 
@@ -160,6 +160,7 @@ namespace NeoFPS
         {
             //DS
             m_TargetTilt = Vector2.zero;
+            //m_TargetTilt = m_CurrentTilt;
 
             //DS
         }
