@@ -6,6 +6,7 @@ using NeoCC;
 using NeoFPS.CharacterMotion.MotionData;
 using NeoSaveGames.Serialization;
 using NeoSaveGames;
+using MoreMountains.Feedbacks;
 
 namespace NeoFPS.CharacterMotion
 {
@@ -814,6 +815,9 @@ namespace NeoFPS.CharacterMotion
         void StartGPLandFX()
         {
             cameraFXController.timedFX("gpland", 0.30f);
+            //particles
+            //MMFeedbacks playerFeedbacks = GameObject.Find("MMFeedbacksPlayer").GetComponent<MMFeedbacks>();
+            //playerFeedbacks.PlayFeedbacks();
         }
 
         void toggleGDFX()

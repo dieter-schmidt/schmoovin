@@ -2,6 +2,7 @@
 using NeoFPS.Constants;
 using NeoFPS.CharacterMotion;
 using NeoFPS.CharacterMotion.Parameters;
+using MoreMountains.Feedbacks;
 
 namespace NeoFPS
 {
@@ -284,6 +285,7 @@ namespace NeoFPS
                     if (GetButtonUp(FpsInputButton.Jump)) {
                         m_JumpTrigger.Trigger();
                         //DS START
+                        //GetComponent<MMFeedbackHandler>().triggerMMFeedbacks();
                         //motionGraph.GetSwitch(Animator.StringToHash("groundPoundStarted"))
                         //DS END
                     }
@@ -294,6 +296,7 @@ namespace NeoFPS
                     {
                         m_JumpTrigger.Trigger();
                         //DS START
+                        //GetComponent<MMFeedbackHandler>().triggerMMFeedbacks();
                         //gpJumpElapsed = 0f;
                         //DS END
                     }
@@ -402,6 +405,8 @@ namespace NeoFPS
                     {
                         m_BurstReleaseTrigger.Trigger();
                         //DS START
+                        //MMFeedbacks playerFeedbacks = (MMFeedbacks)GameObject.Find("MMFeedbacksPlayer").GetComponent<MMFeedbacks>();
+                        //playerFeedbacks.PlayFeedbacks();
                         //motionGraph.GetSwitch(Animator.StringToHash("groundPoundStarted"))
                         //DS END
                     }

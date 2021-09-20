@@ -3,6 +3,9 @@ using UnityEngine.Serialization;
 using NeoSaveGames.Serialization;
 using NeoSaveGames;
 using System.Collections;
+//DS
+using MoreMountains.Feedbacks;
+//DS
 
 namespace NeoFPS.ModularFirearms
 {
@@ -79,8 +82,13 @@ namespace NeoFPS.ModularFirearms
         
 		public override void Shoot (float accuracy, IAmmoEffect effect)
 		{
-			// Just return if there is no effect
-			if (effect == null)
+            //DS MMFeedback
+            MMFeedbacks feedbacks = (MMFeedbacks) GameObject.Find("MMFeedbacks").GetComponent<MMFeedbacks>();
+            feedbacks.PlayFeedbacks();
+            //DS
+
+            // Just return if there is no effect
+            if (effect == null)
 				return;
 
             // Get root game object to prevent impacts with body
