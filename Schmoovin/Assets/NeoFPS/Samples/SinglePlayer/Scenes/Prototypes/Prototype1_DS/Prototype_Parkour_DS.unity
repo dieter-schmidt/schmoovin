@@ -1094,7 +1094,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh241124
+  m_Name: pb_Mesh93814
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1706,7 +1706,7 @@ Transform:
   m_Children:
   - {fileID: 344802258}
   - {fileID: 1098866496}
-  - {fileID: 1309849927}
+  - {fileID: 1936603064}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3850,7 +3850,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh241358
+  m_Name: pb_Mesh94048
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6630,7 +6630,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh241136
+  m_Name: pb_Mesh93826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7342,7 +7342,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh241622
+  m_Name: pb_Mesh94318
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7506,7 +7506,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh241454
+  m_Name: pb_Mesh94144
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7777,19 +7777,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 385308536}
+    m_TransformParent: {fileID: 1936603064}
     m_Modifications:
     - target: {fileID: 191956, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_Name
       value: Block_Cshape_Large-X2
       objectReference: {fileID: 0}
+    - target: {fileID: 191956, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_LocalScale.y
@@ -7817,15 +7821,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 407096, guid: 259317ff10f968e46a196b8fc2ad3cfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7943,7 +7947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65811966b3e48ad4a9362cb8b1c4b83b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 0
+  Active: 1
   Label: Camera Zoom
   Chance: 100
   Timing:
@@ -10083,7 +10087,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh241556
+  m_Name: pb_Mesh94252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12400,6 +12404,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!1 &1936603063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936603064}
+  m_Layer: 0
+  m_Name: WallJumpTestObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1936603064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936603063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1309849927}
+  m_Father: {fileID: 385308536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1978567208
 PrefabInstance:
   m_ObjectHideFlags: 0
