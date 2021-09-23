@@ -119,6 +119,7 @@ namespace NeoFPS
         private string m_BurstChargeLengthKey = "burstChargeLength";
         private float m_BurstChargeLength = 0f;
         private float m_BurstChargeTimer = 0f;
+        private int m_BurstLevel = 0;
 
         protected override void OnAwake()
         {
@@ -399,11 +400,37 @@ namespace NeoFPS
                         m_BurstChargeFloatProperty.value = 0f;
 
                     if (GetButton(FpsInputButton.LeanLeft))
+                    {
                         m_BurstChargeFloatProperty.value = Mathf.Clamp01(m_BurstChargeFloatProperty.value + (Time.deltaTime / m_BurstChargeTime));
+                        if (m_BurstChargeFloatProperty.value >= 1f && m_BurstLevel == 1)
+                        {
+                            m_BurstLevel = 2;
+                            GameObject.Find("AudioBurstCharge2").GetComponent<AudioSource>().Play();
+                        } 
+                        else if (m_BurstChargeFloatProperty.value >= 0.5f && m_BurstLevel == 0)
+                        {
+                            m_BurstLevel = 1;
+                            GameObject.Find("AudioBurstCharge1").GetComponent<AudioSource>().Play();
+                        }    
+                    }
+                        
+
 
                     if (GetButtonUp(FpsInputButton.LeanLeft))
                     {
-                        m_BurstReleaseTrigger.Trigger();
+                        //clamp burst to half or full strength
+                        if (m_BurstChargeFloatProperty.value > 0.5f)
+                        {
+                            if (m_BurstChargeFloatProperty.value < 1f)
+                            {
+                                m_BurstChargeFloatProperty.value = 0.75f;
+                            }
+                            m_BurstReleaseTrigger.Trigger();
+                            m_BurstLevel = 0;
+                        }
+
+
+                        //m_BurstReleaseTrigger.Trigger();
                         //DS START
                         //MMFeedbacks playerFeedbacks = (MMFeedbacks)GameObject.Find("MMFeedbacksPlayer").GetComponent<MMFeedbacks>();
                         //playerFeedbacks.PlayFeedbacks();

@@ -409,6 +409,8 @@ namespace NeoFPS.CharacterMotion
             airdashFX += StartAirdashFX;
             gpLandFX += StartGPLandFX;
             gdFX += toggleGDFX;
+
+            inputGravity = GetComponent<InputGravity>();
             //DS
         }
 
@@ -724,6 +726,9 @@ namespace NeoFPS.CharacterMotion
         private UnityAction gdFX;
         [SerializeField, Tooltip("The camera effects controller used to alter time-based effects")]
         private CameraFXController cameraFXController = null;
+
+        //gravity input script
+        private InputGravity inputGravity;
         //DS
 
         public float smoothedStepRate
@@ -762,7 +767,11 @@ namespace NeoFPS.CharacterMotion
             //scale radial blur with velocity
             cameraFXController.scaleFXWithVelocity(characterController.rawVelocity.magnitude);
 
+            //if (inputGravity.gravityReversed)
+            //    motionGraph.SetSwitch(Animator.StringToHash("isGroundedDS"), false);
+            //else
             motionGraph.SetSwitch(Animator.StringToHash("isGroundedDS"), characterController.isGrounded);
+            //Debug.Log(motionGraph.GetSwitch("isGroundedDS"));
             //Debug.Log(characterController.velocity.magnitude);
             //Debug.Log(motionGraph.GetSwitchProperty(Animator.StringToHash("burstCharge")).on);
             //motionGraph.GetEventProperty(Animator.StringToHash("landTimer")).AddListener;

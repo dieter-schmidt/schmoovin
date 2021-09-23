@@ -10,6 +10,17 @@ public class InputGravity : CharacterInputBase
 {
     //private INeoCharacterController neoCharacterController;
     private NeoCharacterController neoCharacterController;
+    private IMotionController motionController;
+    //public bool groundedOnGravChange
+    //{
+    //    get;
+    //    set;
+    //}
+    public bool gravityReversed
+    {
+        get;
+        set;
+    }
     //private MotionController motionController;
     //private UnityAction flip;
 
@@ -17,26 +28,43 @@ public class InputGravity : CharacterInputBase
     void Start()
     {
         neoCharacterController = GetComponent<NeoCharacterController>();
+        motionController = GetComponent<MotionController>();
+        gravityReversed = false;
         //motionController = GetComponent<MotionController>();
         //flip += ProcessFlip;
     }
 
-    private void Update()
-    {
-        //motionController.motionGraph.AddEventListener(Animator.StringToHash("flip"), flip);
-    }
+    //private void Update()
+    //{
+    //    //motionController.motionGraph.AddEventListener(Animator.StringToHash("flip"), flip);
+    //}
 
     protected override void UpdateInput()
     {
+        //Debug.Log("GRAVITY");
         //throw new System.NotImplementedException();
         //Debug.Log("GRAV CHANGED");
 
         //reverse gravity and up vector
-        bool gravityChange = GetButtonDown(FpsInputButton.Inspect);
+        bool gravityChange = GetButtonDown(FpsInputButton.Inspect) && !neoCharacterController.isGrounded;
 
         if (gravityChange)
         {
+            //Debug.Log("GRAVITY");
             neoCharacterController.characterGravity.gravity *= -1f;
+            //if (!gravityReversed)
+            //    gravityReversed = true;
+            //else
+            //    gravityReversed = false;
+            //check grounded state
+            //if (motionController.characterController.isGrounded)
+            //    groundedOnGravChange = true;
+            //else
+            //    groundedOnGravChange = false;
+        }
+        else
+        {
+            //gravityReversed = false;
         }
 
     }
