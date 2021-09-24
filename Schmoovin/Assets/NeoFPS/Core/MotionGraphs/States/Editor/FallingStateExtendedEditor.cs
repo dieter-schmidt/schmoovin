@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using NeoFPS.CharacterMotion.States;
+using NeoFPS.CharacterMotion.Parameters;
 
 namespace NeoFPSEditor.CharacterMotion.States
 {
@@ -15,6 +16,7 @@ namespace NeoFPSEditor.CharacterMotion.States
             var root = container;
 
             EditorGUILayout.LabelField("Motion Data", EditorStyles.boldLabel);
+            MotionGraphEditorGUI.ParameterDropdownField<VectorParameter>(container, serializedObject.FindProperty("m_WallNormal"));
             MotionGraphEditorGUI.FloatDataReferenceField(root, serializedObject.FindProperty("m_HorizontalAcceleration"));
             MotionGraphEditorGUI.FloatDataReferenceField(root, serializedObject.FindProperty("m_TopSpeed"));
             //START DS MOD

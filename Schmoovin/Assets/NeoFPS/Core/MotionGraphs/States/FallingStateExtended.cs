@@ -5,6 +5,7 @@
 using UnityEngine;
 using NeoFPS.CharacterMotion.MotionData;
 using NeoSaveGames.Serialization;
+using NeoFPS.CharacterMotion.Parameters;
 
 namespace NeoFPS.CharacterMotion.States
 {
@@ -12,6 +13,9 @@ namespace NeoFPS.CharacterMotion.States
     [HelpURL("https://docs.neofps.com/manual/motiongraphref-mgs-fallingstate.html")]
     public class FallingStateExtended : MotionGraphState
     {
+        [SerializeField, Tooltip("The vector parameter containing the wall normal. This will be read AND written to each frame")]
+        private VectorParameter m_WallNormal = null;
+
         [SerializeField, Tooltip("The input driven acceleration while falling.")]
         private FloatDataReference m_HorizontalAcceleration = new FloatDataReference(50f);
 
@@ -48,6 +52,13 @@ namespace NeoFPS.CharacterMotion.States
         private Vector3 m_MotorAcceleration = Vector3.zero;
         private Vector3 m_OutVelocity = Vector3.zero;
 
+        private bool m_Completed = false;
+
+        public override bool completed
+        {
+            get { return m_Completed; }
+        }
+
         protected Vector3 fallVelocity
         {
             get { return m_OutVelocity; }
@@ -83,6 +94,9 @@ namespace NeoFPS.CharacterMotion.States
         public override void OnEnter()
         {
             base.OnEnter();
+
+            m_Completed = false;
+
             m_MotorAcceleration = Vector3.zero;
             m_OutVelocity = characterController.velocity;
 
@@ -93,6 +107,9 @@ namespace NeoFPS.CharacterMotion.States
         public override void OnExit()
         {
             base.OnExit();
+
+            m_Completed = false;
+
             m_OutVelocity = Vector3.zero;
 
             //reset gravity
@@ -103,8 +120,15 @@ namespace NeoFPS.CharacterMotion.States
         {
             base.Update();
 
-            // Update the current velocity (Note: The y value is handled by the standard gravity calculations in the parent mover)
-            Vector3 up = characterController.up;
+            //DS
+            RaycastHit hit;
+            bool didHit = controller.characterController.RayCast(0.25f, -m_WallNormal.value, Space.World, out hit, PhysicsFilter.Masks.CharacterBlockers, QueryTriggerInteraction.Ignore);
+            if (!didHit)
+                m_Completed = true;
+                //DS
+
+                // Update the current velocity (Note: The y value is handled by the standard gravity calculations in the parent mover)
+                Vector3 up = characterController.up;
             Vector3 upVelocity = up * Vector3.Dot(characterController.velocity, up);
             Vector3 hVelocity = characterController.velocity - upVelocity;
             
@@ -181,6 +205,7 @@ namespace NeoFPS.CharacterMotion.States
         public override void CheckReferences(IMotionGraphMap map)
         {
             base.CheckReferences(map);
+            m_WallNormal = map.Swap(m_WallNormal);
             m_TopSpeed.CheckReference(map);
             m_StrafeMultiplier.CheckReference(map);
             m_ReverseMultiplier.CheckReference(map);
