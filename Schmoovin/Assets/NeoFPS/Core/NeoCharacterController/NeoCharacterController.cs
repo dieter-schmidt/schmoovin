@@ -85,7 +85,14 @@ namespace NeoCC
 
         [SerializeField, Range(0f, 3f), Tooltip("The duration (in seconds) it takes to rotate the character up vector a whole 180 degrees.")]
         private float m_UpSmoothing = 2f;
-                
+
+        //DS
+        [SerializeField, Tooltip("The duration (in seconds) it takes to rotate the character up vector a whole 180 degrees.")]
+        private bool m_MatchDirOnGravChange = true;
+
+        private InputGravity inputGravity;
+        //DS
+
         const float k_ClampMaxSlopeLow = 30f;
         const float k_ClampSkinWidthLow = 0.001f;
         const float k_ClampSkinWidthHigh = 0.1f;
@@ -382,6 +389,12 @@ namespace NeoCC
             }
         }
 
+        public bool matchDirOnGravChange
+        {
+            get { return m_MatchDirOnGravChange; }
+            set { m_MatchDirOnGravChange = value; }
+        }
+
         /// <summary>
         /// The variable gravity setup for this character if applicable.
         /// </summary>
@@ -576,6 +589,10 @@ namespace NeoCC
             m_InverseRotation = Quaternion.Inverse(m_StartRotation);
             m_StartPosition = m_TargetPosition = m_LocalTransform.position;
             m_StartRotation = m_TargetRotation = m_LocalTransform.rotation;
+
+            //DS
+            inputGravity = GetComponent<InputGravity>();
+            //DS
 
             // Initialise the capsule
             OnRadiusChanged();
@@ -1016,8 +1033,35 @@ namespace NeoCC
             //m_Rigidbody.position = m_TargetPosition;
             if (m_Aimer != null)
             {
-                m_TargetRotation *= m_Aimer.yawLocalRotation;
-                m_Aimer.ResetYawLocal();
+                //DS
+                //Debug.Log(matchDirOnGravChange);
+                if (matchDirOnGravChange)
+                {
+                    //Debug.Log(inputGravity.gravityChanged);
+                    //m_TargetRotation *= m_Aimer.yawLocalRotation;
+                    if (inputGravity.gravityChanged)
+                    {
+                        Debug.Log("CHANGE");
+                        m_TargetRotation *= m_Aimer.yawLocalRotation;// * new Quaternion(0f, 180f, 0f, 1f).normalized;
+                        m_Aimer.ResetYawLocal();
+                    }
+                    else
+                    {
+                        Debug.Log("NO CHANGE");
+                        m_TargetRotation *= m_Aimer.yawLocalRotation;
+                        m_Aimer.ResetYawLocal();
+                    }
+                    inputGravity.gravityChanged = false;
+                }
+                else
+                {
+                    m_TargetRotation *= m_Aimer.yawLocalRotation;
+                    m_Aimer.ResetYawLocal();
+                }
+                    
+                //DS
+                //m_TargetRotation *= m_Aimer.yawLocalRotation;
+                //m_Aimer.ResetYawLocal();
             }
             m_Rigidbody.rotation = m_TargetRotation;
 

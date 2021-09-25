@@ -16,7 +16,7 @@ public class InputGravity : CharacterInputBase
     //    get;
     //    set;
     //}
-    public bool gravityReversed
+    public bool gravityChanged
     {
         get;
         set;
@@ -29,7 +29,7 @@ public class InputGravity : CharacterInputBase
     {
         neoCharacterController = GetComponent<NeoCharacterController>();
         motionController = GetComponent<MotionController>();
-        gravityReversed = false;
+        gravityChanged = false;
         //motionController = GetComponent<MotionController>();
         //flip += ProcessFlip;
     }
@@ -52,6 +52,7 @@ public class InputGravity : CharacterInputBase
         {
             //Debug.Log("GRAVITY");
             neoCharacterController.characterGravity.gravity *= -1f;
+            gravityChanged = true;
             //if (!gravityReversed)
             //    gravityReversed = true;
             //else
