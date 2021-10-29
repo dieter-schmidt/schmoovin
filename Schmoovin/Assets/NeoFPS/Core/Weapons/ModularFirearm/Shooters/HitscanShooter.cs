@@ -83,8 +83,11 @@ namespace NeoFPS.ModularFirearms
 		public override void Shoot (float accuracy, IAmmoEffect effect)
 		{
             //DS MMFeedback
-            MMFeedbacks feedbacks = (MMFeedbacks) GameObject.Find("MMFeedbacks").GetComponent<MMFeedbacks>();
-            feedbacks.PlayFeedbacks();
+            if (GameObject.Find("MMFeedbacks") != null)
+            {
+                MMFeedbacks feedbacks = (MMFeedbacks)GameObject.Find("MMFeedbacks").GetComponent<MMFeedbacks>();
+                feedbacks.PlayFeedbacks();
+            }
             //DS
 
             // Just return if there is no effect

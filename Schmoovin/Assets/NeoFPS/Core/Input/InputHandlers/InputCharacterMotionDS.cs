@@ -67,6 +67,14 @@ namespace NeoFPS
         [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the dodge right trigger property in the character motion graph.")]
         private string m_DodgeRightKey = "dodgeRight";
 
+        //DS
+        [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the sidestep right trigger property in the character motion graph.")]
+        private string m_SidestepRightKey = "sidestepRight";
+
+        [SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the sidestep left trigger property in the character motion graph.")]
+        private string m_SidestepLeftKey = "sidestepLeft";
+        //DS
+
         //[SerializeField, MotionGraphParameterKey(MotionGraphParameterType.Trigger), Tooltip("The key to the ability trigger property in the character motion graph.")]
         //private string m_AbilityKey = "ability";
 
@@ -103,6 +111,8 @@ namespace NeoFPS
         private SwitchParameter m_SprintHoldProperty = null;
         //DS
         private TriggerParameter m_SprintTriggerProperty = null;
+        private TriggerParameter m_SidestepLeftTrigger = null;
+        private TriggerParameter m_SidestepRightTrigger = null;
         //DS
         private TriggerParameter m_DodgeLeftTrigger = null;
         private TriggerParameter m_DodgeRightTrigger = null;
@@ -145,6 +155,8 @@ namespace NeoFPS
                 m_SprintProperty = motionGraph.GetSwitchProperty(m_SprintKey);
                 //DS
                 m_SprintTriggerProperty = motionGraph.GetTriggerProperty(m_SprintTriggerKey);
+                m_SidestepLeftTrigger = motionGraph.GetTriggerProperty(m_SidestepLeftKey);
+                m_SidestepRightTrigger = motionGraph.GetTriggerProperty(m_SidestepRightKey);
                 //DS
                 m_SprintHoldProperty = motionGraph.GetSwitchProperty(m_SprintHoldKey);
                 m_DodgeLeftTrigger = motionGraph.GetTriggerProperty(m_DodgeLeftKey);
@@ -332,6 +344,21 @@ namespace NeoFPS
                 if (m_DodgeRightTimer < 0f)
                     m_DodgeRightTimer = 0f;
             }
+
+            //DS
+            // Sidestep
+            if (m_SidestepLeftTrigger != null && m_SidestepRightTrigger != null)
+            {
+                if (GetButtonDown(FpsInputButton.Left))
+                {
+                    m_SidestepLeftTrigger.Trigger();
+                }
+                else if (GetButtonDown(FpsInputButton.Right))
+                {
+                    m_SidestepRightTrigger.Trigger();
+                }
+            }
+            //DS
 
             // Ground Pound
             if (m_GroundPoundTrigger != null)

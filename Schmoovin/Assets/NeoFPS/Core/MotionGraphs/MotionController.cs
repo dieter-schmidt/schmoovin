@@ -409,6 +409,7 @@ namespace NeoFPS.CharacterMotion
             airdashFX += StartAirdashFX;
             gpLandFX += StartGPLandFX;
             gdFX += toggleGDFX;
+            gdVelocityReset += ResetGDVelocity;
 
             inputGravity = GetComponent<InputGravity>();
             //DS
@@ -548,6 +549,10 @@ namespace NeoFPS.CharacterMotion
             motionGraph.SetVector(Animator.StringToHash("groundDashStartVelocity"), Vector3.Dot(characterController.velocity, characterController.forward) * characterController.forward);
             //Debug.Log(characterController.velocity);
             motionGraph.SetVector(Animator.StringToHash("playerForward"), characterController.forward);
+            //motionGraph.SetVector(Animator.StringToHash("playerRightDash"), characterController.velocity * 30f);
+            float sidestepSpeed = motionGraph.GetFloat(Animator.StringToHash("sidestepSpeed"));
+            motionGraph.SetVector(Animator.StringToHash("playerRightDash"), Quaternion.AngleAxis(90f, characterController.up) * characterController.velocity.normalized * sidestepSpeed);
+            motionGraph.SetVector(Animator.StringToHash("playerLeftDash"), Quaternion.AngleAxis(-90f, characterController.up) * characterController.velocity.normalized * sidestepSpeed);
             //Debug.Log(characterController.velocity);
 
             //motionGraph.SetSwitch(Animator.StringToHash("isGroundedDS"), characterController.isGrounded);
@@ -724,6 +729,7 @@ namespace NeoFPS.CharacterMotion
         private UnityAction airdashFX;
         private UnityAction gpLandFX;
         private UnityAction gdFX;
+        private UnityAction gdVelocityReset;
         [SerializeField, Tooltip("The camera effects controller used to alter time-based effects")]
         private CameraFXController cameraFXController = null;
 
@@ -775,10 +781,14 @@ namespace NeoFPS.CharacterMotion
             //Debug.Log(characterController.velocity.magnitude);
             //Debug.Log(motionGraph.GetSwitchProperty(Animator.StringToHash("burstCharge")).on);
             //motionGraph.GetEventProperty(Animator.StringToHash("landTimer")).AddListener;
+            //Debug.Log("CHAR  VEL: "+characterController.velocity);
+            //Debug.Log("RESET VEL: " + motionGraph.GetVector(Animator.StringToHash("velOnSSEnter")));
 
             motionGraph.AddEventListener(Animator.StringToHash("airdashFX"), airdashFX);
             motionGraph.AddEventListener(Animator.StringToHash("gpLandFX"), gpLandFX);
             motionGraph.AddEventListener(Animator.StringToHash("gdFX"), gdFX);
+            motionGraph.AddEventListener(Animator.StringToHash("gdVelocityReset"), gdVelocityReset);
+
             //DS END
 
             // Get the stride length (if using dumb stepping, steps are counted at a strideLength of 3m when grounded)
@@ -833,6 +843,18 @@ namespace NeoFPS.CharacterMotion
         {
             //TODO - handle gd/gd top speed transition - scale with velocity regardless of state?
             cameraFXController.toggleFX("grounddash");
+        }
+
+        void ResetGDVelocity()
+        {
+            //Reset ground dash velocity after sidestep completes
+            if (motionGraph.GetSwitch(Animator.StringToHash("sidestepComplete")))
+            {
+                //Debug.Log("RESET GD VEL");
+                //characterController.ResetVelocity();
+                characterController.SetVelocity(motionGraph.GetVector(Animator.StringToHash("velOnSSEnter")));
+                //characterController.SetVelocity(new Vector3(100f, 0f, 0f));
+            }
         }
         //DS
 

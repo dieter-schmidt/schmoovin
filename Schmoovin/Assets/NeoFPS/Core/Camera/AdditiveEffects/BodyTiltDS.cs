@@ -104,7 +104,7 @@ namespace NeoFPS
 
         void OnDisable()
         {
-            ResetTilt();
+            //DSResetTilt();
             m_Handler.RemoveAdditiveEffect(this);
         }
 
@@ -159,8 +159,21 @@ namespace NeoFPS
         public void ResetTilt()
         {
             //DS
-            m_TargetTilt = Vector2.zero;
-            //m_TargetTilt = m_CurrentTilt;
+            Debug.Log("RESET TILT");
+            //if (m_CurrentTilt.x > 0.01f)
+            //{
+            //    m_TargetTilt.x = 180f;
+            //}
+            //else if (m_CurrentTilt.x < -0.01f)
+            //{
+            //    m_TargetTilt.x = -180f;
+            //}
+            //else
+            //{
+            //    m_TargetTilt = Vector2.zero;
+            //}
+            //m_TargetTilt = Vector2.zero;
+            m_TargetTilt = m_CurrentTilt;
 
             //DS
         }
