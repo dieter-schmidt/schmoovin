@@ -349,11 +349,11 @@ namespace NeoFPS
             // Sidestep
             if (m_SidestepLeftTrigger != null && m_SidestepRightTrigger != null)
             {
-                if (GetButtonDown(FpsInputButton.Left))
+                if (GetButtonDown(FpsInputButton.PrevWeapon))
                 {
                     m_SidestepLeftTrigger.Trigger();
                 }
-                else if (GetButtonDown(FpsInputButton.Right))
+                else if (GetButtonDown(FpsInputButton.NextWeapon))
                 {
                     m_SidestepRightTrigger.Trigger();
                 }

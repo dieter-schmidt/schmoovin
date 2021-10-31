@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 037eb279a7874fa498e8a33304415656, type: 3}
   m_Name: Ground Dash
   m_EditorClassIdentifier: 
-  uiPosition: {x: -627.0005, y: 17.999939}
+  uiPosition: {x: -628.0005, y: 17.999939}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -931,6 +931,7 @@ MonoBehaviour:
   - {fileID: -6327625397303071137}
   - {fileID: 1305017789593341021}
   - {fileID: -3455200493542332320}
+  - {fileID: 6475271436624106309}
   - {fileID: -1790329640068135041}
   - {fileID: 8658260347145877915}
   - {fileID: -4592133905482012703}
@@ -985,7 +986,6 @@ MonoBehaviour:
   m_Destination: {fileID: -5290319117658383682}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: -7657976827004316527}
   - {fileID: -348514863622133048}
   m_ConditionGroups: []
 --- !u!114 &-7263010848251857077
@@ -1112,6 +1112,7 @@ MonoBehaviour:
   - {fileID: -6812853647869763297}
   - {fileID: 7393811598194685300}
   - {fileID: 8171683159357694692}
+  - {fileID: -1393014687810394670}
   - {fileID: 5966786068850587741}
   - {fileID: -4261148821876173860}
   - {fileID: 2541246063788907397}
@@ -1320,7 +1321,6 @@ MonoBehaviour:
   m_Destination: {fileID: -5290319117658383682}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: -3295551384519018881}
   - {fileID: -950286075174876858}
   m_ConditionGroups: []
 --- !u!114 &-6761467162833515359
@@ -1904,7 +1904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6f2a201b9e4034d8813652ee5adbd4, type: 3}
   m_Name: Skid
   m_EditorClassIdentifier: 
-  uiPosition: {x: -500.0001, y: 191}
+  uiPosition: {x: -500.0001, y: 190}
   defaultName: NewState
   m_Parent: {fileID: 114250223680194722}
   m_Connections:
@@ -1916,6 +1916,7 @@ MonoBehaviour:
   m_Behaviours:
   - {fileID: 6028867135096980296}
   - {fileID: -7478400679307290879}
+  - {fileID: -944038773417701322}
   m_SerializationKey: 1537271717
   stateName: 
   m_MaxTurnRate:
@@ -3221,7 +3222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8304d3c9cab0479ffe5eef25ebace, type: 3}
   m_Name: ConstrainCameraYawBehaviour
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_SerializationKey: -1683081437
   expanded: 1
   m_Direction: {fileID: -590120925795347199}
@@ -3971,7 +3972,6 @@ MonoBehaviour:
   m_Destination: {fileID: 7233999675453387534}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: -5957806095915362719}
   - {fileID: 4179019645666133468}
   m_ConditionGroups: []
 --- !u!114 &-1883606436820093225
@@ -4277,6 +4277,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property: {fileID: -6180121127705600611}
   m_CompareValue: 0
+--- !u!114 &-1393014687810394670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8922bd4a7cec004aa3114f4c78f889e, type: 3}
+  m_Name: ConstrainCameraYawExtendedBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -1859601166
+  expanded: 1
+  m_Direction: {fileID: -590120925795347199}
+  m_AngleRange: 30
+  m_Flipped: 0
+  m_Alternate_Direction: {fileID: -590120925795347199}
+  m_Alternate_AngleRange: 0
+  m_Alternate_Flipped: 0
+  m_Toggle_Parameter: {fileID: -1978752288075368101}
+  m_Continuous: 1
 --- !u!114 &-1382420665631015994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4457,6 +4480,30 @@ MonoBehaviour:
   m_Name: Condition Group
   m_EditorClassIdentifier: 
   m_Property: {fileID: -2918429424337762135}
+--- !u!114 &-944038773417701322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6704b521f382b240bb6520f423a4e8d, type: 3}
+  m_Name: SlidingAudioBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -254367210
+  expanded: 1
+  m_AudioData: {fileID: 11400000, guid: 9782d3feef193d441bb2853811dd97d5, type: 2}
+  m_CastDirection: 0
+  m_CastVector: {x: 0, y: -1, z: 0}
+  m_VectorParameter: {fileID: 0}
+  m_MinimumSpeed: 1
+  m_MaximumSpeed: 10
+  m_MinimumPitch: 0.75
+  m_MaximumPitch: 1.1
+  m_MaxRayDistance: 1
 --- !u!114 &-939701681802439027
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4906,7 +4953,6 @@ MonoBehaviour:
   m_Destination: {fileID: 7233999675453387534}
   m_TransitionOn: 0
   m_Conditions:
-  - {fileID: 7642675600377792900}
   - {fileID: 3631673790347239875}
   m_ConditionGroups: []
 --- !u!114 &-113311986498157734
@@ -6528,7 +6574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e48642449e8148ae5cdaee559c937, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
-  uiPosition: {x: -4.500122, y: -46.00006}
+  uiPosition: {x: -4.500122, y: -47.00006}
   defaultName: NewState
   m_Parent: {fileID: 114028739362575944}
   m_Connections:
@@ -13378,6 +13424,29 @@ MonoBehaviour:
   - {fileID: -7067897091298692111}
   - {fileID: 5947530944054588453}
   m_ConditionGroups: []
+--- !u!114 &6475271436624106309
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8922bd4a7cec004aa3114f4c78f889e, type: 3}
+  m_Name: ConstrainCameraYawExtendedBehaviour
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_SerializationKey: -172647120
+  expanded: 1
+  m_Direction: {fileID: -590120925795347199}
+  m_AngleRange: 30
+  m_Flipped: 0
+  m_Alternate_Direction: {fileID: -590120925795347199}
+  m_Alternate_AngleRange: 0
+  m_Alternate_Flipped: 0
+  m_Toggle_Parameter: {fileID: -1978752288075368101}
+  m_Continuous: 1
 --- !u!114 &6516835837621670824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14191,7 +14260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8304d3c9cab0479ffe5eef25ebace, type: 3}
   m_Name: ConstrainCameraYawBehaviour
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   m_SerializationKey: 755039428
   expanded: 1
   m_Direction: {fileID: -590120925795347199}
